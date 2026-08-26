@@ -1,0 +1,114 @@
+{
+  "_comment": "Canonical event facts. Hand-edited. Everything on the site reads from here — change a date or a link once, and it updates everywhere.",
+  "name": "Energy Planning Week 2026",
+  "shortName": "EPW 2026",
+  "tagline": "Long-Term Energy Scenarios for Policy, Investment and Implementation",
+  "hostLine": "Co-hosted by IRENA and GET.transform",
+  "hosts": [
+    {
+      "name": "IRENA",
+      "full": "International Renewable Energy Agency",
+      "logo": "images/brand/irena.svg",
+      "url": "https://www.irena.org"
+    },
+    {
+      "name": "GET.transform",
+      "full": "GET.transform",
+      "logo": "images/brand/get-transform.svg",
+      "url": "https://www.get-transform.eu"
+    }
+  ],
+  "dates": {
+    "start": "2026-12-01",
+    "end": "2026-12-04",
+    "display": "1–4 December 2026",
+   "_datesNote": "1–4 December 2026 is confirmed. Earlier drafts saying 1–3 December or \"three days\" are superseded.",
+    "timezone": "Europe/Berlin",
+    "timezoneLabel": "CET (UTC+1)"
+  },
+  "venue": {
+    "name": "GIZ Auditorium",
+    "city": "Bonn",
+    "country": "Germany",
+    "display": "GIZ Auditorium, Bonn, Germany",
+    "address": "",
+    "mapUrl": "",
+    "capacityNote": "On-site capacity is limited. Places are allocated first to LTES Network members and partners, GCEP members, confirmed speakers, and supported developing-country planners."
+  },
+  "format": {
+    "type": "Hybrid",
+    "note": "Sessions run on-site in Bonn and stream online. All times are CET."
+  },
+  "status": {
+    "phase": "auto",
+    "_phaseNote": "The site derives its phase from the programme dates: the opening date before the event, a live now/next strip during it, a closing message after. Nothing to set here.",
+    "banner": "Provisional programme. Sessions, speakers and timings are subject to change until the final agenda is published.",
+    "showBanner": true
+  },
+  "join": {
+    "platform": "Microsoft Teams",
+    "url": "",
+    "_urlNote": "Paste the Teams event link here when it exists. Until it is set, the join buttons show as 'link coming soon' rather than dead links. GDPR: EU-hosted platforms only — no Zoom.",
+    "label": "Join online"
+  },
+  "contacts": [
+    {
+      "label": "LTES Network",
+      "email": "LTES@irena.org"
+    },
+    {
+      "label": "Global Coalition for Energy Planning",
+      "email": "GCEP@irena.org"
+    }
+  ],
+  "components": [
+    {
+      "id": "ltes-forum",
+      "order": 1,
+      "name": "7th International Forum on Long-Term Energy Scenarios",
+      "shortName": "LTES Forum",
+      "days": "Days 1–2",
+      "convener": "IRENA LTES Network",
+      "summary": "The seventh edition of IRENA's International Forum on Long-Term Energy Scenarios, convened through the LTES Network. Government planners and scenario practitioners work through the priorities the Network identified for 2026: scenario governance and capacity, data stewardship, energy security and flexibility, climate risks, and new modelling methods."
+    },
+    {
+      "id": "gcep-dialogue",
+      "order": 2,
+      "name": "GCEP Planning–Investment Dialogue",
+      "shortName": "GCEP Dialogue",
+      "days": "Day 3, morning",
+      "convener": "Global Coalition for Energy Planning",
+      "summary": "Convened under the Global Coalition for Energy Planning. It puts planners in the room with financiers, regulators and utilities to work on the gap between an approved plan and an investable one — what signals finance needs from planning systems, and which bottlenecks recur across the GCEP regional dialogues."
+    },
+    {
+      "id": "implementation",
+      "order": 3,
+      "name": "Implementation Lab: From Plans to Delivery",
+      "shortName": "Implementation Lab",
+      "days": "Day 3 afternoon and Day 4",
+      "convener": "IRENA and GET.transform with partners",
+      "summary": "Convened by IRENA and GET.transform with partners. It follows the plan past approval into delivery — permitting, project preparation, system operation and institutional accountability — including partner-led sessions selected through the call for sessions."
+    }
+  ],
+  "narrative": {
+    "_comment": "The four-stage chain used across all EPW 2026 material. Used on the site to tag sessions.",
+    "stages": [
+      {
+        "id": "scenarios",
+        "label": "Scenarios and planning systems"
+      },
+      {
+        "id": "policy",
+        "label": "Policy translation"
+      },
+      {
+        "id": "investment",
+        "label": "Investment signals and pipelines"
+      },
+      {
+        "id": "implementation",
+        "label": "Implementation and delivery"
+      }
+    ]
+  }
+}

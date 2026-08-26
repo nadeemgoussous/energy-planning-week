@@ -1,0 +1,60 @@
+{
+  "_comment": "Practical information for participants. Hand-edited. Empty strings render as 'to be confirmed' rather than blank space — fill them as details firm up.",
+
+  "documents": [
+    {
+      "title": "Programme",
+      "description": "Full agenda with session descriptions and speakers.",
+      "url": "",
+      "format": "PDF"
+    },
+    {
+      "title": "Logistical note",
+      "description": "Venue, travel, accommodation and practical arrangements.",
+      "url": "",
+      "format": "PDF"
+    }
+  ],
+  "documentsNote": "Documents are hosted on SharePoint for registered participants. If you have trouble opening them, contact the organisers.",
+
+  "venue": {
+    "name": "GIZ Auditorium",
+    "addressLines": [],
+    "_addressNote": "TODO — confirm the GIZ Bonn campus address and phone with the co-host, then fill addressLines and mapEmbed.",
+    "city": "53113 Bonn, Germany",
+    "phone": "",
+    "mapEmbed": ""
+  },
+
+  "gettingThere": [
+    "TODO — confirm tram and walking directions from Bonn Hauptbahnhof to the GIZ campus with the co-host."
+  ],
+
+  "sections": [
+    {
+      "id": "format",
+      "heading": "Attending",
+      "body": "Energy Planning Week 2026 runs in a hybrid format. On-site places are limited and are allocated first to LTES Network members and partners, GCEP members, confirmed speakers, and supported developing-country planners. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
+    },
+    {
+      "id": "meals",
+      "heading": "Meals",
+      "body": "Lunch and coffee are provided on site each day. A welcome dinner takes place on the evening of Day 1. Dietary requirements are collected through the registration form; please provide them as early as possible."
+    },
+    {
+      "id": "visas",
+      "heading": "Visas and letters",
+      "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Contact the organisers with your passport details and the embassy you will apply at."
+    },
+    {
+      "id": "accessibility",
+      "heading": "Access and language",
+      "body": "Sessions run in English without interpretation. Let the organisers know in advance if you have accessibility requirements."
+    }
+  ],
+
+  "emergency": [
+    { "number": "112", "label": "Emergency services — medical and fire" },
+    { "number": "110", "label": "Police" }
+  ]
+}

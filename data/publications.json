@@ -1,0 +1,47 @@
+{
+  "_comment": "LTES Network publications shown in the Resources section. Hand-edited. Add the 2026 releases here when they are out.",
+  "items": [
+    {
+      "year": 2025,
+      "title": "Participatory processes for strategic energy planning",
+      "subtitle": "A toolkit for national energy planners",
+      "image": "images/publications/participatory-toolkit-2025.jpg",
+      "url": "https://www.irena.org/Publications/2025/Sep/Participatory-processes-for-strategic-energy-planning-A-toolkit-for-national-energy-planners"
+    },
+    {
+      "year": 2023,
+      "title": "Scenarios for the energy transition",
+      "subtitle": "Experience and good practices in Africa",
+      "image": "images/publications/africa-2023.jpg",
+      "url": "https://www.irena.org/Publications/2023/Jan/Scenarios-for-the-energy-transition-Experience-and-good-practices-in-Africa"
+    },
+    {
+      "year": 2023,
+      "title": "LTES and low-emission development strategies",
+      "subtitle": "Stocktaking and alignment",
+      "image": "images/publications/ltes-leds-2023.jpg",
+      "url": "https://www.irena.org/Publications/2023/Jan/LTES-and-low-emission-development-strategies-Stocktaking-and-alignment"
+    },
+    {
+      "year": 2022,
+      "title": "Scenarios for the energy transition",
+      "subtitle": "Experience and good practices in Latin America and the Caribbean",
+      "image": "images/publications/lac-2022.jpg",
+      "url": "https://www.irena.org/Publications/2022/Jul/Scenarios-for-the-Energy-Transition-LAC"
+    },
+    {
+      "year": 2021,
+      "title": "Benchmarking scenario comparisons",
+      "subtitle": "Key indicators for the clean energy transition",
+      "image": "images/publications/benchmarking-2021.jpg",
+      "url": "https://www.irena.org/Publications/2021/Sep/Benchmarking-Scenario-Comparisons"
+    },
+    {
+      "year": 2020,
+      "title": "Scenarios for the energy transition",
+      "subtitle": "Global experience and best practices",
+      "image": "images/publications/global-2020.jpg",
+      "url": "https://www.irena.org/Publications/2020/Sep/Scenarios-for-the-Energy-Transition-Global-experience-and-best-practices"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "_comment": "GENERATED FILE — do not hand-edit. Produced by tools/build_data.py from '06 Speakers/EPW2026_Speakers_Tracker.xlsx'. Only people with Status = Confirmed are written here. Edit the tracker, then re-run: python tools/build_data.py",
+  "generatedAt": "2026-08-26T12:59:43Z",
+  "source": "06 Speakers/EPW2026_Speakers_Tracker.xlsx",
+  "people": []
+}

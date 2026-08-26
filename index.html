@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Energy Planning Week 2026 — Participant portal</title>
+<meta name="description" content="Participant portal for Energy Planning Week 2026, 1–4 December 2026, Bonn. Programme, speakers, joining details and practical information.">
+<meta name="theme-color" content="#0073ab">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<a class="skip-link" href="#programme">Skip to programme</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">Energy Planning Week</span>
+        <span class="brand__year">2026</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="u-visually-hidden">Menu</span>
+    </button>
+
+    <nav class="nav" aria-label="Sections">
+      <ul class="nav__list" id="navList">
+        <li><a class="nav__link" href="#programme">Programme</a></li>
+        <li><a class="nav__link" href="#speakers">Speakers</a></li>
+        <li><a class="nav__link" href="#resources">Documents</a></li>
+        <li><a class="nav__link" href="#practical">Practical</a></li>
+        <li><a class="nav__link nav__cta" id="navJoin" href="#join">Join online</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__lead">
+        <p class="hero__hosts" id="heroHosts"></p>
+        <h1 class="hero__title">Energy&nbsp;Planning<br>Week <span class="hero__year">2026</span></h1>
+        <p class="hero__tagline" id="heroTagline"></p>
+        <dl class="hero__facts" id="heroFacts"></dl>
+      </div>
+
+      <div class="hero__band">
+        <p class="hero__band-label">Programme overview</p>
+        <div class="weekband" id="weekBand"></div>
+        <ul class="legend" id="componentLegend"></ul>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="status-strip" id="statusStrip" hidden></div>
+    </div>
+  </section>
+
+  <!-- Programme: blocks are drawn to scale, so their height carries the duration -->
+  <section class="section" id="programme">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="section__note" id="draftNotice" hidden></p>
+        <h2 class="section__title">Programme</h2>
+        <p class="section__lede" id="programmeLede"></p>
+      </div>
+
+      <div class="daytabs" role="tablist" aria-label="Programme days" id="dayTabs"></div>
+      <div class="rail-scroll">
+        <div class="rail" id="rail"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photographs from the previous Forum. The credit line carries the year, so
+       2025 images are not read as pictures of this event. -->
+  <section class="scene" id="scene" hidden>
+    <div class="wrap">
+      <div class="scene__grid" id="sceneGrid"></div>
+      <p class="scene__credit" id="sceneCredit"></p>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="speakers">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Speakers</h2>
+        <p class="section__lede" id="speakersLede"></p>
+      </div>
+      <div class="speakers" id="speakerGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="join">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Online participation</h2>
+      </div>
+      <div class="join-card" id="joinCard"></div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="resources">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Documents</h2>
+      </div>
+      <div class="docs" id="docGrid"></div>
+      <h3 class="subhead">LTES Network publications</h3>
+      <div class="pubs" id="pubGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="practical">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Practical information</h2>
+      </div>
+      <div class="practical" id="practicalGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__line" id="footerLine"></p>
+    <p class="footer__note">Participant portal. Not indexed by search engines.</p>
+  </div>
+</footer>
+
+<!-- Session detail -->
+<dialog class="modal" id="sessionModal" aria-labelledby="modalTitle">
+  <button class="modal__close" id="modalClose" aria-label="Close">&times;</button>
+  <div class="modal__body" id="modalBody"></div>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

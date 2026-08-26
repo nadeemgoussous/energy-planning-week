@@ -1,0 +1,9 @@
+# Full-size image originals — run tools/optimize_images.py and commit the output,
+# never the multi-megabyte source files. The 2025 repo carried 33 MB of them.
+_originals/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*

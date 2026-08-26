@@ -1,0 +1,849 @@
+/* =========================================================================
+   Energy Planning Week 2026 — participant portal
+   -------------------------------------------------------------------------
+   Every colour and typeface here comes from IRENA Brand Guidelines (April
+   2026), held in '12 Comms'. Nothing on this page is an invented brand value.
+   Check anything new against that PDF before adding it.
+
+   Colour still carries meaning. The three convenings run on a cool-to-warm
+   ramp that follows the planning value chain used across all EPW material:
+       scenarios  -> investment signals -> implementation
+       LTES Forum -> GCEP Dialogue      -> Implementation Lab
+       IRENA Blue -> Turquoise Surf     -> Royal Gold
+   Turquoise and gold are accent-palette colours. The guidelines require
+   accents to be used sparingly and never as the dominant colour, which is why
+   they appear as segments and markers and never as a page or section ground.
+
+   Typography is Montserrat throughout — the guidelines name Gotham as the
+   primary online face and Montserrat as its sanctioned substitute. There is no
+   approved monospace, so there is none here.
+   ========================================================================= */
+
+/* ---------- tokens ---------- */
+:root {
+  --paper:      #f4f8fc;
+  --surface:    #ffffff;
+  --surface-2:  #f0f5fb;
+  --ink:        #012a3d;   /* Deep Space Blue */
+  --ink-2:      #575757;   /* IRENA Grey */
+  --ink-3:      #8b96a0;
+  --line:       #d6e0ea;
+  --line-soft:  #e9f0f8;
+
+  /* HOW THESE ARE USED — the rule that keeps the page legible:
+       accent as a FILL or a RULE  (segments, tags, left borders, swatches)
+       IRENA Blue for coloured TEXT (eyebrows, links, selected states)
+       ink/grey for everything else
+     Royal Gold and Turquoise Surf are light colours: as small text on white
+     they fall well below readable contrast. Gold especially disappears. So the
+     accent never becomes type — the component is already carried by the tag
+     and the left rule beside it.
+
+     The convenings. *-ink is the text colour that sits ON that background:
+     Royal Gold is a light colour, so white type on it is unreadable. Any new
+     accent needs its paired ink defined here too. */
+  --forum:      #0073ab;   /* IRENA Blue */
+  --forum-ink:  #ffffff;
+  --gcep:       #00a3ca;   /* Turquoise Surf */
+  --gcep-ink:   #012a3d;
+  --impl:       #f1d64b;   /* Royal Gold */
+  --impl-ink:   #012a3d;
+
+  /* "Happening now". #d62828 was not an IRENA colour at all; this is
+     Geothermal from the renewable-energy palette, which is at least in the
+     brand. Off-label as a status colour — worth Communications sign-off. */
+  --live:       #9f3620;
+  --live-ink:   #ffffff;
+
+  --haze:       #dce6f4;   /* lightest blue tint */
+
+  --focus:      #0073ab;
+  --shadow:     0 1px 2px rgb(10 29 40 / .06), 0 8px 24px -12px rgb(10 29 40 / .18);
+
+  /* One family, three roles. --label keeps its name because it marks the small
+     uppercase labels that used to be monospace; it is no longer a mono stack,
+     so anything relying on fixed-width glyphs needs tabular-nums instead. */
+  --font-display: "Montserrat", "Segoe UI", system-ui, sans-serif;
+  --font-body:    "Montserrat", "Segoe UI", system-ui, sans-serif;
+  --font-mono:    "Montserrat", "Segoe UI", system-ui, sans-serif;
+
+  /* Two rails, and only two. --wrap is the outer edge every grid runs to;
+     --measure is the reading width every run of prose stops at. Both start at
+     the same left edge, so the eye only ever re-anchors once per section
+     instead of once per element. Anything that invents a third width is a bug.
+
+     They are set close together on purpose. A measure far narrower than the
+     wrap made every section heading wrap two-thirds of the way across an empty
+     row, which read as an accident rather than a reading width. */
+  --wrap:       78rem;
+  --measure:    58rem;
+  --radius:     3px;      /* near-square: this is a working document, not an app */
+  --px-per-min: 1.1px;    /* the rail's scale — 1 hour = 66px */
+  /* Floor and ceiling on a rail block. Without the ceiling the scale runs 28:1
+     across this programme: Day 4's 7-hour placeholder alone drew a 630px block
+     holding one line of text. The cap bites only above ~2h20, which is 3 of 29
+     items — everything shorter is still drawn at exactly its real duration. */
+  --rail-min:   3.4rem;
+  --rail-max:   13rem;
+
+  /* Light is the default for everyone, including visitors whose OS is set to
+     dark. An institutional page should look the same to the delegate and to
+     the minister. The dark palette below is kept but opted into explicitly, so
+     it is ready if a toggle is ever added — note it needs the WHITE IRENA logo
+     to stay compliant on that ground. */
+  color-scheme: light;
+}
+
+/* Opt-in only — see color-scheme above. */
+:root[data-theme="dark"] {
+  /* Ground is Deep Space Blue, which is itself in the accent palette. Note
+     the logo rules: on a dark ground the white IRENA logo must be used. */
+  --paper:     #012a3d;
+  --surface:   #06344a;
+  --surface-2: #0a3d56;
+  --ink:       #eef4fa;
+  --ink-2:     #afc6e3;
+  --ink-3:     #79a4cf;
+  --line:      #14455f;
+  --line-soft: #0f3b52;
+
+  --forum:     #79a4cf;
+  --forum-ink: #012a3d;
+  --gcep:      #00a3ca;
+  --gcep-ink:  #012a3d;
+  --impl:      #f1d64b;
+  --impl-ink:  #012a3d;
+
+  --live:      #c76a52;
+  --live-ink:  #012a3d;
+
+  --haze:      #0f3b52;
+
+  --focus:     #79a4cf;
+  --shadow:    0 1px 2px rgb(0 0 0 / .4), 0 8px 24px -12px rgb(0 0 0 / .7);
+}
+
+/* ---------- reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-body);
+  font-size: clamp(.95rem, .9rem + .2vw, 1.02rem);
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}
+
+.u-visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+.skip-link {
+  position: absolute; left: .5rem; top: -3rem; z-index: 100;
+  background: var(--forum); color: #fff;
+  padding: .6rem 1rem; text-decoration: none;
+  transition: top .15s ease;
+}
+.skip-link:focus { top: .5rem; }
+
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner {
+  display: flex; align-items: center; gap: 1.5rem;
+  min-height: 4rem;
+}
+
+.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; margin-right: auto; }
+
+/* Three stacked bars in the three convening colours — the week's structure as a mark */
+.brand__mark {
+  width: 1.15rem; height: 1.6rem; flex: none;
+  background:
+    linear-gradient(var(--forum) 0 0) 0 0    / 100% 46% no-repeat,
+    linear-gradient(var(--gcep)  0 0) 0 54%  / 100% 20% no-repeat,
+    linear-gradient(var(--impl)  0 0) 0 100% / 100% 20% no-repeat;
+}
+
+.brand__text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand__name {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: .95rem; letter-spacing: -.01em;
+}
+.brand__year { font-family: var(--font-mono); font-size: .72rem; color: var(--ink-3); }
+
+.nav__list { display: flex; align-items: center; gap: .35rem; list-style: none; padding: 0; }
+
+.nav__link {
+  display: block; padding: .45rem .7rem;
+  font-size: .88rem; font-weight: 500; text-decoration: none;
+  color: var(--ink-2); border-radius: var(--radius);
+}
+.nav__link:hover { color: var(--ink); background: var(--surface-2); }
+.nav__link[aria-current="true"] { color: var(--forum); }
+
+.nav__cta {
+  background: var(--forum); color: #fff; margin-left: .4rem;
+  padding-inline: .95rem; font-weight: 600;
+}
+.nav__cta:hover { background: var(--forum); color: #fff; filter: brightness(1.12); }
+.nav__cta[aria-disabled="true"] { background: var(--ink-3); cursor: default; }
+
+.nav-toggle { display: none; }
+
+@media (max-width: 60rem) {
+  .nav-toggle {
+    display: grid; place-items: center;
+    width: 2.5rem; height: 2.5rem; order: 3;
+    background: none; border: 1px solid var(--line); border-radius: var(--radius);
+    cursor: pointer;
+  }
+  .nav-toggle__bars, .nav-toggle__bars::before, .nav-toggle__bars::after {
+    content: ""; display: block; width: 1rem; height: 1.5px; background: var(--ink);
+  }
+  .nav-toggle__bars { position: relative; }
+  .nav-toggle__bars::before { position: absolute; top: -5px; }
+  .nav-toggle__bars::after  { position: absolute; top: 5px; }
+
+  .nav { order: 4; width: 100%; }
+  .nav__list {
+    display: none; flex-direction: column; align-items: stretch;
+    gap: 0; padding: .5rem 0 1rem;
+    border-top: 1px solid var(--line-soft);
+  }
+  .nav__list[data-open="true"] { display: flex; }
+  .nav__link { padding: .7rem .25rem; }
+  .nav__cta { margin: .5rem .25rem 0; text-align: center; }
+}
+
+/* ---------- hero ---------- */
+.hero { padding: clamp(2.5rem, 1rem + 6vw, 5rem) 0 2.5rem; background: var(--surface); border-bottom: 1px solid var(--line); }
+
+/* One column, one width. The title block and the week band sit under each
+   other and both run the full --wrap, so the page has a single left edge from
+   the masthead to the footer. */
+.hero__inner {
+  display: grid; gap: clamp(2.25rem, 1.5rem + 2vw, 3.25rem);
+  grid-template-columns: 1fr;
+}
+
+.hero__hosts {
+  font-family: var(--font-mono); font-size: .76rem;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: 1rem;
+}
+
+/* "Energy Planning" is held together by a non-breaking space, so it cannot wrap
+   to escape a column that is too narrow. The hero is a single column now, so the
+   line has the full --wrap to sit in. */
+.hero__title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(2.4rem, 1.1rem + 4.4vw, 4.1rem);
+  line-height: .95; letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.hero__year { color: var(--forum); }
+
+.hero__tagline {
+  margin-top: 1.1rem; max-width: 34ch;
+  font-size: 1.05rem; color: var(--ink-2); text-wrap: pretty;
+}
+
+/* Four equal tracks across the full width: at --wrap each is wide enough for
+   "GIZ Auditorium, Bonn, Germany" on one line, and they collapse to two and
+   then one column as the screen narrows. */
+.hero__facts {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem 1.5rem; margin-top: 2rem;
+  padding-top: 1.5rem; border-top: 1px solid var(--line-soft);
+}
+.hero__facts > div { min-width: 0; }
+.hero__facts dt {
+  font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: .3rem;
+}
+.hero__facts dd { margin: 0; font-weight: 500; line-height: 1.35; text-wrap: balance; }
+
+/* --- the week band: the shape of the week in one glance --- */
+.hero__band { padding-top: clamp(1.75rem, 1rem + 2vw, 2.5rem); border-top: 1px solid var(--line); }
+
+.hero__band-label {
+  font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: .75rem;
+}
+
+/* Two shared rows — labels, then blocks. The days opt into them with subgrid so
+   every colour block starts on the same line no matter how many lines its label
+   takes. Day 4 carries an extra "sessions TBD" and wraps to three; without this
+   its block hangs below the other three and the band stops reading as one row. */
+.weekband {
+  display: grid; gap: 3px;
+  grid-auto-flow: column; grid-auto-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+.weekband__day {
+  display: flex; flex-direction: column; gap: .4rem;
+  background: none; border: 0; padding: 0;
+  text-align: left; cursor: pointer;
+  font: inherit;
+}
+
+@supports (grid-template-rows: subgrid) {
+  .weekband__day {
+    display: grid; grid-row: span 2; grid-template-rows: subgrid;
+    row-gap: .4rem;
+  }
+}
+
+/* Reserve two lines whether or not the label needs them. Day 4 carries the
+   extra "sessions TBD" and wraps; without this its colour block starts a line
+   lower than the other three and the band stops reading as one row. */
+.weekband__head {
+  font-family: var(--font-mono); font-size: .68rem; color: var(--ink-3);
+  display: flex; flex-direction: column; gap: .1rem;
+  min-height: 2.5rem;   /* fallback only; subgrid above sizes the row properly */
+}
+@supports (grid-template-rows: subgrid) { .weekband__head { min-height: 0; } }
+.weekband__dow { color: var(--ink-2); font-weight: 500; }
+
+/* Segments are sized by how many minutes of the day each convening takes,
+   so Day 3's split between the Dialogue and the Lab is visible, not stated. */
+.weekband__body { display: flex; flex-direction: column; gap: 3px; height: 7rem; }
+
+.weekband__span {
+  min-height: 0; border-radius: 2px;
+  display: flex; align-items: flex-end; padding: .35rem .45rem;
+  font-size: .68rem; font-weight: 600;
+  line-height: 1.1; overflow: hidden;
+  transition: filter .15s ease;
+}
+.weekband__day:hover .weekband__span { filter: brightness(1.12); }
+
+.weekband__span[data-component="ltes-forum"]   { background: var(--forum); color: var(--forum-ink); }
+.weekband__span[data-component="gcep-dialogue"] { background: var(--gcep);  color: var(--gcep-ink); }
+.weekband__span[data-component="implementation"] { background: var(--impl);  color: var(--impl-ink); }
+
+/* Day 4 only happens if partners lead sessions and cover the costs. It is the
+   least certain thing on the page, so it must not be the loudest — outlined,
+   not filled. */
+/* Gold is a light colour: as type on a light ground it is close to invisible.
+   The dashed border still identifies the Lab; the label reads in body ink. */
+.weekband__span[data-tbd="true"] {
+  background-color: transparent;
+  border: 1px dashed var(--impl);
+  color: var(--ink-2);
+}
+
+/* One column per convening where there is room, so the legend lines up under
+   the band it explains instead of running 68rem-long lines of prose. */
+.legend {
+  list-style: none; padding: 0; margin-top: 1.5rem;
+  display: grid; gap: .55rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+.legend li { position: relative; }
+
+/* The legend names the three convenings and says when each runs. What each one
+   is for is a sentence too long to sit under a colour band, so it waits in a
+   tooltip on hover or keyboard focus. */
+.legend__item {
+  display: grid; grid-template-columns: .7rem 1fr; gap: .65rem;
+  align-items: baseline; width: 100%; text-align: left;
+  padding: .2rem 0; font-size: .82rem; cursor: help;
+  background: none; border: 0; color: inherit; font-family: inherit;
+}
+.legend__swatch { width: .7rem; height: .7rem; border-radius: 1px; transform: translateY(.05rem); }
+.legend__name { font-weight: 600; border-bottom: 1px dotted var(--ink-3); }
+.legend__item:hover .legend__name { border-bottom-color: var(--ink); }
+.legend__when { color: var(--ink-3); font-family: var(--font-mono); font-size: .72rem; }
+
+.legend__tip {
+  position: absolute; z-index: 5; top: calc(100% + .4rem); left: 0;
+  width: max(100%, 22rem); max-width: min(28rem, 80vw);
+  padding: .8rem .95rem;
+  background: var(--surface); color: var(--ink-2);
+  border: 1px solid var(--line); border-left: 3px solid var(--accent, var(--forum));
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  font-size: .82rem; line-height: 1.5; text-wrap: pretty;
+  opacity: 0; visibility: hidden; transform: translateY(-.2rem);
+  transition: opacity .15s ease, transform .15s ease, visibility .15s;
+}
+/* The last column would push its tooltip past the right edge of the page. */
+.legend li:last-child .legend__tip { left: auto; right: 0; }
+
+/* :focus, not :focus-visible — a tap on a touch screen focuses the button but
+   never counts as focus-visible, and tapping is the only way to reach a tooltip
+   without a pointer. */
+.legend__item:hover + .legend__tip,
+.legend__item:focus + .legend__tip {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+/* --- status strip: countdown before, now/next during --- */
+.status-strip {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.25rem;
+  margin-top: 2.5rem; padding: .85rem 1.1rem;
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-left: 3px solid var(--forum); border-radius: var(--radius);
+  font-size: .9rem;
+}
+.status-strip[data-live="true"] { border-left-color: var(--live); }
+/* display:flex above would otherwise beat the hidden attribute. */
+.status-strip[hidden] { display: none; }
+
+.status-strip__label {
+  font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3);
+}
+.status-strip__value { font-weight: 600; }
+.status-strip__count { font-family: var(--font-mono); font-weight: 500; }
+
+.live-dot {
+  display: inline-block; width: .5rem; height: .5rem; border-radius: 50%;
+  background: var(--live); margin-right: .4rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 50% { opacity: .35; } }
+
+.notice {
+  margin-top: 1rem; padding: .75rem 1rem;
+  font-size: .85rem; color: var(--ink-2);
+  background: var(--haze); border-radius: var(--radius);
+}
+
+/* ---------- sections ---------- */
+.section { padding: clamp(3rem, 1.5rem + 5vw, 5.5rem) 0; }
+.section--tint { background: var(--surface); border-block: 1px solid var(--line); }
+
+.section__head { max-width: var(--measure); margin-bottom: clamp(2rem, 1rem + 3vw, 3rem); }
+
+.section__eyebrow {
+  font-family: var(--font-mono); font-size: .7rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: .6rem;
+}
+
+.section__title {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(1.6rem, 1.1rem + 2vw, 2.4rem);
+  line-height: 1.1; letter-spacing: -.025em; text-wrap: balance;
+}
+
+.section__lede { margin-top: .9rem; color: var(--ink-2); text-wrap: pretty; }
+
+/* Standing caveats sit above the heading in the eyebrow's place: present on
+   every view of the section, so never a callout. */
+.section__note {
+  font-size: .78rem; color: var(--ink-3);
+  margin-bottom: .7rem; text-wrap: pretty;
+}
+
+.subhead {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 1.05rem; letter-spacing: -.01em;
+  margin: 3rem 0 1.25rem; padding-bottom: .6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ---------- day tabs ---------- */
+.daytabs { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.75rem; }
+
+.daytabs__btn {
+  display: flex; flex-direction: column; gap: .1rem;
+  padding: .6rem .95rem; cursor: pointer; text-align: left;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); border-top: 2px solid var(--line);
+}
+.daytabs__btn:hover { border-color: var(--ink-3); }
+
+.daytabs__btn[aria-selected="true"] { border-top-color: var(--accent, var(--forum)); background: var(--surface-2); }
+.daytabs__btn[aria-selected="true"] .daytabs__day { color: var(--forum); }
+
+.daytabs__day { font-family: var(--font-display); font-weight: 600; font-size: .92rem; }
+.daytabs__date { font-family: var(--font-mono); font-size: .7rem; color: var(--ink-3); }
+
+/* ---------- the rail ----------
+   Item height is its real duration. A 15-minute wrap-up looks like 15 minutes
+   next to a 195-minute lab. Short items get a legibility floor. */
+
+.rail-scroll { overflow-x: auto; }
+
+.rail {
+  position: relative;
+  border-top: 1px solid var(--line);
+  min-width: 30rem;
+}
+
+.rail__daytitle {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .75rem;
+  padding: 1.25rem 0 1rem;
+}
+.rail__theme {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
+  letter-spacing: -.015em;
+}
+.rail__component {
+  font-family: var(--font-mono); font-size: .7rem;
+  letter-spacing: .07em; text-transform: uppercase;
+  padding: .2rem .5rem; border-radius: 2px;
+  color: var(--accent-ink, #fff); background: var(--accent, var(--forum));
+}
+
+.rail__item {
+  --minutes: 60;
+  display: grid; grid-template-columns: 5.5rem 1fr;
+  gap: 0 1.25rem; width: 100%;
+  min-height: clamp(var(--rail-min), calc(var(--minutes) * var(--px-per-min)), var(--rail-max));
+  border: 0; border-top: 1px solid var(--line-soft);
+  padding: 0; background: none; text-align: left;
+  position: relative; font: inherit; color: inherit;
+}
+/* Only the programme is drawn to scale. Registration, coffee, lunch and the
+   dinner carry no content, so their height was pure void — the 3-hour welcome
+   dinner alone drew 198px to hold two words. Their times are printed beside
+   them, which is all a delegate needs; the sessions keep their real duration. */
+.rail__item[data-kind="break"],
+.rail__item[data-kind="meal"],
+.rail__item[data-kind="social"] { min-height: var(--rail-min); }
+
+.rail__item:first-of-type { border-top: 0; }
+button.rail__item { cursor: pointer; }
+button.rail__item:hover .rail__title { color: var(--forum); }
+button.rail__item:hover .rail__body { background: var(--surface-2); }
+
+/* These were monospace; Montserrat is proportional, so figures must be told to
+   occupy equal width or the times in the rail will not align down the column. */
+.rail__time, .status-strip__count, .weekband__head, .daytabs__date {
+  font-variant-numeric: tabular-nums;
+}
+
+.rail__time {
+  font-family: var(--font-mono); font-size: .78rem; line-height: 1.4;
+  color: var(--ink-3); padding-top: .85rem;
+  display: flex; flex-direction: column;
+  font-variant-numeric: tabular-nums;
+}
+.rail__time > span { display: block; }
+.rail__start { color: var(--ink-2); font-weight: 500; }
+.rail__dur { font-size: .68rem; opacity: .75; margin-top: .15rem; }
+
+.rail__body {
+  display: block;
+  padding: .85rem 1rem 1.1rem 1.25rem;
+  border-left: 2px solid var(--line);
+  min-width: 0;
+}
+.rail__item[data-kind="session"]  .rail__body,
+.rail__item[data-kind="plenary"]  .rail__body,
+.rail__item[data-kind="keynote"]  .rail__body,
+.rail__item[data-kind="impact"]   .rail__body { border-left-color: var(--accent, var(--forum)); }
+
+.rail__item[data-kind="break"] .rail__body,
+.rail__item[data-kind="meal"]  .rail__body,
+.rail__item[data-kind="social"] .rail__body { border-left-style: dotted; }
+
+.rail__code {
+  display: block;
+  font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .07em; text-transform: uppercase;
+  color: var(--forum); margin-bottom: .25rem;
+}
+
+.rail__title {
+  display: block;
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 1.02rem; line-height: 1.25; letter-spacing: -.012em;
+  text-wrap: pretty;
+}
+/* Anything with no detail behind it — coffee, lunch, registration — reads as a
+   marker on the day rather than as something you turn up for. */
+.rail__item[data-plain="true"] .rail__title {
+  display: block;
+  font-family: var(--font-body); font-weight: 400;
+  font-size: .92rem; color: var(--ink-2);
+}
+
+.rail__subtitle { display: block; font-size: .92rem; color: var(--ink-2); margin-top: .2rem; }
+
+.rail__partner {
+  display: inline-block; margin-top: .35rem;
+  font-size: .78rem; color: var(--ink-3); font-style: italic;
+}
+
+
+
+
+.rail__tag {
+  display: inline-block; margin-top: .5rem;
+  font-family: var(--font-mono); font-size: .66rem;
+  letter-spacing: .07em; text-transform: uppercase;
+  padding: .15rem .45rem; border-radius: 2px;
+  background: var(--haze); color: var(--ink-2);
+}
+.rail__tag[data-tone="closed"] { background: var(--ink-3); color: var(--surface); }
+
+/* the now-line: the only red on the page */
+.rail__now {
+  position: absolute; left: 0; right: 0; height: 0;
+  border-top: 2px solid var(--live); z-index: 2;
+  pointer-events: none;
+}
+.rail__now::before {
+  content: "now"; position: absolute; top: -.72rem; left: 0;
+  font-family: var(--font-mono); font-size: .62rem; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase;
+  background: var(--live); color: var(--live-ink); padding: .05rem .3rem;
+}
+
+.rail__item[data-now="true"] { background: color-mix(in srgb, var(--live) 5%, transparent); }
+
+.empty {
+  padding: 2.5rem 1.5rem; text-align: center;
+  color: var(--ink-2); background: var(--surface-2);
+  border: 1px dashed var(--line); border-radius: var(--radius);
+}
+.empty strong { display: block; font-family: var(--font-display); color: var(--ink); margin-bottom: .35rem; }
+
+/* ---------- speakers ---------- */
+.speakers {
+  display: grid; gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+}
+
+.speaker { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; text-align: left; cursor: pointer; padding: 0; }
+.speaker:hover { border-color: var(--ink-3); }
+.speaker__photo { aspect-ratio: 1; width: 100%; object-fit: cover; background: var(--haze); }
+.speaker__body { padding: .8rem .9rem 1rem; }
+.speaker__name { font-family: var(--font-display); font-weight: 600; font-size: .95rem; line-height: 1.2; }
+.speaker__org { font-size: .8rem; color: var(--ink-3); margin-top: .2rem; }
+.speaker__role { font-family: var(--font-mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; color: var(--forum); margin-top: .45rem; }
+
+/* ---------- join ---------- */
+.join-card {
+  display: grid; gap: 1.5rem; align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  background: var(--surface); border: 1px solid var(--line);
+  border-left: 3px solid var(--forum); border-radius: var(--radius);
+}
+@media (max-width: 48rem) { .join-card { grid-template-columns: 1fr; } }
+
+.join-card__text { max-width: 46ch; color: var(--ink-2); }
+.join-card__text strong { color: var(--ink); }
+
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .75rem 1.35rem; border-radius: var(--radius);
+  font-weight: 600; font-size: .92rem; text-decoration: none;
+  background: var(--forum); color: #fff; border: 1px solid transparent;
+  white-space: nowrap;
+}
+.btn:hover { filter: brightness(1.12); }
+.btn--quiet { background: var(--surface); color: var(--ink); border-color: var(--line); }
+.btn--quiet:hover { border-color: var(--ink-3); filter: none; }
+.btn[aria-disabled="true"] { background: var(--surface-2); color: var(--ink-3); border-color: var(--line); cursor: default; filter: none; }
+
+/* ---------- resources ---------- */
+/* auto-FILL, not auto-fit: there are only two documents, and auto-fit would
+   stretch each to half the row. The cards keep a card's width and the row runs
+   out where the content does. */
+.docs { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); }
+
+.doc {
+  display: flex; flex-direction: column; gap: .5rem;
+  padding: 1.25rem; background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: var(--radius);
+}
+.doc__title { font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
+.doc__desc { font-size: .88rem; color: var(--ink-2); flex: 1; }
+.doc__action { margin-top: .5rem; }
+
+.pubs { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+
+.pub { display: flex; flex-direction: column; text-decoration: none; }
+.pub__cover {
+  aspect-ratio: 3 / 4; object-fit: cover; width: 100%;
+  border: 1px solid var(--line); border-radius: 2px; background: var(--haze);
+}
+.pub:hover .pub__cover { border-color: var(--ink-3); }
+.pub__year { font-family: var(--font-mono); font-size: .7rem; color: var(--ink-3); margin-top: .7rem; }
+.pub__title { font-weight: 600; font-size: .88rem; line-height: 1.3; margin-top: .15rem; }
+.pub__sub { font-size: .8rem; color: var(--ink-2); margin-top: .15rem; }
+
+/* ---------- practical ---------- */
+/* No align-items: start here. Letting the panels size to their own content is
+   what made this section stair-step — six cards of six different heights with
+   nothing sharing a baseline. Stretching them is what makes it read as a grid. */
+.practical {
+  display: grid; gap: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+
+.panel {
+  display: flex; flex-direction: column;
+  padding: 1.5rem; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius);
+}
+.panel__heading {
+  font-family: var(--font-display); font-weight: 600; font-size: 1rem;
+  margin-bottom: .7rem;
+}
+.panel__body { font-size: .92rem; color: var(--ink-2); text-wrap: pretty; }
+.panel__body p + p { margin-top: .7rem; }
+
+.panel__list { list-style: none; padding: 0; display: grid; gap: .55rem; font-size: .9rem; color: var(--ink-2); }
+.panel__list li { padding-left: 1rem; position: relative; }
+.panel__list li::before {
+  content: ""; position: absolute; left: 0; top: .62em;
+  width: .35rem; height: 1px; background: var(--ink-3);
+}
+
+.addr { font-style: normal; font-size: .92rem; line-height: 1.6; }
+
+.contact-list { list-style: none; padding: 0; display: grid; gap: .6rem; }
+.contact-list a { font-weight: 500; }
+
+.emergency { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line-soft); font-size: .85rem; color: var(--ink-2); }
+.emergency b { font-family: var(--font-mono); color: var(--ink); }
+
+.todo {
+  font-family: var(--font-mono); font-size: .72rem;
+  color: var(--ink-3); font-style: normal;
+}
+
+/* ---------- footer ---------- */
+.footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--line); background: var(--surface); }
+.footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; }
+.footer__line { font-size: .88rem; color: var(--ink-2); }
+.footer__note { font-family: var(--font-mono); font-size: .72rem; color: var(--ink-3); }
+
+/* ---------- modal ---------- */
+.modal {
+  width: min(100% - 2rem, 44rem); max-height: 85vh;
+  padding: 0; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); color: var(--ink); box-shadow: var(--shadow);
+}
+.modal::backdrop { background: rgb(6 18 26 / .55); backdrop-filter: blur(2px); }
+
+.modal__close {
+  position: absolute; top: .5rem; right: .75rem;
+  width: 2rem; height: 2rem; font-size: 1.5rem; line-height: 1;
+  background: none; border: 0; cursor: pointer; color: var(--ink-3);
+}
+.modal__close:hover { color: var(--ink); }
+
+.modal__body { padding: clamp(1.5rem, 1rem + 2vw, 2.25rem); overflow-y: auto; max-height: 85vh; }
+
+.modal__eyebrow {
+  font-family: var(--font-mono); font-size: .7rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--forum); margin-bottom: .5rem;
+}
+.modal__title {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(1.3rem, 1rem + 1.5vw, 1.75rem);
+  line-height: 1.15; letter-spacing: -.02em; margin-bottom: .75rem;
+}
+.modal__meta {
+  font-family: var(--font-mono); font-size: .78rem; color: var(--ink-3);
+  padding-bottom: 1rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--line);
+}
+.modal__summary { color: var(--ink-2); text-wrap: pretty; }
+.modal__section { margin-top: 1.5rem; }
+.modal__label {
+  font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: .6rem;
+}
+.modal__people { list-style: none; padding: 0; display: grid; gap: .85rem; }
+.modal__person-name { font-weight: 600; }
+.modal__person-role { font-family: var(--font-mono); font-size: .7rem; color: var(--forum); text-transform: uppercase; letter-spacing: .06em; }
+.modal__person-org { font-size: .88rem; color: var(--ink-2); }
+
+/* ---------- scene ----------
+   Photographs from the previous Forum, sitting between the programme and the
+   speakers. No heading and no card chrome: this band is meant to be felt rather
+   than read, so it borrows the publication covers' hairline and 2px radius and
+   otherwise stays out of the way. The credit line is not decoration — it is what
+   stops a 2025 photograph from reading as a picture of the 2026 week. */
+.scene { padding: clamp(2rem, 1rem + 3vw, 3.25rem) 0; }
+
+/* Deliberately narrower than the page's wrap. At full width the photographs read
+   as a feature and start competing with the programme; held to this size they sit
+   under it as an aside, which is all they are here to be. It also keeps faces below
+   the size at which individual participants are identifiable — so this one is
+   capped tighter than --measure now that the measure has grown. */
+.scene__grid {
+  display: grid; gap: .75rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: min(var(--measure), 46rem);
+}
+
+.scene__item { margin: 0; min-width: 0; }
+.scene__item[data-span="wide"] { grid-column: 1 / -1; }
+
+.scene__img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--line); border-radius: 2px;
+  background: var(--haze);
+}
+
+/* Both ratios match what the camera produced — 16:9 for the group photograph,
+   4:3 for the room shots — so object-fit never actually crops. Keep it that way:
+   a letterbox crop on a group photograph takes the back row's heads off. */
+.scene__item[data-span="wide"] .scene__img { aspect-ratio: 16 / 9; }
+.scene__item[data-span="half"] .scene__img { aspect-ratio: 4 / 3; }
+.scene__img { object-position: center 35%; }
+
+/* Dark mode dims a bright, white-walled conference room so the band does not
+   glare against the dark page. */
+:root[data-theme="dark"] .scene__img { filter: brightness(.88) saturate(.95); }
+
+.scene__credit {
+  font-family: var(--font-mono); font-size: .7rem;
+  color: var(--ink-3); margin-top: .9rem;
+}
+
+@media (max-width: 40rem) {
+  :root { --px-per-min: .85px; }
+  .rail { min-width: 0; }
+  .rail__item { grid-template-columns: 4.25rem 1fr; gap: 0 .75rem; }
+  .rail__body { padding-left: .9rem; }
+  .hero__facts { grid-template-columns: 1fr 1fr; }
+  .scene__grid { grid-template-columns: 1fr; }
+}
