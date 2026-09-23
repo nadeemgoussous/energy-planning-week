@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 19:34 UTC */
+   Built 2026-09-23 19:35 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
@@ -189,10 +189,6 @@ window.EPW = {
    {
     "q": "What language are the sessions in?",
     "a": "English only, without interpretation."
-   },
-   {
-    "q": "Can my organisation host a session?",
-    "a": "Day 4 is given to partner-hosted sessions, selected through a call for partner-led sessions. Organisations can submit a proposal through the {session submission form|https://forms.cloud.microsoft/r/1ZG77Pd3H1}."
    },
    {
     "q": "Who do I contact with questions?",
