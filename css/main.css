@@ -749,6 +749,7 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
 .footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--line); background: var(--surface); }
 .footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; }
 .footer__line { font-size: .88rem; color: var(--ink-2); }
+.footer__hosts { flex-basis: 100%; order: 1; font-size: .8rem; color: var(--ink-2); }
 .footer__note { font-family: var(--font-mono); font-size: .72rem; color: var(--ink-3); }
 
 /* ---------- modal ---------- */

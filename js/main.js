@@ -106,6 +106,11 @@
 
     el("footerLine").textContent =
       event.name + " — " + event.hostLine + ". " + event.dates.display + ", " + event.venue.display + ".";
+
+    /* GET.transform asked for its standard description wherever the event is
+       presented — it is how GIZ, which has no logo on the site, is credited. */
+    el("footerHosts").textContent = event.hosts.filter(function (h) { return h.description; })
+      .map(function (h) { return h.name + ": " + h.description; }).join(" ");
   }
 
   /* ---------- the week band ----------

@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 18:50 UTC */
+   Built 2026-09-23 18:55 UTC */
 window.EPW = {
  "event": {
   "_comment": "Canonical event facts. Hand-edited. Everything on the site reads from here — change a date or a link once, and it updates everywhere.",
@@ -20,7 +20,9 @@ window.EPW = {
     "name": "GET.transform",
     "full": "GET.transform",
     "logo": "images/brand/get-transform.svg",
-    "url": "https://www.get-transform.eu"
+    "url": "https://www.get-transform.eu",
+    "description": "A technical assistance programme implemented by GIZ and co-funded by the European Union, Germany, Norway, the Netherlands, Sweden and Austria.",
+    "_descriptionNote": "Standard description requested by GET.transform (Sept 2026) and live on the IRENA event page. Use verbatim; do not revert to the 'several European governments' phrasing."
    }
   ],
   "dates": {

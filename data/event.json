@@ -15,7 +15,9 @@
       "name": "GET.transform",
       "full": "GET.transform",
       "logo": "images/brand/get-transform.svg",
-      "url": "https://www.get-transform.eu"
+      "url": "https://www.get-transform.eu",
+      "description": "A technical assistance programme implemented by GIZ and co-funded by the European Union, Germany, Norway, the Netherlands, Sweden and Austria.",
+      "_descriptionNote": "Standard description requested by GET.transform (Sept 2026) and live on the IRENA event page. Use verbatim; do not revert to the 'several European governments' phrasing."
     }
   ],
   "dates": {
