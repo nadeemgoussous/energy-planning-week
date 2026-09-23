@@ -34,6 +34,7 @@
     "display": "GIZ Campus, Bonn, Germany",
     "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
     "mapUrl": "",
+    "onsitePlaces": 120,
     "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed in order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector."
   },
   "format": {
@@ -110,19 +111,23 @@
     "stages": [
       {
         "id": "scenarios",
-        "label": "Scenarios and planning systems"
+        "label": "Scenarios and planning systems",
+        "summary": "Scenario governance, modelling tools, data, capacity, uncertainty and resilience — the planning systems that make long-term scenarios credible."
       },
       {
         "id": "policy",
-        "label": "Policy translation"
+        "label": "Policy translation",
+        "summary": "Mandates, regulatory pathways, budgeting and coordination — how scenario insights become policies, roadmaps and decisions."
       },
       {
         "id": "investment",
-        "label": "Investment signals and pipelines"
+        "label": "Investment signals and pipelines",
+        "summary": "Planning information, sequencing, project preparation and risk allocation — the signals that turn a plan into an investable pipeline."
       },
       {
         "id": "implementation",
-        "label": "Implementation and delivery"
+        "label": "Implementation and delivery",
+        "summary": "Procurement, markets, grids, system operation and institutional accountability — what it takes to deliver the plan on the ground."
       }
     ]
   }

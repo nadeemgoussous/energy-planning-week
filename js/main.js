@@ -18,7 +18,7 @@
 
   var event = D.event, programme = D.programme,
       speakers = D.speakers, publications = D.publications, practical = D.practical,
-      gallery = D.gallery;
+      gallery = D.gallery, about = D.about, faq = D.faq;
 
   /* Bonn in December is CET (UTC+1) all week — no daylight-saving edge to handle,
      so a fixed offset gives every visitor the same, correct local-to-venue time. */
@@ -101,8 +101,7 @@
 
     var facts = [
       ["Dates", event.dates.display],
-      ["Venue", event.venue.display],
-      ["Format", event.format.type]
+      ["Venue", event.venue.display]
     ];
     el("heroFacts").innerHTML = facts.map(function (f) {
       return "<div><dt>" + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd></div>";
@@ -121,6 +120,104 @@
        presented — it is how GIZ, which has no logo on the site, is credited. */
     el("footerHosts").textContent = event.hosts.filter(function (h) { return h.description; })
       .map(function (h) { return h.name + ": " + h.description; }).join(" ");
+  }
+
+  function picture(src, alt, cls, lazy) {
+    var webp = src.replace(/\.(jpg|jpeg|png)$/i, ".webp");
+    return "<picture>" +
+      '<source srcset="' + esc(webp) + '" type="image/webp">' +
+      '<img class="' + cls + '" src="' + esc(src) + '" alt="' + esc(alt) + '"' +
+        (lazy ? ' loading="lazy"' : "") + ' decoding="async">' +
+    "</picture>";
+  }
+
+  function renderHeroPhoto() {
+    var ph = about && about.photo;
+    if (!ph || !ph.image || !ph.credit) return;   // no credit, no photograph
+    el("heroPhoto").innerHTML = picture(ph.image, ph.alt, "hero__img", false) +
+      '<figcaption class="hero__credit">' + esc(ph.credit) + "</figcaption>";
+    el("heroPhoto").hidden = false;
+  }
+
+  /* ---------- the Week in numbers ----------
+     Counted from the programme, so the strip cannot drift from the agenda. */
+
+  function renderStats() {
+    var sessions = 0;
+    programme.days.forEach(function (d) {
+      d.items.forEach(function (i) { if (i.code) sessions++; });
+    });
+    var stats = [
+      [programme.days.length, "Days"],
+      [sessions, "Programme sessions"],
+      [event.components.length, "Parts of the week"],
+      [event.venue.onsitePlaces, "On-site places, plus online"]
+    ].filter(function (s) { return s[0]; });
+    el("stats").innerHTML = stats.map(function (s) {
+      return '<div class="stats__item"><dt class="stats__label">' + esc(s[1]) + "</dt>" +
+        '<dd class="stats__value">' + esc(s[0]) + "</dd></div>";
+    }).join("");
+  }
+
+  /* ---------- about ---------- */
+
+  function renderAbout() {
+    if (!about) { el("about").hidden = true; return; }
+    el("aboutTitle").textContent = about.title;
+    el("aboutLede").textContent = about.lede;
+    el("aboutBody").innerHTML = about.background.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+    el("aboutObjectives").innerHTML = about.objectives.map(function (o) { return "<li>" + esc(o) + "</li>"; }).join("");
+    el("aboutAudience").textContent = about.audience;
+  }
+
+  /* ---------- themes ----------
+     The four-stage chain, with the sessions tagged to each stage. */
+
+  var STAGE_ICONS = {
+    scenarios: '<path d="M4 20h16M6 16l4-5 3 3 5-7"/><circle cx="18" cy="7" r="1.6"/>',
+    policy: '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',
+    investment: '<path d="M4 20h16M7 16v-4M12 16V8M17 16v-6"/><path d="M15 5h4v4"/>',
+    implementation: '<path d="M12 3l7 4v10l-7 4-7-4V7z"/><path d="M5 7l7 4 7-4M12 11v10"/>'
+  };
+
+  function renderThemes() {
+    el("themeGrid").innerHTML = event.narrative.stages.map(function (stage, i) {
+      var codes = [];
+      programme.days.forEach(function (d) {
+        d.items.forEach(function (it) { if (it.stage === stage.id && it.code) codes.push(it.code.replace("Session ", "")); });
+      });
+      return '<article class="theme">' +
+        '<div class="theme__top">' +
+          '<svg class="theme__icon" viewBox="0 0 24 24" aria-hidden="true">' + (STAGE_ICONS[stage.id] || "") + "</svg>" +
+          '<span class="theme__step">' + (i + 1) + " / " + event.narrative.stages.length + "</span>" +
+        "</div>" +
+        '<h3 class="theme__title">' + esc(stage.label) + "</h3>" +
+        '<p class="theme__text">' + esc(stage.summary || "") + "</p>" +
+        (codes.length
+          ? '<p class="theme__sessions">' + (codes.length === 1 ? "Session " : "Sessions ") + esc(codes.join(", ")) + "</p>"
+          : "") +
+      "</article>";
+    }).join("");
+  }
+
+  /* ---------- FAQ ----------
+     Answers may carry links written as {label|url}. */
+
+  function linkify(text) {
+    return esc(text).replace(/\{([^|}]+)\|([^}]+)\}/g, function (_, label, url) {
+      var external = !/^mailto:/.test(url);
+      return '<a href="' + url + '"' + (external ? ' target="_blank" rel="noopener noreferrer"' : "") + ">" + label + "</a>";
+    });
+  }
+
+  function renderFaq() {
+    if (!faq || !faq.items || !faq.items.length) { el("faq").hidden = true; return; }
+    el("faqList").innerHTML = faq.items.map(function (item) {
+      return '<details class="faq__item">' +
+        '<summary class="faq__q">' + esc(item.q) + "</summary>" +
+        '<div class="faq__a"><p>' + linkify(item.a) + "</p></div>" +
+      "</details>";
+    }).join("");
   }
 
   /* ---------- the week band ----------
@@ -479,14 +576,11 @@
     if (!images.length || !gallery.credit) return;
 
     el("sceneGrid").innerHTML = images.map(function (img) {
-      var webp = img.image.replace(/\.(jpg|jpeg|png)$/i, ".webp");
       return '<figure class="scene__item" data-span="' + esc(img.span || "half") + '">' +
-        "<picture>" +
-          '<source srcset="' + esc(webp) + '" type="image/webp">' +
-          '<img class="scene__img" src="' + esc(img.image) + '" alt="' + esc(img.alt) + '" loading="lazy" decoding="async">' +
-        "</picture>" +
+        picture(img.image, img.alt, "scene__img", true) +
       "</figure>";
     }).join("");
+    if (gallery.layout) el("sceneGrid").setAttribute("data-layout", gallery.layout);
 
     el("sceneCredit").textContent = gallery.credit;
     el("scene").hidden = false;
@@ -577,6 +671,10 @@
   /* ---------- go ---------- */
 
   renderHero();
+  renderHeroPhoto();
+  renderStats();
+  renderAbout();
+  renderThemes();
   renderWeekBand();
   renderNotices();
   renderDayTabs();
@@ -586,6 +684,7 @@
   renderJoin();
   renderResources();
   renderPractical();
+  renderFaq();
   initNav();
   renderStatus();
 

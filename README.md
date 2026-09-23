@@ -15,6 +15,8 @@ one copy of each fact.
 
 ```
 data/event.json         dates, venue, hosts, registration and join links, contacts, the four parts of the week
+data/about.json         About the Week — background, objectives, audience (from the agenda); hero photo
+data/faq.json           frequently asked questions; links written as {label|url}
 data/programme.json     days, sessions, times, summaries
 data/practical.json     venue address, travel, meals, visas, documents
 data/publications.json  LTES Network publications

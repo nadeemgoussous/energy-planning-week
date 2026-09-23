@@ -298,6 +298,39 @@ button { font: inherit; color: inherit; }
 }
 .hero__facts dd { margin: 0; font-weight: 500; line-height: 1.35; text-wrap: balance; }
 
+/* Title and photograph side by side on wide screens; the photograph drops
+   under the title on narrow ones. */
+.hero__lead { display: grid; gap: 2rem; align-items: center; }
+@media (min-width: 60rem) {
+  .hero__lead { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; }
+}
+.hero__photo { margin: 0; }
+.hero__photo[hidden] { display: none; }
+.hero__img {
+  display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  border: 1px solid var(--line); border-radius: 2px; background: var(--haze);
+}
+.hero__credit { font-size: .7rem; color: var(--ink-3); margin-top: .6rem; }
+
+/* --- the Week in numbers --- */
+.stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  border-top: 1px solid var(--line);   /* the week band below draws its own top rule */
+}
+.stats__item { padding: 1.25rem 1.25rem 1.25rem 0; display: flex; flex-direction: column-reverse; gap: .2rem; }
+.stats__item + .stats__item { padding-left: 1.25rem; border-left: 1px solid var(--line-soft); }
+.stats__value {
+  margin: 0; font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.6rem); line-height: 1;
+  letter-spacing: -.03em; color: var(--forum); font-variant-numeric: tabular-nums;
+}
+.stats__label { font-size: .78rem; color: var(--ink-2); }
+@media (max-width: 40rem) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stats__item:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .stats__item:nth-child(n+3) { border-top: 1px solid var(--line-soft); }
+}
+
 /* --- the week band: the shape of the week in one glance --- */
 .hero__band { padding-top: clamp(1.75rem, 1rem + 2vw, 2.5rem); border-top: 1px solid var(--line); }
 
@@ -837,6 +870,11 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
 }
 
 .scene__item { margin: 0; min-width: 0; }
+
+/* Two photographs side by side at equal height: a 16:9 and a 4:3 image share a
+   height when their columns are 4:3, so neither is cropped. */
+.scene__grid[data-layout="pair"] { grid-template-columns: 4fr 3fr; }
+.scene__grid[data-layout="pair"] .scene__item[data-span="wide"] { grid-column: auto; }
 .scene__item[data-span="wide"] { grid-column: 1 / -1; }
 
 .scene__img {
@@ -861,6 +899,59 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
   font-family: var(--font-mono); font-size: .7rem;
   color: var(--ink-3); margin-top: .9rem;
 }
+
+/* ---------- about ---------- */
+.about { display: grid; gap: 2.5rem; }
+@media (min-width: 60rem) {
+  .about { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 4rem; }
+}
+.about__body p { color: var(--ink-2); text-wrap: pretty; max-width: 68ch; }
+.about__body p + p { margin-top: 1rem; }
+.about__side { border-top: 2px solid var(--forum); padding-top: 1.25rem; }
+.about__heading { font-family: var(--font-display); font-weight: 600; font-size: 1rem; margin-bottom: .75rem; }
+.about__heading ~ .about__heading { margin-top: 2rem; }
+.about__objectives { padding-left: 1.2rem; display: grid; gap: .75rem; font-size: .92rem; color: var(--ink-2); }
+.about__objectives li::marker { color: var(--forum); font-weight: 700; }
+.about__audience { font-size: .92rem; color: var(--ink-2); text-wrap: pretty; }
+
+/* ---------- themes ---------- */
+.themes { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.theme {
+  display: flex; flex-direction: column; gap: .6rem;
+  padding: 1.5rem; background: var(--paper);
+  border: 1px solid var(--line); border-radius: var(--radius);
+}
+.theme__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .4rem; }
+.theme__icon {
+  width: 2rem; height: 2rem; fill: none; stroke: var(--forum);
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+.theme__step { font-size: .7rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.theme__title { font-family: var(--font-display); font-weight: 600; font-size: 1rem; line-height: 1.3; }
+.theme__text { font-size: .88rem; color: var(--ink-2); text-wrap: pretty; }
+.theme__sessions {
+  margin-top: auto; padding-top: .75rem; border-top: 1px solid var(--line-soft);
+  font-size: .75rem; color: var(--forum); font-weight: 600;
+}
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 52rem; border-top: 1px solid var(--line); }
+.faq__item { border-bottom: 1px solid var(--line); }
+.faq__q {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: 1.1rem 0; cursor: pointer; list-style: none;
+  font-weight: 600; font-size: .98rem;
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q::after {
+  content: ""; flex: none; width: .55rem; height: .55rem;
+  border-right: 1.5px solid var(--forum); border-bottom: 1.5px solid var(--forum);
+  transform: rotate(45deg) translateY(-25%); transition: transform .15s ease;
+}
+.faq__item[open] .faq__q::after { transform: rotate(225deg) translateY(-25%); }
+.faq__q:hover { color: var(--forum); }
+.faq__a { padding: 0 2rem 1.25rem 0; color: var(--ink-2); max-width: 70ch; }
+.faq__a a { color: var(--forum); }
 
 @media (max-width: 40rem) {
   :root { --px-per-min: .85px; }

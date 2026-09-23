@@ -1,8 +1,31 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 19:22 UTC */
+   Built 2026-09-23 19:30 UTC */
 window.EPW = {
+ "about": {
+  "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
+  "title": "About the Week",
+  "lede": "A single, jointly convened programme across four days, building the planning bridge between the political commitments of COP31 and investment-ready projects.",
+  "background": [
+   "Energy Planning Week 2026 convenes in Bonn approximately two weeks after the close of COP31. Co-hosted by IRENA and GET.transform, the Week provides the first occasion for the energy planning community to consider how the commitments emerging from COP31 can be translated into the scenarios, roadmaps and project pipelines required for their implementation.",
+   "The scale of the task is defined less by the availability of capital than by the capacity to direct it. Global energy transition investment reached a record USD 2.4 trillion in 2024, yet roughly 90 per cent remains concentrated in advanced and emerging economies. Mobilising this investment effectively depends on credible national energy plans, institutions able to sustain them across political cycles, and regional frameworks capable of supporting the necessary infrastructure – priorities reflected in recent initiatives from the ASEAN interconnection agenda to the European Commission's Grids Package of December 2025.",
+   "The planning discipline itself faces new demands. Energy systems are transforming rapidly, with storage, distributed generation and demand-side flexibility reshaping what national models must represent. Geopolitical volatility, fuel-price shocks and critical-mineral disruptions have reduced the reliability of scenario work built on pre-2022 assumptions, while climate-related physical risks require systematic integration into national planning. New methods, including artificial intelligence, offer part of the response, and the planning community has an opportunity to shape their adoption.",
+   "The Week builds on three complementary efforts. The Long-term Energy Scenarios (LTES) Network provides the principal forum in which government planners strengthen scenario practice and institutional coordination. The Global Coalition for Energy Planning (GCEP) examines how scenarios and plans translate into investment in clean energy infrastructure and technology. GET.transform supports countries across the full sequence from planning to finance to implementation; it is a technical assistance programme implemented by GIZ and co-funded by the European Union, Germany, Norway, the Netherlands, Sweden and Austria. Together, they frame a single week connecting political commitment to delivery."
+  ],
+  "objectives": [
+   "Strengthen the planning value chain end-to-end, connecting long-term scenario governance, investment signals and implementation into one coherent sequence, so that COP31 commitments translate into bankable, investment-ready projects.",
+   "Build the institutional and analytical capacity for delivery — the mandates, skills, data governance and modelling capabilities that allow planning to be sustained across political cycles and feed directly into policy, budget and investment decisions.",
+   "Surface and address the cross-regional planning-to-investment bottlenecks emerging from the LTES Network and GCEP regional dialogues — grids, flexibility, project preparation, institutional coordination and finance-facing signals — and identify the practical partner support countries are asking for.",
+   "Foster peer exchange and partnership across the planning community, connecting government planners, financiers, regulators, utilities and partner institutions to share methods, tools and country experience."
+  ],
+  "audience": "The Week is designed primarily for government energy planners and policymakers, alongside representatives of the energy industry, financial institutions, regulators, utilities, intergovernmental organisations and the scientific and modelling community. Sessions emphasise peer exchange among practitioners, with speakers drawn from across the LTES Network, partner institutions and GCEP.",
+  "photo": {
+   "image": "images/scene/forum-plenary.jpg",
+   "alt": "Delegates seated around a large open square of tables during a plenary session of the 6th LTES Forum, with presentation screens at the front of the room.",
+   "credit": "6th Forum on Long-Term Energy Scenarios, Bonn, November 2025"
+  }
+ },
  "event": {
   "_comment": "Canonical event facts. Hand-edited. Everything on the site reads from here — change a date or a link once, and it updates everywhere.",
   "name": "Energy Planning Week 2026",
@@ -39,6 +62,7 @@ window.EPW = {
    "display": "GIZ Campus, Bonn, Germany",
    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
    "mapUrl": "",
+   "onsitePlaces": 120,
    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed in order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector."
   },
   "format": {
@@ -115,26 +139,76 @@ window.EPW = {
    "stages": [
     {
      "id": "scenarios",
-     "label": "Scenarios and planning systems"
+     "label": "Scenarios and planning systems",
+     "summary": "Scenario governance, modelling tools, data, capacity, uncertainty and resilience — the planning systems that make long-term scenarios credible."
     },
     {
      "id": "policy",
-     "label": "Policy translation"
+     "label": "Policy translation",
+     "summary": "Mandates, regulatory pathways, budgeting and coordination — how scenario insights become policies, roadmaps and decisions."
     },
     {
      "id": "investment",
-     "label": "Investment signals and pipelines"
+     "label": "Investment signals and pipelines",
+     "summary": "Planning information, sequencing, project preparation and risk allocation — the signals that turn a plan into an investable pipeline."
     },
     {
      "id": "implementation",
-     "label": "Implementation and delivery"
+     "label": "Implementation and delivery",
+     "summary": "Procurement, markets, grids, system operation and institutional accountability — what it takes to deliver the plan on the ground."
     }
    ]
   }
  },
+ "faq": {
+  "_comment": "Frequently asked questions. Hand-edited. Answers must match data/practical.json and the agreed registration rules — change both together. Links in answers are written as {label|url} and rendered as anchors.",
+  "items": [
+   {
+    "q": "When and where is Energy Planning Week 2026?",
+    "a": "1–4 December 2026 at the GIZ Campus, Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany. The Week runs in a hybrid format: on site in Bonn and online through Microsoft Teams. All times are CET."
+   },
+   {
+    "q": "Who can attend?",
+    "a": "The Week is designed primarily for government energy planners and policymakers, alongside representatives of the energy industry, financial institutions, regulators, utilities, intergovernmental organisations and the scientific and modelling community. Anyone interested is welcome to follow the sessions online."
+   },
+   {
+    "q": "Does registering guarantee me a place in Bonn?",
+    "a": "No. Registration is an expression of interest, not a confirmed place. There are up to 120 places on site. The co-hosts review every registration and confirm on-site places in this order of priority: confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector. Everyone else is welcome to join online."
+   },
+   {
+    "q": "How do I register?",
+    "a": "Complete the {expression of interest form|https://forms.cloud.microsoft/r/UhjVrHEPrx}. Please indicate whether you would like to attend on site or online, and whether you need a visa invitation letter."
+   },
+   {
+    "q": "Is travel support available?",
+    "a": "A limited number of government participants from developing countries may receive travel support, subject to eligibility. Other participants cover their own travel and accommodation."
+   },
+   {
+    "q": "I need a visa to travel to Germany. What should I do?",
+    "a": "Indicate on the registration form that you need an invitation letter, and apply early: Schengen visa appointments in some countries are booked months ahead. Passport details are requested separately, and only once your place is confirmed — please do not send them by email."
+   },
+   {
+    "q": "Can I follow the Week online?",
+    "a": "Yes. All plenary and numbered sessions are streamed on Microsoft Teams, except the closed-door LTES Network strategic meeting on Day 2. The joining link is published on this page before the event."
+   },
+   {
+    "q": "What language are the sessions in?",
+    "a": "English only, without interpretation."
+   },
+   {
+    "q": "Can my organisation host a session?",
+    "a": "Day 4 is given to partner-hosted sessions, selected through a call for partner-led sessions. Organisations can submit a proposal through the {session submission form|https://forms.cloud.microsoft/r/1ZG77Pd3H1}."
+   },
+   {
+    "q": "Who do I contact with questions?",
+    "a": "Write to the LTES Network at {LTES@irena.org|mailto:LTES@irena.org}."
+   }
+  ]
+ },
  "gallery": {
   "_comment": "Photographs from the previous Forum, shown as a quiet band between the programme and the speakers. The band carries no heading. Every image needs a credit: these are 2025 photographs on a 2026 event site. Add or remove entries and re-run: python tools/build_data.py",
   "show": true,
+  "layout": "pair",
   "credit": "6th Forum on Long-Term Energy Scenarios — Bonn, November 2025",
   "images": [
    {
@@ -142,12 +216,6 @@ window.EPW = {
     "image": "images/scene/forum-group.jpg",
     "alt": "Participants of the 6th LTES Forum gathered for a group photograph in front of an IRENA backdrop.",
     "span": "wide"
-   },
-   {
-    "id": "forum-plenary",
-    "image": "images/scene/forum-plenary.jpg",
-    "alt": "Delegates seated around a large open square of tables during a plenary session, with presentation screens at the front of the room.",
-    "span": "half"
    },
    {
     "id": "forum-dialogue",
