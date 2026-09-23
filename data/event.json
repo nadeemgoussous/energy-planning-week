@@ -2,7 +2,6 @@
   "_comment": "Canonical event facts. Hand-edited. Everything on the site reads from here — change a date or a link once, and it updates everywhere.",
   "name": "Energy Planning Week 2026",
   "shortName": "EPW 2026",
-  "tagline": "Long-Term Energy Scenarios for Policy, Investment and Implementation",
   "hostLine": "Co-hosted by IRENA and GET.transform",
   "hosts": [
     {

@@ -1,13 +1,12 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 19:19 UTC */
+   Built 2026-09-23 19:22 UTC */
 window.EPW = {
  "event": {
   "_comment": "Canonical event facts. Hand-edited. Everything on the site reads from here — change a date or a link once, and it updates everywhere.",
   "name": "Energy Planning Week 2026",
   "shortName": "EPW 2026",
-  "tagline": "Long-Term Energy Scenarios for Policy, Investment and Implementation",
   "hostLine": "Co-hosted by IRENA and GET.transform",
   "hosts": [
    {

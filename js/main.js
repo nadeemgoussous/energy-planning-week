@@ -98,7 +98,6 @@
 
   function renderHero() {
     el("heroHosts").textContent = event.hostLine;
-    el("heroTagline").textContent = event.tagline;
 
     var facts = [
       ["Dates", event.dates.display],

@@ -282,11 +282,6 @@ button { font: inherit; color: inherit; }
 }
 .hero__year { color: var(--forum); }
 
-.hero__tagline {
-  margin-top: 1.1rem; max-width: 34ch;
-  font-size: 1.05rem; color: var(--ink-2); text-wrap: pretty;
-}
-
 /* Four equal tracks across the full width: at --wrap each is wide enough for
    "GIZ Auditorium, Bonn, Germany" on one line, and they collapse to two and
    then one column as the screen narrows. */
