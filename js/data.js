@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 19:32 UTC */
+   Built 2026-09-23 19:34 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
@@ -62,8 +62,7 @@ window.EPW = {
    "display": "GIZ Campus, Bonn, Germany",
    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
    "mapUrl": "",
-   "onsitePlaces": 120,
-   "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed in order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector."
+   "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
   },
   "format": {
    "type": "Hybrid",
@@ -173,7 +172,7 @@ window.EPW = {
    },
    {
     "q": "Does registering guarantee me a place in Bonn?",
-    "a": "No. Registration is an expression of interest, not a confirmed place. There are up to 120 places on site. The co-hosts review every registration and confirm on-site places in this order of priority: confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector. Everyone else is welcome to join online."
+    "a": "No. Registration is an expression of interest, not a confirmed place. There are up to 120 places on site. The co-hosts review every registration and confirm on-site places. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform. Everyone else is welcome to join online."
    },
    {
     "q": "How do I register?",
@@ -255,7 +254,7 @@ window.EPW = {
    {
     "id": "format",
     "heading": "Attending",
-    "body": "Energy Planning Week 2026 runs in a hybrid format, with up to 120 places on site. Registering is an expression of interest, not a confirmed place: the co-hosts review every registration and confirm on-site places in this order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions such as intergovernmental and research organisations, then the private sector. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
+    "body": "Energy Planning Week 2026 runs in a hybrid format, with up to 120 places on site. Registering is an expression of interest, not a confirmed place: the co-hosts review every registration and confirm on-site places. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
    },
    {
     "id": "meals",

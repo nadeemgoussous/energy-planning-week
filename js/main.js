@@ -101,7 +101,8 @@
 
     var facts = [
       ["Dates", event.dates.display],
-      ["Venue", event.venue.display]
+      ["Venue", event.venue.display],
+      ["Format", event.format.type]
     ];
     el("heroFacts").innerHTML = facts.map(function (f) {
       return "<div><dt>" + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd></div>";
@@ -139,26 +140,6 @@
     el("heroPhoto").hidden = false;
   }
 
-  /* ---------- the Week in numbers ----------
-     Counted from the programme, so the strip cannot drift from the agenda. */
-
-  function renderStats() {
-    var sessions = 0;
-    programme.days.forEach(function (d) {
-      d.items.forEach(function (i) { if (i.code) sessions++; });
-    });
-    var stats = [
-      [programme.days.length, "Days"],
-      [sessions, "Programme sessions"],
-      [event.components.length, "Parts of the week"],
-      [event.venue.onsitePlaces, "On-site places, plus online"]
-    ].filter(function (s) { return s[0]; });
-    el("stats").innerHTML = stats.map(function (s) {
-      return '<div class="stats__item"><dt class="stats__label">' + esc(s[1]) + "</dt>" +
-        '<dd class="stats__value">' + esc(s[0]) + "</dd></div>";
-    }).join("");
-  }
-
   /* ---------- about ---------- */
 
   function renderAbout() {
@@ -171,33 +152,24 @@
   }
 
   /* ---------- themes ----------
-     The four-stage chain, with the sessions tagged to each stage. */
-
-  var STAGE_ICONS = {
-    scenarios: '<path d="M4 20h16M6 16l4-5 3 3 5-7"/><circle cx="18" cy="7" r="1.6"/>',
-    policy: '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',
-    investment: '<path d="M4 20h16M7 16v-4M12 16V8M17 16v-6"/><path d="M15 5h4v4"/>',
-    implementation: '<path d="M12 3l7 4v10l-7 4-7-4V7z"/><path d="M5 7l7 4 7-4M12 11v10"/>'
-  };
+     The four-stage chain, drawn as one sequence rather than four cards: the
+     stages are steps of a single planning process. Each lists its sessions. */
 
   function renderThemes() {
-    el("themeGrid").innerHTML = event.narrative.stages.map(function (stage, i) {
+    el("themeGrid").innerHTML = '<ol class="chain">' + event.narrative.stages.map(function (stage, i) {
       var codes = [];
       programme.days.forEach(function (d) {
         d.items.forEach(function (it) { if (it.stage === stage.id && it.code) codes.push(it.code.replace("Session ", "")); });
       });
-      return '<article class="theme">' +
-        '<div class="theme__top">' +
-          '<svg class="theme__icon" viewBox="0 0 24 24" aria-hidden="true">' + (STAGE_ICONS[stage.id] || "") + "</svg>" +
-          '<span class="theme__step">' + (i + 1) + " / " + event.narrative.stages.length + "</span>" +
-        "</div>" +
-        '<h3 class="theme__title">' + esc(stage.label) + "</h3>" +
-        '<p class="theme__text">' + esc(stage.summary || "") + "</p>" +
+      return '<li class="chain__step">' +
+        '<span class="chain__node" aria-hidden="true">' + (i + 1) + "</span>" +
+        '<h3 class="chain__title">' + esc(stage.label) + "</h3>" +
+        '<p class="chain__text">' + esc(stage.summary || "") + "</p>" +
         (codes.length
-          ? '<p class="theme__sessions">' + (codes.length === 1 ? "Session " : "Sessions ") + esc(codes.join(", ")) + "</p>"
+          ? '<p class="chain__sessions">' + (codes.length === 1 ? "Session " : "Sessions ") + esc(codes.join(", ")) + "</p>"
           : "") +
-      "</article>";
-    }).join("");
+      "</li>";
+    }).join("") + "</ol>";
   }
 
   /* ---------- FAQ ----------
@@ -672,7 +644,6 @@
 
   renderHero();
   renderHeroPhoto();
-  renderStats();
   renderAbout();
   renderThemes();
   renderWeekBand();
