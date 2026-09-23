@@ -230,6 +230,8 @@
         "to": "implementation"
       },
       "theme": "From Planning to Investment and Implementation",
+      "parts": ["Morning", "Afternoon"],
+      "intro": "Convened under the Global Coalition for Energy Planning (GCEP), the Planning–Investment Dialogue connects the technical discussions of the LTES Forum with the investment and implementation challenges emerging from GCEP regional dialogues. It takes the findings of those dialogues as its evidence base and opens a structured discussion with financiers, regulators and planning institutions on a single question: what turns an energy plan into an investable opportunity.",
       "items": [
         {
           "start": "08:30",
@@ -343,7 +345,7 @@
       "label": "Day 4",
       "date": "2026-12-04",
       "weekday": "Friday",
-      "component": "implementation",
+      "component": "partner-sessions",
       "theme": "Partner-hosted sessions",
       "items": [
         {

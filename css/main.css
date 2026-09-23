@@ -48,6 +48,8 @@
   --gcep-ink:   #012a3d;
   --impl:       #f1d64b;   /* Royal Gold */
   --impl-ink:   #012a3d;
+  --partner:    #575757;   /* IRENA Grey — Day 4, partner-hosted, still TBC */
+  --partner-ink: #ffffff;
 
   /* "Happening now". #d62828 was not an IRENA colour at all; this is
      Geothermal from the renewable-energy palette, which is at least in the
@@ -113,6 +115,8 @@
   --gcep-ink:  #012a3d;
   --impl:      #f1d64b;
   --impl-ink:  #012a3d;
+  --partner:   #8b96a0;
+  --partner-ink: #012a3d;
 
   --live:      #c76a52;
   --live-ink:  #012a3d;
@@ -236,6 +240,7 @@ button { font: inherit; color: inherit; }
   .nav-toggle__bars::before { position: absolute; top: -5px; }
   .nav-toggle__bars::after  { position: absolute; top: 5px; }
 
+  .site-header__inner { flex-wrap: wrap; gap: 0 1rem; }
   .nav { order: 4; width: 100%; }
   .nav__list {
     display: none; flex-direction: column; align-items: stretch;
@@ -258,9 +263,11 @@ button { font: inherit; color: inherit; }
   grid-template-columns: 1fr;
 }
 
+/* Not uppercased: that would print GET.TRANSFORM, and the co-host's name
+   keeps its lowercase t. */
 .hero__hosts {
-  font-family: var(--font-mono); font-size: .76rem;
-  letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3);
+  font-family: var(--font-mono); font-size: .85rem; font-weight: 500;
+  letter-spacing: .01em; color: var(--ink-3);
   margin-bottom: 1rem;
 }
 
@@ -356,6 +363,7 @@ button { font: inherit; color: inherit; }
 .weekband__span[data-component="ltes-forum"]   { background: var(--forum); color: var(--forum-ink); }
 .weekband__span[data-component="gcep-dialogue"] { background: var(--gcep);  color: var(--gcep-ink); }
 .weekband__span[data-component="implementation"] { background: var(--impl);  color: var(--impl-ink); }
+.weekband__span[data-component="partner-sessions"] { background: var(--partner); color: var(--partner-ink); }
 
 /* Day 4 only happens if partners lead sessions and cover the costs. It is the
    least certain thing on the page, so it must not be the loudest — outlined,
@@ -364,7 +372,7 @@ button { font: inherit; color: inherit; }
    The dashed border still identifies the Lab; the label reads in body ink. */
 .weekband__span[data-tbd="true"] {
   background-color: transparent;
-  border: 1px dashed var(--impl);
+  border: 1px dashed var(--ink-3);
   color: var(--ink-2);
 }
 
@@ -516,6 +524,19 @@ button { font: inherit; color: inherit; }
   font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
   letter-spacing: -.015em;
 }
+.rail__intro { max-width: 70ch; margin: -.25rem 0 1rem; color: var(--ink-2); font-size: .92rem; text-wrap: pretty; }
+
+/* Morning / afternoon headings inside a day that changes convening at lunch */
+.rail__part {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .75rem;
+  padding: 1.25rem 0 .6rem; border-top: 1px solid var(--line);
+}
+.rail__part-when {
+  font-family: var(--font-mono); font-size: .7rem; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.rail__part-name { font-weight: 600; font-size: 1rem; }
+
 .rail__component {
   font-family: var(--font-mono); font-size: .7rem;
   letter-spacing: .07em; text-transform: uppercase;
@@ -673,6 +694,11 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
   white-space: nowrap;
 }
 .btn:hover { filter: brightness(1.12); }
+
+.hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-top: 1.75rem; }
+.hero__cta[hidden] { display: none; }
+.hero__cta-note { font-size: .85rem; color: var(--ink-3); }
+.panel__action { margin-top: 1rem; }
 .btn--quiet { background: var(--surface); color: var(--ink); border-color: var(--line); }
 .btn--quiet:hover { border-color: var(--ink-3); filter: none; }
 .btn[aria-disabled="true"] { background: var(--surface-2); color: var(--ink-3); border-color: var(--line); cursor: default; filter: none; }
@@ -754,6 +780,7 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
 
 /* ---------- modal ---------- */
 .modal {
+  margin: auto; /* the global margin reset otherwise pins the dialog top-left */
   width: min(100% - 2rem, 44rem); max-height: 85vh;
   padding: 0; border: 1px solid var(--line); border-radius: var(--radius);
   background: var(--surface); color: var(--ink); box-shadow: var(--shadow);

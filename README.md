@@ -14,7 +14,7 @@ JavaScript object), so the agenda and the speaker list drifted apart. Here there
 one copy of each fact.
 
 ```
-data/event.json         dates, venue, hosts, join link, contacts, the three convenings
+data/event.json         dates, venue, hosts, registration and join links, contacts, the four parts of the week
 data/programme.json     days, sessions, times, summaries
 data/practical.json     venue address, travel, meals, visas, documents
 data/publications.json  LTES Network publications
@@ -29,7 +29,9 @@ python tools/build_data.py
 ```
 
 That regenerates `js/data.js`, which is what the browser actually loads. **If you skip
-this step your change will not appear on the site.**
+this step your change will not appear on the site.** It also stamps the CSS and JS links
+in `index.html` with a content hash (`?v=…`), so visitors never get a new page against
+stale cached scripts — run it after editing `css/` or `js/main.js` too.
 
 ### Speakers
 
@@ -81,6 +83,7 @@ also works, because the data is loaded as a plain script rather than by `fetch()
 | `#0073ab` | IRENA Blue (primary) | 7th LTES Forum — scenarios and planning systems |
 | `#00a3ca` | Turquoise Surf (accent) | GCEP Planning–Investment Dialogue — investment signals |
 | `#f1d64b` | Royal Gold (accent) | Implementation Lab — delivery |
+| `#575757` | IRENA Grey (primary) | Partner-hosted sessions (Day 4) — neutral while still TBC |
 | `#012a3d` | Deep Space Blue (accent) | Body ink; the dark theme's ground |
 | `#575757` | IRENA Grey (primary) | Secondary text |
 | `#9f3620` | Geothermal (RE palette) | What is happening right now |

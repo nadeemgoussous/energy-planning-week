@@ -35,7 +35,7 @@
     "display": "GIZ Campus, Bonn, Germany",
     "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
     "mapUrl": "",
-    "capacityNote": "On-site capacity is limited. Places are allocated first to LTES Network members and partners, GCEP members, confirmed speakers, and supported developing-country planners."
+    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed in order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector."
   },
   "format": {
     "type": "Hybrid",
@@ -46,6 +46,11 @@
     "_phaseNote": "The site derives its phase from the programme dates: the opening date before the event, a live now/next strip during it, a closing message after. Nothing to set here.",
     "banner": "Provisional programme. Sessions, speakers and timings are subject to change until the final agenda is published.",
     "showBanner": true
+  },
+  "registration": {
+    "url": "https://forms.cloud.microsoft/r/UhjVrHEPrx",
+    "label": "Register your interest",
+    "note": "Registration is an expression of interest, not a confirmed place."
   },
   "join": {
     "platform": "Microsoft Teams",
@@ -87,9 +92,18 @@
       "order": 3,
       "name": "Implementation Lab: From Plans to Delivery",
       "shortName": "Implementation Lab",
-      "days": "Day 3 afternoon, with partner-hosted sessions on Day 4",
+      "days": "Day 3, afternoon",
       "convener": "IRENA and GET.transform with partners",
-      "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery — how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions — with country cases on where planning meets the market. Day 4 is given to sessions hosted by partner institutions, subject to partner submissions."
+      "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery — how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions — with country cases on where planning meets the market."
+    },
+    {
+      "id": "partner-sessions",
+      "order": 4,
+      "name": "Partner-hosted sessions",
+      "shortName": "Partner sessions",
+      "days": "Day 4",
+      "convener": "Partner institutions",
+      "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform. Agenda to be confirmed, subject to partner submissions."
     }
   ],
   "narrative": {

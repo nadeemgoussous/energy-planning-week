@@ -1,6 +1,6 @@
 """Build the site's data bundle.
 
-Two jobs:
+Three jobs:
 
 1. Pull confirmed speakers out of the project's speaker tracker
    (06 Speakers/EPW2026_Speakers_Tracker.xlsx) into data/speakers.json.
@@ -12,6 +12,9 @@ Two jobs:
    The bundle exists so the site works when opened straight from disk.
    Browsers block fetch() on file:// URLs, so a colleague double-clicking
    index.html would otherwise see an empty page.
+
+3. Stamp the CSS and JS links in index.html with a content hash, so a
+   deploy never serves a new page against stale cached scripts.
 
 Usage
 -----
@@ -30,6 +33,7 @@ The script uses these if the tracker has them, and skips them if not:
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -154,6 +158,29 @@ def bundle() -> None:
     print(f"  wrote js/data.js ({size/1024:.0f} KB)")
 
 
+def stamp_assets() -> None:
+    """Version the CSS and JS links in index.html by content hash.
+
+    Browsers cache these files, so after a deploy a visitor could get the new
+    index.html with yesterday's main.js — the two disagree and parts of the
+    page silently break. A hash in the URL changes only when the file does.
+    """
+    index = REPO / "index.html"
+    html = index.read_text(encoding="utf-8")
+    for rel in ("css/main.css", "js/data.js", "js/main.js"):
+        digest = hashlib.sha1((REPO / rel).read_bytes()).hexdigest()[:8]
+        html, n = re.subn(
+            r'((?:href|src)=")' + re.escape(rel) + r'(?:\?v=[0-9a-f]+)?"',
+            lambda m: f'{m.group(1)}{rel}?v={digest}"',
+            html,
+        )
+        if n != 1:
+            print(f"! expected one reference to {rel} in index.html, found {n}")
+    with index.open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write(html)
+    print("  stamped asset versions in index.html")
+
+
 def main() -> int:
     bundle_only = "--bundle" in sys.argv
 
@@ -164,6 +191,7 @@ def main() -> int:
             fh.write("\n")
 
     bundle()
+    stamp_assets()
     print("Done.")
     return 0
 

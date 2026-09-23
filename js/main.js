@@ -56,7 +56,7 @@
     return null;
   }
 
-  function accentName(id) { return { "ltes-forum": "forum", "gcep-dialogue": "gcep", "implementation": "impl" }[id] || "forum"; }
+  function accentName(id) { return { "ltes-forum": "forum", "gcep-dialogue": "gcep", "implementation": "impl", "partner-sessions": "partner" }[id] || "forum"; }
   function accentVar(id) { return "var(--" + accentName(id) + ")"; }
 
   /* Each accent is emitted with the ink colour that sits on it: Royal Gold needs
@@ -91,6 +91,11 @@
 
   /* ---------- hero ---------- */
 
+  function registerButton() {
+    return '<a class="btn" href="' + esc(event.registration.url) + '" target="_blank" rel="noopener noreferrer">' +
+      esc(event.registration.label) + "</a>";
+  }
+
   function renderHero() {
     el("heroHosts").textContent = event.hostLine;
     el("heroTagline").textContent = event.tagline;
@@ -103,6 +108,12 @@
     el("heroFacts").innerHTML = facts.map(function (f) {
       return "<div><dt>" + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd></div>";
     }).join("");
+
+    if (event.registration && event.registration.url) {
+      el("heroCta").hidden = false;
+      el("heroCta").innerHTML = registerButton() +
+        '<span class="hero__cta-note">' + esc(event.registration.note) + "</span>";
+    }
 
     el("footerLine").textContent =
       event.name + " — " + event.hostLine + ". " + event.dates.display + ", " + event.venue.display + ".";
@@ -198,12 +209,29 @@
     var day = programme.days.filter(function (d) { return d.id === selectedDay; })[0];
     var comp = component(day.component);
 
+    /* A day with parts (Day 3: GCEP Dialogue in the morning, Implementation Lab
+       in the afternoon) carries its convening on each part's heading instead
+       of on the day title, as the agenda does. */
+    var parts = day.parts || [];
     var head =
       '<div class="rail__daytitle" style="' + accentStyle(day.component) + '">' +
-        '<span class="rail__component">' + esc(comp ? comp.shortName : day.label) + "</span>" +
+        (parts.length ? "" : '<span class="rail__component">' + esc(comp ? comp.shortName : day.label) + "</span>") +
         '<span class="rail__theme">' + esc(day.theme) + "</span>" +
       "</div>" +
+      (day.intro ? '<p class="rail__intro">' + esc(day.intro) + "</p>" : "") +
       (day.tbd ? '<p class="notice">' + esc(day.tbdNote) + "</p>" : "");
+
+    var partIndex = 0, lastComponent = null;
+    function partHeading(item) {
+      if (!parts.length || item._component === lastComponent) return "";
+      lastComponent = item._component;
+      var c = component(item._component);
+      return '<div class="rail__part" style="' + accentStyle(item._component) + '">' +
+        '<span class="rail__part-when">' + esc(parts[partIndex++] || "") + "</span>" +
+        '<span class="rail__component">' + esc(c ? c.shortName : "") + "</span>" +
+        '<span class="rail__part-name">' + esc(c ? c.name : "") + "</span>" +
+      "</div>";
+    }
 
     /* Blocks carry only time, code and title. The rail is drawn to scale, so
        content must not push a block beyond its duration; the full description
@@ -234,7 +262,7 @@
           (item.access ? '<span class="rail__tag" data-tone="closed">' + esc(item.access) + "</span>" : "") +
         "</span>";
 
-      return tag.outerHTML;
+      return partHeading(item) + tag.outerHTML;
     }).join("");
 
     el("rail").innerHTML = head + items;
@@ -407,7 +435,12 @@
         : '<span class="btn" aria-disabled="true">Joining link to be published</span>');
 
     var navJoin = el("navJoin");
-    if (!hasLink) navJoin.setAttribute("aria-disabled", "true");
+    if (!hasLink && event.registration && event.registration.url) {
+      navJoin.textContent = "Register";
+      navJoin.href = event.registration.url;
+      navJoin.target = "_blank";
+      navJoin.rel = "noopener noreferrer";
+    } else if (!hasLink) navJoin.setAttribute("aria-disabled", "true");
   }
 
   /* ---------- resources ---------- */
@@ -483,7 +516,10 @@
     practical.sections.forEach(function (s) {
       panels.push('<div class="panel">' +
         '<h3 class="panel__heading">' + esc(s.heading) + "</h3>" +
-        '<div class="panel__body"><p>' + esc(s.body) + "</p></div>" +
+        '<div class="panel__body"><p>' + esc(s.body) + "</p>" +
+          (s.id === "format" && event.registration && event.registration.url
+            ? '<p class="panel__action">' + registerButton() + "</p>" : "") +
+        "</div>" +
       "</div>");
     });
 

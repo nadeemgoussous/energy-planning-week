@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 18:55 UTC */
+   Built 2026-09-23 19:19 UTC */
 window.EPW = {
  "event": {
   "_comment": "Canonical event facts. Hand-edited. Everything on the site reads from here — change a date or a link once, and it updates everywhere.",
@@ -40,7 +40,7 @@ window.EPW = {
    "display": "GIZ Campus, Bonn, Germany",
    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
    "mapUrl": "",
-   "capacityNote": "On-site capacity is limited. Places are allocated first to LTES Network members and partners, GCEP members, confirmed speakers, and supported developing-country planners."
+   "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed in order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions, then the private sector."
   },
   "format": {
    "type": "Hybrid",
@@ -51,6 +51,11 @@ window.EPW = {
    "_phaseNote": "The site derives its phase from the programme dates: the opening date before the event, a live now/next strip during it, a closing message after. Nothing to set here.",
    "banner": "Provisional programme. Sessions, speakers and timings are subject to change until the final agenda is published.",
    "showBanner": true
+  },
+  "registration": {
+   "url": "https://forms.cloud.microsoft/r/UhjVrHEPrx",
+   "label": "Register your interest",
+   "note": "Registration is an expression of interest, not a confirmed place."
   },
   "join": {
    "platform": "Microsoft Teams",
@@ -92,9 +97,18 @@ window.EPW = {
     "order": 3,
     "name": "Implementation Lab: From Plans to Delivery",
     "shortName": "Implementation Lab",
-    "days": "Day 3 afternoon, with partner-hosted sessions on Day 4",
+    "days": "Day 3, afternoon",
     "convener": "IRENA and GET.transform with partners",
-    "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery — how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions — with country cases on where planning meets the market. Day 4 is given to sessions hosted by partner institutions, subject to partner submissions."
+    "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery — how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions — with country cases on where planning meets the market."
+   },
+   {
+    "id": "partner-sessions",
+    "order": 4,
+    "name": "Partner-hosted sessions",
+    "shortName": "Partner sessions",
+    "days": "Day 4",
+    "convener": "Partner institutions",
+    "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform. Agenda to be confirmed, subject to partner submissions."
    }
   ],
   "narrative": {
@@ -172,13 +186,13 @@ window.EPW = {
    "mapEmbed": ""
   },
   "gettingThere": [
-   "TODO — confirm tram and walking directions from Bonn Hauptbahnhof to the GIZ campus with the co-host."
+   "Directions from Bonn Hauptbahnhof to the GIZ Campus: to be confirmed."
   ],
   "sections": [
    {
     "id": "format",
     "heading": "Attending",
-    "body": "Energy Planning Week 2026 runs in a hybrid format. On-site places are limited and are allocated first to LTES Network members and partners, GCEP members, confirmed speakers, and supported developing-country planners. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
+    "body": "Energy Planning Week 2026 runs in a hybrid format, with up to 120 places on site. Registering is an expression of interest, not a confirmed place: the co-hosts review every registration and confirm on-site places in this order of priority — confirmed speakers, LTES Network focal points, government representatives, partner institutions such as intergovernmental and research organisations, then the private sector. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
    },
    {
     "id": "meals",
@@ -188,12 +202,12 @@ window.EPW = {
    {
     "id": "visas",
     "heading": "Visas and letters",
-    "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Contact the organisers with your passport details and the embassy you will apply at."
+    "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Indicate on the registration form that you need an invitation letter. Passport details are requested separately, and only once your place is confirmed — please do not send them by email."
    },
    {
     "id": "accessibility",
     "heading": "Access and language",
-    "body": "Sessions run in English without interpretation. Let the organisers know in advance if you have accessibility requirements."
+    "body": "Sessions run in English only, without interpretation. Let the organisers know in advance if you have accessibility requirements."
    }
   ],
   "emergency": [
@@ -439,6 +453,11 @@ window.EPW = {
      "to": "implementation"
     },
     "theme": "From Planning to Investment and Implementation",
+    "parts": [
+     "Morning",
+     "Afternoon"
+    ],
+    "intro": "Convened under the Global Coalition for Energy Planning (GCEP), the Planning–Investment Dialogue connects the technical discussions of the LTES Forum with the investment and implementation challenges emerging from GCEP regional dialogues. It takes the findings of those dialogues as its evidence base and opens a structured discussion with financiers, regulators and planning institutions on a single question: what turns an energy plan into an investable opportunity.",
     "items": [
      {
       "start": "08:30",
@@ -552,7 +571,7 @@ window.EPW = {
     "label": "Day 4",
     "date": "2026-12-04",
     "weekday": "Friday",
-    "component": "implementation",
+    "component": "partner-sessions",
     "theme": "Partner-hosted sessions",
     "items": [
      {
