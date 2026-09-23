@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 19:30 UTC */
+   Built 2026-09-23 19:32 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
@@ -178,10 +178,6 @@ window.EPW = {
    {
     "q": "How do I register?",
     "a": "Complete the {expression of interest form|https://forms.cloud.microsoft/r/UhjVrHEPrx}. Please indicate whether you would like to attend on site or online, and whether you need a visa invitation letter."
-   },
-   {
-    "q": "Is travel support available?",
-    "a": "A limited number of government participants from developing countries may receive travel support, subject to eligibility. Other participants cover their own travel and accommodation."
    },
    {
     "q": "I need a visa to travel to Germany. What should I do?",
