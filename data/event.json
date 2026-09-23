@@ -27,11 +27,11 @@
     "timezoneLabel": "CET (UTC+1)"
   },
   "venue": {
-    "name": "GIZ Auditorium",
+    "name": "GIZ Campus",
     "city": "Bonn",
     "country": "Germany",
-    "display": "GIZ Auditorium, Bonn, Germany",
-    "address": "",
+    "display": "GIZ Campus, Bonn, Germany",
+    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
     "mapUrl": "",
     "capacityNote": "On-site capacity is limited. Places are allocated first to LTES Network members and partners, GCEP members, confirmed speakers, and supported developing-country planners."
   },
@@ -85,9 +85,9 @@
       "order": 3,
       "name": "Implementation Lab: From Plans to Delivery",
       "shortName": "Implementation Lab",
-      "days": "Day 3 afternoon and Day 4",
+      "days": "Day 3 afternoon, with partner-hosted sessions on Day 4",
       "convener": "IRENA and GET.transform with partners",
-      "summary": "Convened by IRENA and GET.transform with partners. It follows the plan past approval into delivery — permitting, project preparation, system operation and institutional accountability — including partner-led sessions selected through the call for sessions."
+      "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery — how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions — with country cases on where planning meets the market. Day 4 is given to sessions hosted by partner institutions, subject to partner submissions."
     }
   ],
   "narrative": {

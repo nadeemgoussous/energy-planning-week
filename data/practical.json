@@ -18,9 +18,9 @@
   "documentsNote": "Documents are hosted on SharePoint for registered participants. If you have trouble opening them, contact the organisers.",
 
   "venue": {
-    "name": "GIZ Auditorium",
-    "addressLines": [],
-    "_addressNote": "TODO — confirm the GIZ Bonn campus address and phone with the co-host, then fill addressLines and mapEmbed.",
+    "name": "GIZ Campus",
+    "addressLines": ["Friedrich-Ebert-Allee 32 + 36"],
+    "_addressNote": "Address confirmed to comms 14 Sept 2026. Phone and mapEmbed still to fill.",
     "city": "53113 Bonn, Germany",
     "phone": "",
     "mapEmbed": ""

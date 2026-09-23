@@ -173,9 +173,7 @@ GitHub Pages from `main`, root. `CNAME` holds the custom domain.
 ## Still open
 
 - Teams join link — `event.json` → `join.url` (GDPR: EU-hosted platforms only, no Zoom)
-- GIZ Auditorium address and travel directions — `practical.json`
+- Venue phone, map and travel directions — `practical.json` (address confirmed: GIZ Campus, Friedrich-Ebert-Allee 32 + 36, 53113 Bonn)
 - Programme and logistical note PDFs — `practical.json` → `documents[].url`
 - IRENA and GET.transform logos — `images/brand/`, referenced from `event.json`
 - Favicon
-- Session 7 (Day 3, 09:30–11:00 in the draft) still overlaps the 09:15–09:45 keynote. The
-  site shows it at 09:45 pending confirmation — fix in the programme document.

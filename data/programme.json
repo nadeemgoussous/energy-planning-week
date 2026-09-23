@@ -1,6 +1,6 @@
 {
-  "_comment": "Programme data. Hand-edited from '05 Programme (read-only)/Energy Planning Week 2026 - Draft Programme_Internal.docx' (18 August 2026), the most recent draft. Internal deliberation from that document — candidate-name pools, '[TBC]' option lists, open questions — is deliberately NOT carried over. Speaker names are not published on the site yet; they are filled from 06 Speakers/EPW2026_Speakers_Tracker.xlsx via tools/build_data.py once confirmed.",
-  "sourceDocument": "Energy Planning Week 2026 - Draft Programme_Internal.docx (18 August 2026)",
+  "_comment": "Programme data. Hand-edited from the draft programme overview circulated 23 September 2026 (the most recent draft). Speaker names are not published on the site yet — including the Day 1 keynote speaker named in the draft; they are filled via tools/build_data.py once confirmed.",
+  "sourceDocument": "Energy Planning Week 2026 - Draft Programme (overview), 23 September 2026",
   "status": "provisional",
   "itemTypes": {
     "session": "Numbered programme session",
@@ -33,9 +33,9 @@
           "end": "09:45",
           "type": "plenary",
           "title": "Opening session",
-          "subtitle": "Framing the week: from COP31 commitments to investment-ready planning",
+          "subtitle": "From COP31 commitments to investment-ready planning",
           "stage": "scenarios",
-          "summary": "Welcome remarks from the co-hosts and co-lead countries, and an introduction to the planning value chain that structures the week — scenarios, to investment signals, to implementation.",
+          "summary": "Welcome remarks by IRENA, GET.transform and the co-lead countries, followed by two introductory presentations: an overview of the LTES Network's work and the role of scenario practice in connecting national planning to policy and investment decisions; and GET.transform's support to countries across the planning-to-implementation chain.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -44,7 +44,7 @@
           "start": "09:45",
           "end": "10:15",
           "type": "keynote",
-          "title": "Expert keynote",
+          "title": "Keynote presentation",
           "stage": "scenarios",
           "speakers": [],
           "speakersStatus": "tbc"
@@ -55,9 +55,10 @@
           "start": "10:15",
           "end": "12:00",
           "type": "session",
-          "title": "Electrification and the COP commitments: implications for scenarios",
+          "title": "Electrification and the COP commitments – what scenarios must now capture",
           "stage": "policy",
-          "summary": "A high-level panel linking electrification to the COP31 climate commitments, building on the discussions at SB64 in Bonn. What does accelerated electrification mean for equitable climate goals, and how should national scenarios be adjusted to capture it? The session examines the aspects of electrification — including those often overlooked — that need to feature in scenarios and plans to inform feasible policies and reveal what is possible, drawing on both qualitative and quantitative evidence. It traces how international electrification goals translate into national planning and connect with local, municipal and urban planning, including the trade-offs, implementation and permitting involved.",
+          "summary": "This opening session examines what accelerated electrification commitments mean for national energy planning. Government planners and the institutions supporting them discuss how global electrification goals translate into national scenarios, policies and investment pipelines, and what practical support countries need to make that translation work.",
+          "note": "Scene-setting: outcomes of COP31 and SB64 relevant to electrification and planning.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -73,10 +74,9 @@
           "start": "12:30",
           "end": "14:15",
           "type": "session",
-          "title": "Hybrid scenario capacity across the value chain",
+          "title": "Building planning ecosystems that survive political cycles",
           "stage": "scenarios",
-          "summary": "Capacity as the central enabler of durable scenario work. The focus is on building sustainable national planning ecosystems — working with universities, research institutions and other national bodies to develop and retain capacity, coordinating with partners, and moving countries from dependency on external support toward hybrid, self-sustaining planning ecosystems. It covers institutional mandates and ownership, skills and retention, modelling-tool selection and institutionalisation, and alignment with policy and budget cycles, so that scenario work survives political cycles and feeds directly into policy and budget decisions.",
-          "note": "Reflects the leading governance cluster of the 2026 Priorities Survey.",
+          "summary": "Durable scenario work depends on institutions. This session examines how countries build planning ecosystems that develop and retain capacity across ministries, universities and research institutions, moving from dependence on external support toward self-sustaining national planning functions. It covers institutional mandates and ownership, skills and retention, modelling-tool institutionalisation, and alignment with policy and budget cycles.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -85,8 +85,8 @@
           "start": "14:15",
           "end": "15:45",
           "type": "meal",
-          "title": "Lunch and poster session",
-          "summary": "An extended lunch with a poster session: participants and partner institutions present scenario tools, country cases and ongoing work for informal discussion. As part of IRENA's commitment to next-generation capacity, five young energy planning researchers from developing countries are invited to display their work.",
+          "title": "Lunch break and poster session",
+          "summary": "An extended lunch with a poster session: participants present scenario tools, country cases and ongoing work for informal discussion over lunch.",
           "speakers": [],
           "speakersStatus": "none"
         },
@@ -96,9 +96,9 @@
           "start": "15:45",
           "end": "17:30",
           "type": "session",
-          "title": "Data governance, sharing and quality assurance",
+          "title": "Data governance, sharing and quality assurance for developing long-term scenarios",
           "stage": "scenarios",
-          "summary": "Data as the foundation of credible, repeatable scenarios. For many planning teams the reality is inconsistent access to data and data-sharing platforms, significant gaps in the available data, and heavy reliance on proprietary datasets. The session covers data availability, stewardship and governance; data sharing and harmonisation across agencies and institutions; quality assurance; and the particular data challenges faced by developing-country planning teams — and explores practical solutions.",
+          "summary": "Credible scenarios rest on credible data, yet many planning teams face fragmented access, persistent gaps and heavy reliance on proprietary datasets. This session examines how countries and regional institutions govern, share and quality-assure energy data – from national energy information systems to regional databases – and explores practical solutions for planning teams with limited resources.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -119,7 +119,7 @@
       "date": "2026-12-02",
       "weekday": "Wednesday",
       "component": "ltes-forum",
-      "theme": "Scenarios for Security, Adaptation and Implementation",
+      "theme": "Scenarios for Security, Flexibility and Implementation",
       "items": [
         {
           "start": "08:00",
@@ -144,7 +144,7 @@
           "type": "impact",
           "title": "Impact session: Brazil's national energy plan and the LTES Network",
           "stage": "policy",
-          "summary": "Brazil presents its national energy plan and reflects on how collaboration through the LTES Network contributed to it — an impact spotlight on translating Network learning and peer exchange into national planning practice.",
+          "summary": "Brazil's Energy Research Office presents the country's national energy planning instruments — the long-term PNE 2055 and the ten-year expansion plan PDE 2035 — and reflects on how peer exchange through the LTES Network informed national planning practice. An impact spotlight on what Network collaboration looks like for national planning processes.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -160,9 +160,9 @@
           "start": "10:30",
           "end": "12:15",
           "type": "session",
-          "title": "Energy security and resilience: planning under geopolitical uncertainty",
+          "title": "Planning under geopolitical uncertainty",
           "stage": "scenarios",
-          "summary": "How countries stress-test scenarios against geopolitical volatility and fuel-price shocks, and how the fossil-fuel transition and asset risk are treated in national scenario frameworks. Framed around the energy trilemma, the session asks how alternative plans have been conceived to respond to supply disruptions.",
+          "summary": "Geopolitical volatility, fuel-price shocks and supply disruptions have moved energy security back to the centre of national planning. This session examines how countries stress-test scenarios against these risks, how the fossil-fuel transition and stranded-asset exposure are treated in national frameworks, and how alternative plans are conceived to respond to supply disruptions.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -171,9 +171,9 @@
           "start": "12:15",
           "end": "13:30",
           "type": "meal",
-          "title": "Lunch session: machine learning and AI in energy planning",
+          "title": "Lunch session: machine learning and artificial intelligence in energy planning",
           "stage": "scenarios",
-          "summary": "A working-lunch showcase of applied uses of AI prioritised by the Network — demand and load forecasting, scenario development and sensitivity analysis, and data processing and quality assurance — together with the governance and institutional capacities needed for responsible adoption, building on the SAGES framework.",
+          "summary": "A working-lunch, state-of-the-art showcase of applied AI uses prioritised by the LTES Network – demand and load forecasting, scenario development and sensitivity analysis, and data processing and quality assurance.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -183,9 +183,9 @@
           "start": "13:30",
           "end": "15:15",
           "type": "session",
-          "title": "Climate risks and adaptation",
+          "title": "Climate risks and adaptation in national energy scenarios",
           "stage": "scenarios",
-          "summary": "The top scenario-design priority of the 2026 Priorities Survey. How scenarios incorporate climate risks and adaptation — heating and cooling demand, floods, droughts and other physical risks — into national energy planning.",
+          "summary": "Climate variability and physical risks – heatwaves, floods, droughts and shifting hydrology – are stress-testing national energy systems in real time. This session examines how planning teams incorporate climate risks and adaptation into long-term scenarios: from El Niño-driven droughts in hydropower-dependent systems to cooling demand and flood exposure, and the data and methods needed to make plans resilient.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -201,9 +201,9 @@
           "start": "15:45",
           "end": "17:30",
           "type": "session",
-          "title": "Transformative scenarios: an interface between novel methods and national planning practices",
+          "title": "Transformative scenarios in national planning practice",
           "stage": "scenarios",
-          "summary": "Scenario-based energy planning is a constantly evolving field, incorporating new tools and actors and broadening its scope. Many new methods — deep uncertainty and robust decision-making approaches, agent-based modelling, participatory and open-source modelling — are pioneered in research and gradually diffuse into policy-facing work, bringing communities and civil society into the scenario-building process itself. This session explores those methods in conversation with government planners, to understand how they can be navigated within the social, political and economic realities planners contend with, including resource constraints and perceived political non-viability.",
+          "summary": "Scenario practice is evolving: deep uncertainty and robust decision-making, agent-based and participatory modelling, and open-source tools are moving from research into government planning, bringing new actors and interdisciplinary insights into the scenario-building process itself. This session examines how these methods can be navigated within the realities government planners face: resource constraints, institutional mandates and political viability.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -229,7 +229,7 @@
         "afterItem": "lunch-d3",
         "to": "implementation"
       },
-      "theme": "From planning signals to investment, and from plans to delivery",
+      "theme": "From Planning to Investment and Implementation",
       "items": [
         {
           "start": "08:30",
@@ -250,26 +250,26 @@
         {
           "id": "keynote-d3",
           "start": "09:15",
-          "end": "09:45",
+          "end": "09:30",
           "type": "keynote",
-          "title": "What countries are telling us about planning, investment and implementation",
+          "title": "Findings from the GCEP regional planning-to-investment dialogues",
+          "subtitle": "What countries are telling us about planning, investment and implementation",
           "stage": "investment",
-          "summary": "Cross-regional findings from the GCEP regional dialogues and other regional exchanges, focusing on recurring planning-to-investment messages: grids and flexibility, institutional coordination, project preparation, finance-facing planning signals, data and governance, and the practical partner support countries are asking for.",
+          "summary": "Cross-regional findings from the GCEP regional dialogues and other relevant regional exchanges, focusing on recurring planning-to-investment messages: grids and flexibility, institutional coordination, project preparation, finance-facing planning signals, data and governance, and country requests for practical partner support.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
         {
           "id": "session-7",
           "code": "Session 7",
-          "start": "09:45",
+          "start": "09:30",
           "end": "11:00",
           "type": "session",
-          "title": "Global and European perspectives on the planning-to-investment gap",
+          "title": "Global perspectives on the planning-to-investment gap",
           "stage": "investment",
-          "summary": "This session compares the key planning-to-investment challenges emerging from the regional dialogues with European experience, identifying common barriers and practical lessons for turning long-term energy plans into implementable investments.",
+          "summary": "Financiers from across regions examine the planning-to-investment challenges emerging from the regional dialogues: what do development banks and markets need to see in a national plan before capital moves? Drawing on experience from Latin America, Africa, Asia and Europe, the session identifies common barriers and practical lessons for turning long-term energy plans into implementable investments.",
           "speakers": [],
-          "speakersStatus": "tbc",
-          "_sourceNote": "Draft programme v0.3 lists 09:30–11:00, which overlaps the preceding keynote (09:15–09:45). Start moved to 09:45 pending confirmation."
+          "speakersStatus": "tbc"
         },
         {
           "start": "11:00",
@@ -283,40 +283,56 @@
           "start": "11:30",
           "end": "13:00",
           "type": "session",
-          "title": "Planning the Transition Away from Fossil Fuels",
-          "partner": "with Spain",
+          "title": "Planning the transition away from fossil fuels (TAFF)",
           "stage": "investment",
-          "summary": "The Transition Away from Fossil Fuels (TAFF) agenda through the lens of investment-ready energy planning: how national planning systems can translate transition-away commitments into credible implementation pathways, and what practical support GCEP can provide to facilitate dialogue between planners, policymakers and financiers on the conditions needed to move from political commitment to investable action. It also reflects on the development and climate nexus.",
+          "summary": "The transition away from fossil fuels (TAFF) agenda through the lens of investment-ready energy planning: how national planning systems can translate transition-away commitments into credible implementation pathways, and what practical support GCEP can provide to facilitate dialogue between planners, policymakers and financiers on the conditions needed to move from political commitment to investable action. It also reflects on the development and climate nexus.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
         {
           "id": "lunch-d3",
           "start": "13:00",
-          "end": "14:00",
+          "end": "14:15",
           "type": "meal",
           "title": "Lunch break"
         },
         {
           "id": "session-9",
           "code": "Session 9",
-          "start": "14:00",
-          "end": "17:15",
+          "start": "14:15",
+          "end": "15:45",
           "type": "session",
-          "title": "Implementation: from plans to delivery",
+          "title": "From plans to delivery – how can planning support enabling energy markets?",
           "stage": "implementation",
-          "summary": "The Implementation Lab turns to what happens after a plan is approved — permitting, project preparation, system operation, infrastructure delivery and institutional accountability.",
-          "note": "Session line-up to be confirmed jointly by the co-hosts.",
+          "summary": "What it takes to turn energy planning priorities into commercially viable projects, infrastructure and functioning markets. The session looks at what needs to happen from planning to action — from policy, regulation and procurement to market design and investment decisions — and where key barriers can emerge along the way, bringing together perspectives from different actors on how governments and planning institutions can create the conditions for investment and strengthen the link between long-term planning and delivery.",
+          "speakers": [],
+          "speakersStatus": "tbc"
+        },
+        {
+          "start": "15:45",
+          "end": "16:15",
+          "type": "break",
+          "title": "Coffee break"
+        },
+        {
+          "id": "session-10",
+          "code": "Session 10",
+          "start": "16:15",
+          "end": "17:45",
+          "type": "session",
+          "title": "Country cases – when planning meets the market",
+          "stage": "implementation",
+          "summary": "Country case presentations from three angles. Planning enables the market (large scale): how long-term planning can inform large-scale project procurement and create a pipeline investors can respond to. The market moves faster than planning (distributed generation): what happens when markets, prosumers or new technologies such as battery storage move ahead of the assumptions in the plan, and how market information, investor behaviour, technology costs and emerging business models should feed back into planning. Planning enables infrastructure investment: how grid infrastructure enables functioning energy markets and private investment, and how planning can provide the long-term visibility, coordination and investment framework needed to develop it.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
         {
           "id": "closing",
-          "start": "17:15",
-          "end": "17:30",
+          "start": "17:45",
+          "end": "18:00",
           "type": "plenary",
           "title": "Closing of Energy Planning Week 2026",
-          "summary": "Joint closing remarks by IRENA and GET.transform.",
+          "summary": "Joint closing remarks by IRENA and GET.transform: what the week established — from scenario practice to planning-to-investment — and what follows: the partnerships, country cases and commitments carried forward into the GCEP programme and the LTES Network calendar for 2027.",
           "speakers": [],
           "speakersStatus": "tbc"
         }
@@ -328,22 +344,22 @@
       "date": "2026-12-04",
       "weekday": "Friday",
       "component": "implementation",
-      "theme": "Sessions to be confirmed",
+      "theme": "Partner-hosted sessions",
       "items": [
         {
           "id": "day4-placeholder",
           "start": "09:00",
           "end": "16:00",
           "type": "session",
-          "title": "Sessions to be confirmed",
+          "title": "Partner-hosted sessions",
           "stage": "implementation",
-          "summary": "A continuation of the implementation sessions and partner-led sessions selected through the call for partner-led sessions. The line-up is being confirmed.",
+          "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform.",
           "speakers": [],
           "speakersStatus": "tbc"
         }
       ],
       "tbd": true,
-      "tbdNote": "The Day 4 line-up is still being confirmed, including sessions selected through the call for partner-led sessions. Details are published closer to the event."
+      "tbdNote": "Agenda to be confirmed, subject to partner submissions through the call for partner-led sessions."
     }
   ]
 }
