@@ -3,6 +3,8 @@
 Static site for participants of Energy Planning Week 2026, 1–4 December 2026, Bonn.
 Co-hosted by IRENA and GET.transform. Served by GitHub Pages; not indexed by search engines.
 
+**Live site:** https://nadeemgoussous.github.io/energy-planning-week/
+
 The date line is **1–4 December 2026** — confirmed, and it is the four-day event across all
 materials. Earlier drafts that say 1–3 December or "three days" are superseded.
 
@@ -181,12 +183,13 @@ There is nothing to switch over on the day.
 
 ## Deployment
 
-GitHub Pages from `main`, root. `CNAME` holds the custom domain.
+GitHub Pages from `main`, root, at https://nadeemgoussous.github.io/energy-planning-week/.
+The custom domain is parked in `CNAME.disabled`; rename it to `CNAME` to switch it on.
 
 ## Still open
 
 - Teams join link — `event.json` → `join.url` (GDPR: EU-hosted platforms only, no Zoom)
-- Venue phone, map and travel directions — `practical.json` (address confirmed: GIZ Campus, Friedrich-Ebert-Allee 32 + 36, 53113 Bonn)
+- Venue phone and travel directions — `practical.json` (address confirmed: GIZ Campus, Friedrich-Ebert-Allee 32 + 36, 53113 Bonn)
 - Programme and logistical note PDFs — `practical.json` → `documents[].url`
 - IRENA and GET.transform logos — `images/brand/`, referenced from `event.json`
 - Favicon
