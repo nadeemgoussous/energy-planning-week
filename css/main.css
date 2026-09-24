@@ -773,11 +773,6 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
   display: block; width: 100%; aspect-ratio: 4 / 3; margin-top: 1rem;
   border: 1px solid var(--line); border-radius: var(--radius);
 }
-.map--consent {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: .9rem; padding: 1.5rem; text-align: center;
-  background: var(--surface-2); font-size: .85rem; color: var(--ink-2);
-}
 .map__link { margin-top: .5rem; font-size: .85rem; }
 .map__link a { font-weight: 500; }
 

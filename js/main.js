@@ -575,13 +575,9 @@
       '<h3 class="panel__heading">Venue</h3>' +
       '<address class="addr"><strong>' + esc(venue.name) + "</strong><br>" + address +
       (venue.phone ? "<br>" + esc(venue.phone) : "") + "</address>" +
-      /* The map is a Google embed, and Google can set cookies once it loads. So it
-         stays a placeholder until the visitor asks for it (GDPR). */
       (venue.mapEmbed
-        ? '<div class="map map--consent" id="venueMap">' +
-            '<p>The map is provided by Google. Loading it shares data with Google and may set cookies.</p>' +
-            '<button type="button" class="btn btn--quiet" id="venueMapLoad">Show map</button>' +
-          "</div>"
+        ? '<iframe class="map" src="' + esc(venue.mapEmbed) + '" title="Map of ' + esc(venue.name) +
+          '" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
         : "") +
       (event.venue.mapUrl
         ? '<p class="map__link"><a href="' + esc(event.venue.mapUrl) + '" target="_blank" rel="noopener">Open in Google Maps</a></p>'
@@ -613,12 +609,6 @@
     "</div>");
 
     el("practicalGrid").innerHTML = panels.join("");
-
-    var mapLoad = el("venueMapLoad");
-    if (mapLoad) mapLoad.addEventListener("click", function () {
-      el("venueMap").outerHTML = '<iframe class="map" src="' + esc(venue.mapEmbed) +
-        '" title="Map of ' + esc(venue.name) + '" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-    });
   }
 
   /* ---------- chrome ---------- */
