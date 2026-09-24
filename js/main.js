@@ -101,11 +101,14 @@
 
     var facts = [
       ["Dates", event.dates.display],
-      ["Venue", event.venue.display],
+      ["Venue", event.venue.display, event.venue.mapUrl],
       ["Format", event.format.type]
     ];
     el("heroFacts").innerHTML = facts.map(function (f) {
-      return "<div><dt>" + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd></div>";
+      var value = f[2]
+        ? '<a href="' + esc(f[2]) + '" target="_blank" rel="noopener">' + esc(f[1]) + "</a>"
+        : esc(f[1]);
+      return "<div><dt>" + esc(f[0]) + "</dt><dd>" + value + "</dd></div>";
     }).join("");
 
     if (event.registration && event.registration.url) {
@@ -572,6 +575,17 @@
       '<h3 class="panel__heading">Venue</h3>' +
       '<address class="addr"><strong>' + esc(venue.name) + "</strong><br>" + address +
       (venue.phone ? "<br>" + esc(venue.phone) : "") + "</address>" +
+      /* The map is a Google embed, and Google can set cookies once it loads. So it
+         stays a placeholder until the visitor asks for it (GDPR). */
+      (venue.mapEmbed
+        ? '<div class="map map--consent" id="venueMap">' +
+            '<p>The map is provided by Google. Loading it shares data with Google and may set cookies.</p>' +
+            '<button type="button" class="btn btn--quiet" id="venueMapLoad">Show map</button>' +
+          "</div>"
+        : "") +
+      (event.venue.mapUrl
+        ? '<p class="map__link"><a href="' + esc(event.venue.mapUrl) + '" target="_blank" rel="noopener">Open in Google Maps</a></p>'
+        : "") +
       '<h3 class="panel__heading" style="margin-top:1.5rem">Getting there</h3>' +
       '<ul class="panel__list">' + practical.gettingThere.map(function (line) {
         return "<li>" + (/^TODO/.test(line) ? "<span class='todo'>" + esc(line) + "</span>" : esc(line)) + "</li>";
@@ -599,6 +613,12 @@
     "</div>");
 
     el("practicalGrid").innerHTML = panels.join("");
+
+    var mapLoad = el("venueMapLoad");
+    if (mapLoad) mapLoad.addEventListener("click", function () {
+      el("venueMap").outerHTML = '<iframe class="map" src="' + esc(venue.mapEmbed) +
+        '" title="Map of ' + esc(venue.name) + '" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    });
   }
 
   /* ---------- chrome ---------- */

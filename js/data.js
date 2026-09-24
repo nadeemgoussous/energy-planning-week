@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-24 08:35 UTC */
+   Built 2026-09-24 13:03 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
@@ -61,7 +61,7 @@ window.EPW = {
    "country": "Germany",
    "display": "GIZ Campus, Bonn, Germany",
    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
-   "mapUrl": "",
+   "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
   },
   "format": {
@@ -238,10 +238,10 @@ window.EPW = {
    "addressLines": [
     "Friedrich-Ebert-Allee 32 + 36"
    ],
-   "_addressNote": "Address confirmed to comms 14 Sept 2026. Phone and mapEmbed still to fill.",
+   "_addressNote": "Address confirmed to comms 14 Sept 2026. Phone still to fill.",
    "city": "53113 Bonn, Germany",
    "phone": "",
-   "mapEmbed": ""
+   "mapEmbed": "https://maps.google.com/maps?q=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany&z=16&output=embed"
   },
   "gettingThere": [
    "Directions from Bonn Hauptbahnhof to the GIZ Campus: to be confirmed."

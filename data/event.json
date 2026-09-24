@@ -33,7 +33,7 @@
     "country": "Germany",
     "display": "GIZ Campus, Bonn, Germany",
     "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
-    "mapUrl": "",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
     "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
   },
   "format": {
