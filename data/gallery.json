@@ -2,7 +2,7 @@
   "_comment": "Photographs from the previous Forum, shown as a quiet band between the programme and the speakers. The band carries no heading. Every image needs a credit: these are 2025 photographs on a 2026 event site. Add or remove entries and re-run: python tools/build_data.py",
   "show": true,
   "layout": "pair",
-  "credit": "6th Forum on Long-Term Energy Scenarios — Bonn, November 2025",
+  "credit": "6th Forum on Long-Term Energy Scenarios, Bonn, November 2025",
   "images": [
     {
       "id": "forum-group",

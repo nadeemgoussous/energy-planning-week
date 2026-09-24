@@ -7,7 +7,7 @@
     "plenary": "Opening, closing or whole-room moment",
     "keynote": "Keynote address",
     "impact": "Country impact spotlight",
-    "closed": "Closed-door — restricted attendance",
+    "closed": "Closed-door: restricted attendance",
     "break": "Coffee, registration, networking",
     "meal": "Lunch or dinner, including working sessions over food",
     "social": "Evening or social programme"
@@ -133,7 +133,7 @@
           "end": "09:15",
           "type": "closed",
           "title": "LTES Network members and partners strategic meeting",
-          "access": "Closed-door — LTES Network members and partners only",
+          "access": "Closed-door: LTES Network members and partners only",
           "speakers": [],
           "speakersStatus": "none"
         },
@@ -144,7 +144,7 @@
           "type": "impact",
           "title": "Impact session: Brazil's national energy plan and the LTES Network",
           "stage": "policy",
-          "summary": "Brazil's Energy Research Office presents the country's national energy planning instruments — the long-term PNE 2055 and the ten-year expansion plan PDE 2035 — and reflects on how peer exchange through the LTES Network informed national planning practice. An impact spotlight on what Network collaboration looks like for national planning processes.",
+          "summary": "Brazil's Energy Research Office presents the country's national energy planning instruments, the long-term PNE 2055 and the ten-year expansion plan PDE 2035, and reflects on how peer exchange through the LTES Network informed national planning practice. An impact spotlight on what Network collaboration looks like for national planning processes.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -306,7 +306,7 @@
           "type": "session",
           "title": "From plans to delivery – how can planning support enabling energy markets?",
           "stage": "implementation",
-          "summary": "What it takes to turn energy planning priorities into commercially viable projects, infrastructure and functioning markets. The session looks at what needs to happen from planning to action — from policy, regulation and procurement to market design and investment decisions — and where key barriers can emerge along the way, bringing together perspectives from different actors on how governments and planning institutions can create the conditions for investment and strengthen the link between long-term planning and delivery.",
+          "summary": "What it takes to turn energy planning priorities into commercially viable projects, infrastructure and functioning markets. The session looks at what needs to happen from planning to action, from policy, regulation and procurement to market design and investment decisions, and where key barriers can emerge along the way, bringing together perspectives from different actors on how governments and planning institutions can create the conditions for investment and strengthen the link between long-term planning and delivery.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -334,7 +334,7 @@
           "end": "18:00",
           "type": "plenary",
           "title": "Closing of Energy Planning Week 2026",
-          "summary": "Joint closing remarks by IRENA and GET.transform: what the week established — from scenario practice to planning-to-investment — and what follows: the partnerships, country cases and commitments carried forward into the GCEP programme and the LTES Network calendar for 2027.",
+          "summary": "Joint closing remarks by IRENA and GET.transform: what the week established, from scenario practice to planning-to-investment, and what follows: the partnerships, country cases and commitments carried forward into the GCEP programme and the LTES Network calendar for 2027.",
           "speakers": [],
           "speakersStatus": "tbc"
         }

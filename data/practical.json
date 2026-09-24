@@ -44,7 +44,7 @@
     {
       "id": "visas",
       "heading": "Visas and letters",
-      "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Indicate on the registration form that you need an invitation letter. Passport details are requested separately, and only once your place is confirmed — please do not send them by email."
+      "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Indicate on the registration form that you need an invitation letter. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
     },
     {
       "id": "accessibility",
@@ -54,7 +54,7 @@
   ],
 
   "emergency": [
-    { "number": "112", "label": "Emergency services — medical and fire" },
+    { "number": "112", "label": "Emergency services (medical and fire)" },
     { "number": "110", "label": "Police" }
   ]
 }

@@ -118,7 +118,7 @@
     }
 
     el("footerLine").textContent =
-      event.name + " — " + event.hostLine + ". " + event.dates.display + ", " + event.venue.display + ".";
+      event.name + ", " + event.hostLine.charAt(0).toLowerCase() + event.hostLine.slice(1) + ". " + event.dates.display + ", " + event.venue.display + ".";
 
     /* GET.transform asked for its standard description wherever the event is
        presented — it is how GIZ, which has no logo on the site, is credited. */

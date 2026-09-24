@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-24 15:06 UTC */
+   Built 2026-09-24 15:11 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -111,7 +111,7 @@ window.EPW = {
     "shortName": "GCEP Dialogue",
     "days": "Day 3, morning",
     "convener": "Global Coalition for Energy Planning",
-    "summary": "Convened under the Global Coalition for Energy Planning. It puts planners in the room with financiers, regulators and utilities to work on the gap between an approved plan and an investable one — what signals finance needs from planning systems, and which bottlenecks recur across the GCEP regional dialogues."
+    "summary": "Convened under the Global Coalition for Energy Planning. It puts planners in the room with financiers, regulators and utilities to work on the gap between an approved plan and an investable one: what signals finance needs from planning systems, and which bottlenecks recur across the GCEP regional dialogues."
    },
    {
     "id": "implementation",
@@ -120,7 +120,7 @@ window.EPW = {
     "shortName": "Implementation Lab",
     "days": "Day 3, afternoon",
     "convener": "IRENA and GET.transform with partners",
-    "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery — how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions — with country cases on where planning meets the market."
+    "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery, looking at how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions. Country cases show where planning meets the market."
    },
    {
     "id": "partner-sessions",
@@ -179,7 +179,7 @@ window.EPW = {
    },
    {
     "q": "I need a visa to travel to Germany. What should I do?",
-    "a": "Indicate on the registration form that you need an invitation letter, and apply early: Schengen visa appointments in some countries are booked months ahead. Passport details are requested separately, and only once your place is confirmed — please do not send them by email."
+    "a": "Indicate on the registration form that you need an invitation letter, and apply early: Schengen visa appointments in some countries are booked months ahead. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
    },
    {
     "q": "Can I follow the Week online?",
@@ -199,7 +199,7 @@ window.EPW = {
   "_comment": "Photographs from the previous Forum, shown as a quiet band between the programme and the speakers. The band carries no heading. Every image needs a credit: these are 2025 photographs on a 2026 event site. Add or remove entries and re-run: python tools/build_data.py",
   "show": true,
   "layout": "pair",
-  "credit": "6th Forum on Long-Term Energy Scenarios — Bonn, November 2025",
+  "credit": "6th Forum on Long-Term Energy Scenarios, Bonn, November 2025",
   "images": [
    {
     "id": "forum-group",
@@ -259,7 +259,7 @@ window.EPW = {
    {
     "id": "visas",
     "heading": "Visas and letters",
-    "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Indicate on the registration form that you need an invitation letter. Passport details are requested separately, and only once your place is confirmed — please do not send them by email."
+    "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Indicate on the registration form that you need an invitation letter. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
    },
    {
     "id": "accessibility",
@@ -270,7 +270,7 @@ window.EPW = {
   "emergency": [
    {
     "number": "112",
-    "label": "Emergency services — medical and fire"
+    "label": "Emergency services (medical and fire)"
    },
    {
     "number": "110",
@@ -287,7 +287,7 @@ window.EPW = {
    "plenary": "Opening, closing or whole-room moment",
    "keynote": "Keynote address",
    "impact": "Country impact spotlight",
-   "closed": "Closed-door — restricted attendance",
+   "closed": "Closed-door: restricted attendance",
    "break": "Coffee, registration, networking",
    "meal": "Lunch or dinner, including working sessions over food",
    "social": "Evening or social programme"
@@ -413,7 +413,7 @@ window.EPW = {
       "end": "09:15",
       "type": "closed",
       "title": "LTES Network members and partners strategic meeting",
-      "access": "Closed-door — LTES Network members and partners only",
+      "access": "Closed-door: LTES Network members and partners only",
       "speakers": [],
       "speakersStatus": "none"
      },
@@ -424,7 +424,7 @@ window.EPW = {
       "type": "impact",
       "title": "Impact session: Brazil's national energy plan and the LTES Network",
       "stage": "policy",
-      "summary": "Brazil's Energy Research Office presents the country's national energy planning instruments — the long-term PNE 2055 and the ten-year expansion plan PDE 2035 — and reflects on how peer exchange through the LTES Network informed national planning practice. An impact spotlight on what Network collaboration looks like for national planning processes.",
+      "summary": "Brazil's Energy Research Office presents the country's national energy planning instruments, the long-term PNE 2055 and the ten-year expansion plan PDE 2035, and reflects on how peer exchange through the LTES Network informed national planning practice. An impact spotlight on what Network collaboration looks like for national planning processes.",
       "speakers": [],
       "speakersStatus": "tbc"
      },
@@ -589,7 +589,7 @@ window.EPW = {
       "type": "session",
       "title": "From plans to delivery – how can planning support enabling energy markets?",
       "stage": "implementation",
-      "summary": "What it takes to turn energy planning priorities into commercially viable projects, infrastructure and functioning markets. The session looks at what needs to happen from planning to action — from policy, regulation and procurement to market design and investment decisions — and where key barriers can emerge along the way, bringing together perspectives from different actors on how governments and planning institutions can create the conditions for investment and strengthen the link between long-term planning and delivery.",
+      "summary": "What it takes to turn energy planning priorities into commercially viable projects, infrastructure and functioning markets. The session looks at what needs to happen from planning to action, from policy, regulation and procurement to market design and investment decisions, and where key barriers can emerge along the way, bringing together perspectives from different actors on how governments and planning institutions can create the conditions for investment and strengthen the link between long-term planning and delivery.",
       "speakers": [],
       "speakersStatus": "tbc"
      },
@@ -617,7 +617,7 @@ window.EPW = {
       "end": "18:00",
       "type": "plenary",
       "title": "Closing of Energy Planning Week 2026",
-      "summary": "Joint closing remarks by IRENA and GET.transform: what the week established — from scenario practice to planning-to-investment — and what follows: the partnerships, country cases and commitments carried forward into the GCEP programme and the LTES Network calendar for 2027.",
+      "summary": "Joint closing remarks by IRENA and GET.transform: what the week established, from scenario practice to planning-to-investment, and what follows: the partnerships, country cases and commitments carried forward into the GCEP programme and the LTES Network calendar for 2027.",
       "speakers": [],
       "speakersStatus": "tbc"
      }
