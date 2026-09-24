@@ -167,7 +167,7 @@ def stamp_assets() -> None:
     """
     index = REPO / "index.html"
     html = index.read_text(encoding="utf-8")
-    for rel in ("css/main.css", "js/data.js", "js/main.js"):
+    for rel in ("css/main.css", "js/data.js", "js/main.js", "js/thread.js"):
         digest = hashlib.sha1((REPO / rel).read_bytes()).hexdigest()[:8]
         html, n = re.subn(
             r'((?:href|src)=")' + re.escape(rel) + r'(?:\?v=[0-9a-f]+)?"',

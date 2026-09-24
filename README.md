@@ -108,6 +108,14 @@ is now Geothermal from the renewable-energy palette, which is at least in the br
 using an energy-source colour as a status colour is off-label — worth Communications
 sign-off.
 
+**The scenario thread** (`js/thread.js`) is the one decorative element. Five scenario
+pathways leave a single origin in the hero, fan out, and sweep across the page at every
+section boundary before converging on one point in the footer. The lines draw in as you
+scroll, shading from IRENA Blue to Turquoise Surf, and the end point lights up in Royal
+Gold. It is laid out from the live page, so new or hidden sections need no changes. It
+only runs through the side gutters and the empty padding between sections, never under
+text. With reduced motion it is drawn in full and does not move.
+
 Typography is **Montserrat** throughout. The guidelines name Gotham as the primary online
 face and Montserrat as its sanctioned substitute; ITC Avant Garde is print-only and must
 never be used digitally. There is no approved monospace, so there is none here — times

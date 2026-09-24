@@ -787,6 +787,38 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
   color: var(--ink-3); font-style: normal;
 }
 
+/* ---------- scenario thread ---------- */
+/* Drawn by js/thread.js. It sits above the section grounds but only ever runs
+   through the gutters and the empty padding between sections, so it never
+   covers text; pointer-events keeps it out of the way of every click. The
+   stroke shades from IRENA Blue to Turquoise Surf down the page, and Royal
+   Gold appears only on the point the lines converge on — the accents stay what
+   the guidelines allow: thin rules and markers, never a ground. */
+.thread {
+  position: absolute; top: 0; left: 0; z-index: 1;
+  pointer-events: none;
+}
+.thread__line {
+  fill: none; stroke: url(#threadInk); stroke-width: 1.25;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.thread__line--lead { stroke-width: 2; }
+.thread__origin { fill: var(--forum); }
+.thread__goal {
+  fill: var(--surface); stroke: var(--impl); stroke-width: 2;
+  transition: fill .5s ease;
+}
+.thread__goal.is-reached { fill: var(--impl); }
+.thread__tip { transition: opacity .3s ease; }
+.thread__dot { fill: url(#threadInk); }
+.thread__halo {
+  fill: url(#threadInk); opacity: .2;
+  transform-box: fill-box; transform-origin: center;
+  animation: thread-pulse 2.4s ease-in-out infinite;
+}
+@keyframes thread-pulse { 50% { transform: scale(1.7); opacity: .04; } }
+@media print { .thread { display: none; } }
+
 /* ---------- footer ---------- */
 .footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--line); background: var(--surface); }
 .footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; }
