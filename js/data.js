@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-24 15:05 UTC */
+   Built 2026-09-24 15:06 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -15,7 +15,7 @@ window.EPW = {
   "objectives": [
    "Connect scenario governance, investment signals and implementation, so COP31 commitments become investment-ready projects.",
    "Build the mandates, skills, data and modelling capacity that keep planning on track across political cycles.",
-   "Tackle the planning-to-investment bottlenecks raised in LTES and GCEP regional dialogues — grids, flexibility, project preparation and finance-facing signals.",
+   "Tackle the planning-to-investment bottlenecks raised in LTES and GCEP regional dialogues, such as grids, flexibility, project preparation and finance-facing signals.",
    "Foster peer exchange among planners, financiers, regulators, utilities and partner institutions."
   ],
   "audience": "Government energy planners and policymakers, alongside industry, finance, regulators, utilities, intergovernmental organisations and the modelling community.",
@@ -138,22 +138,22 @@ window.EPW = {
     {
      "id": "scenarios",
      "label": "Scenarios and planning systems",
-     "summary": "Scenario governance, modelling tools, data, capacity, uncertainty and resilience — the planning systems that make long-term scenarios credible."
+     "summary": "The planning systems behind credible long-term scenarios: governance, modelling tools, data, capacity, uncertainty and resilience."
     },
     {
      "id": "policy",
      "label": "Policy translation",
-     "summary": "Mandates, regulatory pathways, budgeting and coordination — how scenario insights become policies, roadmaps and decisions."
+     "summary": "How scenario insights become policies, roadmaps and decisions, through mandates, regulatory pathways, budgeting and coordination."
     },
     {
      "id": "investment",
      "label": "Investment signals and pipelines",
-     "summary": "Planning information, sequencing, project preparation and risk allocation — the signals that turn a plan into an investable pipeline."
+     "summary": "The signals that turn a plan into an investable pipeline, from planning information and sequencing to project preparation and risk allocation."
     },
     {
      "id": "implementation",
      "label": "Implementation and delivery",
-     "summary": "Procurement, markets, grids, system operation and institutional accountability — what it takes to deliver the plan on the ground."
+     "summary": "What it takes to deliver the plan on the ground: procurement, markets, grids, system operation and institutional accountability."
     }
    ]
   }
