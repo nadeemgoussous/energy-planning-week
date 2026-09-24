@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-24 08:34 UTC */
+   Built 2026-09-24 08:35 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
@@ -130,7 +130,7 @@ window.EPW = {
     "shortName": "Partner sessions",
     "days": "Day 4",
     "convener": "Partner institutions",
-    "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform. Agenda to be confirmed, subject to partner submissions."
+    "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform. Agenda to be confirmed."
    }
   ],
   "narrative": {
