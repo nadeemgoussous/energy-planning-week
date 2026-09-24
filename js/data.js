@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-09-23 19:35 UTC */
+   Built 2026-09-24 08:34 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Hand-edited from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse.",
@@ -645,7 +645,7 @@ window.EPW = {
      }
     ],
     "tbd": true,
-    "tbdNote": "Agenda to be confirmed, subject to partner submissions through the call for partner-led sessions."
+    "tbdNote": "Agenda to be confirmed."
    }
   ]
  },
