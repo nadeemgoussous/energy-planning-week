@@ -288,6 +288,7 @@
       '<div class="rail__daytitle" style="' + accentStyle(day.component) + '">' +
         (parts.length ? "" : '<span class="rail__component">' + esc(comp ? comp.shortName : day.label) + "</span>") +
         '<span class="rail__theme">' + esc(day.theme) + "</span>" +
+        (day.venue ? '<span class="rail__venue">Venue: ' + esc(day.venue) + "</span>" : "") +
       "</div>" +
       (day.intro ? '<p class="rail__intro">' + esc(day.intro) + "</p>" : "") +
       (day.tbd ? '<p class="notice">' + esc(day.tbdNote) + "</p>" : "");
@@ -309,7 +310,7 @@
        is in the modal. */
     var items = day.items.map(function (item, index) {
       var accent = accentStyle(item._component);
-      var detailed = Boolean(item.summary);
+      var detailed = Boolean(item.summary || (item.speakers && item.speakers.length));
       var tag = document.createElement(detailed ? "button" : "article");
 
       tag.className = "rail__item";
@@ -463,6 +464,12 @@
 
   /* ---------- speakers ---------- */
 
+  /* Initials stand in until a headshot arrives: "Prof. Maarten Hajer" -> "MH". */
+  function initials(name) {
+    var parts = name.replace(/^(prof|dr|mr|ms|mrs)\.?\s+/i, "").split(/\s+/);
+    return (parts[0].charAt(0) + (parts.length > 1 ? parts[parts.length - 1].charAt(0) : "")).toUpperCase();
+  }
+
   function renderSpeakers() {
     var people = speakers.people || [];
     var grid = el("speakerGrid");
@@ -482,8 +489,10 @@
       var role = (p.appearances && p.appearances[0] && p.appearances[0].role) || "";
       var comp = (p.appearances && p.appearances[0] && p.appearances[0].component) || "";
       return '<button class="speaker" type="button" style="' + accentStyle(comp) + '">' +
-        '<img class="speaker__photo" src="images/speakers/' + esc(p.photo) + '" alt="" loading="lazy"' +
-        " onerror=\"this.style.visibility='hidden'\">" +
+        (p.photo
+          ? '<img class="speaker__photo" src="images/speakers/' + esc(p.photo) + '" alt="" loading="lazy"' +
+            " onerror=\"this.style.visibility='hidden'\">"
+          : '<span class="speaker__photo speaker__initials" aria-hidden="true">' + esc(initials(p.name)) + "</span>") +
         '<span class="speaker__body">' +
           '<span class="speaker__name">' + esc(p.name) + "</span>" +
           (p.org ? '<span class="speaker__org">' + esc(p.org) + "</span>" : "") +

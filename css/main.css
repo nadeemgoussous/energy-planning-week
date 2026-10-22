@@ -48,7 +48,7 @@
   --gcep-ink:   #012a3d;
   --impl:       #f1d64b;   /* Royal Gold */
   --impl-ink:   #012a3d;
-  --partner:    #575757;   /* IRENA Grey — Day 4, partner-hosted, still TBC */
+  --partner:    #575757;   /* IRENA Grey — Day 4, partner-hosted Thematic Deep Dives */
   --partner-ink: #ffffff;
 
   /* "Happening now". #d62828 was not an IRENA colour at all; this is
@@ -534,6 +534,7 @@ button { font: inherit; color: inherit; }
   font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
   letter-spacing: -.015em;
 }
+.rail__venue { flex-basis: 100%; font-size: .85rem; color: var(--ink-2); }
 .rail__intro { max-width: 70ch; margin: -.25rem 0 1rem; color: var(--ink-2); font-size: .92rem; text-wrap: pretty; }
 
 /* Morning / afternoon headings inside a day that changes convening at lunch */
@@ -678,7 +679,15 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
 .speaker { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; text-align: left; cursor: pointer; padding: 0; }
 .speaker:hover { border-color: var(--ink-3); }
 .speaker__photo { aspect-ratio: 1; width: 100%; object-fit: cover; background: var(--haze); }
+.speaker { display: flex; flex-direction: column; }
+.speaker__photo { display: block; }
+.speaker__initials {
+  display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 600; font-size: 2.2rem;
+  color: var(--forum); letter-spacing: .02em;
+}
 .speaker__body { padding: .8rem .9rem 1rem; }
+.speaker__name, .speaker__org, .speaker__role { display: block; }
 .speaker__name { font-family: var(--font-display); font-weight: 600; font-size: .95rem; line-height: 1.2; }
 .speaker__org { font-size: .8rem; color: var(--ink-3); margin-top: .2rem; }
 .speaker__role { font-family: var(--font-mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; color: var(--forum); margin-top: .45rem; }

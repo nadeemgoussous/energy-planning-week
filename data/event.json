@@ -98,11 +98,11 @@
     {
       "id": "partner-sessions",
       "order": 4,
-      "name": "Partner-hosted sessions",
-      "shortName": "Partner sessions",
+      "name": "Thematic Deep Dives",
+      "shortName": "Deep Dives",
       "days": "Day 4",
-      "convener": "Partner institutions",
-      "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform. Agenda to be confirmed."
+      "convener": "Partner-hosted sessions",
+      "summary": "A day of partner-hosted deep dives at IRENA's Innovation and Technology Centre in Bonn: data centres and rising electricity demand, offshore wind planning and subnational delivery, and power system flexibility."
     }
   ],
   "narrative": {

@@ -1,6 +1,6 @@
 {
-  "_comment": "Programme data. Hand-edited from the draft programme overview circulated 23 September 2026 (the most recent draft). Speaker names are not published on the site yet — including the Day 1 keynote speaker named in the draft; they are filled via tools/build_data.py once confirmed.",
-  "sourceDocument": "Energy Planning Week 2026 - Draft Programme (overview), 23 September 2026",
+  "_comment": "Programme data. Hand-edited from the draft programme overview circulated 22 October 2026 (the most recent draft). Speaker names are not written here: they live in data/speakers.json and tools/build_data.py attaches them to their sessions in the bundle.",
+  "sourceDocument": "Energy Planning Week 2026 - Draft Programme (overview), 22 October 2026",
   "status": "provisional",
   "itemTypes": {
     "session": "Numbered programme session",
@@ -56,6 +56,7 @@
           "end": "12:00",
           "type": "session",
           "title": "Electrification and the COP commitments – what scenarios must now capture",
+          "partner": "Co-hosted with UNFCCC",
           "stage": "policy",
           "summary": "This opening session examines what accelerated electrification commitments mean for national energy planning. Government planners and the institutions supporting them discuss how global electrification goals translate into national scenarios, policies and investment pipelines, and what practical support countries need to make that translation work.",
           "note": "Scene-setting: outcomes of COP31 and SB64 relevant to electrification and planning.",
@@ -75,6 +76,7 @@
           "end": "14:15",
           "type": "session",
           "title": "Building planning ecosystems that survive political cycles",
+          "partner": "Co-hosted with the Energy Modelling Hub and Natural Resources Canada",
           "stage": "scenarios",
           "summary": "Durable scenario work depends on institutions. This session examines how countries build planning ecosystems that develop and retain capacity across ministries, universities and research institutions, moving from dependence on external support toward self-sustaining national planning functions. It covers institutional mandates and ownership, skills and retention, modelling-tool institutionalisation, and alignment with policy and budget cycles.",
           "speakers": [],
@@ -97,6 +99,7 @@
           "end": "17:30",
           "type": "session",
           "title": "Data governance, sharing and quality assurance for developing long-term scenarios",
+          "partner": "Co-hosted with European Commission DG ENER",
           "stage": "scenarios",
           "summary": "Credible scenarios rest on credible data, yet many planning teams face fragmented access, persistent gaps and heavy reliance on proprietary datasets. This session examines how countries and regional institutions govern, share and quality-assure energy data – from national energy information systems to regional databases – and explores practical solutions for planning teams with limited resources.",
           "speakers": [],
@@ -161,6 +164,7 @@
           "end": "12:15",
           "type": "session",
           "title": "Planning under geopolitical uncertainty",
+          "partner": "Co-hosted with the World Energy Council",
           "stage": "scenarios",
           "summary": "Geopolitical volatility, fuel-price shocks and supply disruptions have moved energy security back to the centre of national planning. This session examines how countries stress-test scenarios against these risks, how the fossil-fuel transition and stranded-asset exposure are treated in national frameworks, and how alternative plans are conceived to respond to supply disruptions.",
           "speakers": [],
@@ -267,9 +271,10 @@
           "start": "09:30",
           "end": "11:00",
           "type": "session",
-          "title": "Global perspectives on the planning-to-investment gap",
+          "title": "From energy planning to investment decisions in developing countries",
+          "partner": "Co-hosted with the World Bank",
           "stage": "investment",
-          "summary": "Financiers from across regions examine the planning-to-investment challenges emerging from the regional dialogues: what do development banks and markets need to see in a national plan before capital moves? Drawing on experience from Latin America, Africa, Asia and Europe, the session identifies common barriers and practical lessons for turning long-term energy plans into implementable investments.",
+          "summary": "This session examines how developing countries can strengthen the connection between national energy planning and investment decisions. Drawing on country experiences and perspectives from development finance institutions, it explores how long-term scenarios inform investment priorities, how these priorities connect with budgeting and project preparation, and how collaboration between planners and financiers can support implementation.",
           "speakers": [],
           "speakersStatus": "tbc"
         },
@@ -286,6 +291,7 @@
           "end": "13:00",
           "type": "session",
           "title": "Planning the transition away from fossil fuels (TAFF)",
+          "partner": "Co-hosted with the Ministry for the Ecological Transition and the Demographic Challenge, Spain",
           "stage": "investment",
           "summary": "The transition away from fossil fuels (TAFF) agenda through the lens of investment-ready energy planning: how national planning systems can translate transition-away commitments into credible implementation pathways, and what practical support GCEP can provide to facilitate dialogue between planners, policymakers and financiers on the conditions needed to move from political commitment to investable action. It also reflects on the development and climate nexus.",
           "speakers": [],
@@ -346,22 +352,83 @@
       "date": "2026-12-04",
       "weekday": "Friday",
       "component": "partner-sessions",
-      "theme": "Partner-hosted sessions",
+      "theme": "Thematic Deep Dives",
+      "venue": "IRENA Innovation and Technology Centre, Bonn",
       "items": [
         {
-          "id": "day4-placeholder",
+          "start": "08:30",
+          "end": "09:00",
+          "type": "break",
+          "title": "Coffee and networking"
+        },
+        {
+          "id": "deep-dive-1",
+          "code": "Deep Dive 1",
           "start": "09:00",
-          "end": "16:00",
+          "end": "10:00",
           "type": "session",
-          "title": "Partner-hosted sessions",
-          "stage": "implementation",
-          "summary": "A day of sessions hosted by partner institutions, giving partners space to convene discussions with country teams on planning and implementation cases. Open to members and partners of GCEP, the LTES Network and GET.transform.",
+          "title": "Data centres and rising electricity demand: implications for energy planning",
+          "stage": "scenarios",
+          "summary": "The rapid expansion of data centres is creating new challenges for energy planners, particularly in anticipating electricity demand, assessing grid capacity and planning future infrastructure investments. This session explores how integrated planning approaches can help governments accommodate growing data centre demand while considering system reliability, flexibility, affordability and broader energy priorities.",
           "speakers": [],
           "speakersStatus": "tbc"
+        },
+        {
+          "id": "deep-dive-2",
+          "code": "Deep Dive 2",
+          "start": "10:00",
+          "end": "11:00",
+          "type": "session",
+          "title": "Offshore wind planning: spatial coordination and subnational delivery",
+          "stage": "implementation",
+          "summary": "The role of subnational and state-level governments in planning and enabling offshore wind development. Drawing on experiences from different jurisdictions, the discussion explores marine spatial planning, permitting, grid and port infrastructure, and stakeholder engagement, with particular attention to coordination between national and subnational authorities and the practical challenges of project delivery.",
+          "speakers": [],
+          "speakersStatus": "tbc"
+        },
+        {
+          "start": "11:00",
+          "end": "11:30",
+          "type": "break",
+          "title": "Coffee break"
+        },
+        {
+          "id": "deep-dive-3",
+          "code": "Deep Dive 3",
+          "start": "11:30",
+          "end": "12:30",
+          "type": "session",
+          "title": "Planning for power system flexibility: from scenarios to grid investment",
+          "stage": "investment",
+          "summary": "How governments can integrate flexibility needs into long-term energy planning as renewable energy shares increase and power systems evolve. Drawing on country experiences and technical perspectives, the discussion examines the implications for grid expansion, storage, system operation and investment priorities, including the planning and coordination approaches needed to support more flexible and resilient power systems.",
+          "speakers": [],
+          "speakersStatus": "tbc"
+        },
+        {
+          "start": "12:30",
+          "end": "13:30",
+          "type": "meal",
+          "title": "Lunch"
+        },
+        {
+          "id": "deep-dive-4",
+          "code": "Deep Dive 4",
+          "start": "13:30",
+          "end": "14:30",
+          "type": "session",
+          "title": "Topic to be confirmed",
+          "speakers": [],
+          "speakersStatus": "tbc"
+        },
+        {
+          "id": "closing-d4",
+          "start": "14:30",
+          "end": "14:45",
+          "type": "plenary",
+          "title": "Closing",
+          "speakers": [],
+          "speakersStatus": "none"
         }
-      ],
-      "tbd": true,
-      "tbdNote": "Agenda to be confirmed."
+      ]
     }
   ]
 }

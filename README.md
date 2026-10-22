@@ -23,7 +23,7 @@ data/programme.json     days, sessions, times, summaries
 data/practical.json     venue address, travel, meals, visas, documents
 data/publications.json  LTES Network publications
 data/gallery.json       photographs from the previous Forum, and their credit
-data/speakers.json      GENERATED — do not edit by hand
+data/speakers.json      confirmed speakers and their sessions (hand-edited)
 ```
 
 After any edit, rebuild and commit:
@@ -39,15 +39,27 @@ stale cached scripts — run it after editing `css/` or `js/main.js` too.
 
 ### Speakers
 
-Speakers come from `06 Speakers/EPW2026_Speakers_Tracker.xlsx` in the project folder —
-the same tracker the rest of the project uses. Only rows with `Status = Confirmed` are
-published. To add a speaker: edit the tracker, then run `python tools/build_data.py`.
+Speakers are hand-edited in `data/speakers.json`: only confirmed people go in. Each
+person lists the programme items they appear in, by item `id` from `programme.json`:
 
-The tracker has no `Title`, `Bio` or `Photo` columns yet. Add them and the build picks
-them up automatically; without them, speaker cards show name, organisation and role only.
+```json
+{
+  "name": "Prof. Maarten Hajer",
+  "title": "Distinguished Professor of Urban Futures and Futuring",
+  "org": "Utrecht University",
+  "sessions": [{ "item": "keynote-d1", "role": "Keynote speaker" }]
+}
+```
 
-Speaker names are currently **not** published anywhere on the site. The session data in
-`programme.json` has empty `speakers` arrays by design.
+`python tools/build_data.py` puts each person on their sessions (in the bundle only, so
+`programme.json` stays name-free) and stops with an error if an `item` id does not exist.
+One entry per person, however many sessions they appear in.
+
+**Photos:** add the headshot as `images/speakers/<slug>.webp` + `.jpg`, where the slug is
+the name without "Prof."/"Dr.", lower-case and hyphenated (`maarten-hajer`). Easiest: name
+the original after the person and run `python tools/optimize_images.py speakers <folder>`.
+The build finds the photo automatically; without one the card shows initials. A `photo`
+field in the entry overrides the filename.
 
 ### Images
 
@@ -87,7 +99,7 @@ also works, because the data is loaded as a plain script rather than by `fetch()
 | `#0073ab` | IRENA Blue (primary) | 7th LTES Forum — scenarios and planning systems |
 | `#00a3ca` | Turquoise Surf (accent) | GCEP Planning–Investment Dialogue — investment signals |
 | `#f1d64b` | Royal Gold (accent) | Implementation Lab — delivery |
-| `#575757` | IRENA Grey (primary) | Partner-hosted sessions (Day 4) — neutral while still TBC |
+| `#575757` | IRENA Grey (primary) | Thematic Deep Dives (Day 4, partner-hosted) |
 | `#012a3d` | Deep Space Blue (accent) | Body ink; the dark theme's ground |
 | `#575757` | IRENA Grey (primary) | Secondary text |
 | `#9f3620` | Geothermal (RE palette) | What is happening right now |

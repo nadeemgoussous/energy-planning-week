@@ -1,6 +1,300 @@
 {
-  "_comment": "GENERATED FILE — do not hand-edit. Produced by tools/build_data.py from '06 Speakers/EPW2026_Speakers_Tracker.xlsx'. Only people with Status = Confirmed are written here. Edit the tracker, then re-run: python tools/build_data.py",
-  "generatedAt": "2026-08-26T12:59:43Z",
-  "source": "06 Speakers/EPW2026_Speakers_Tracker.xlsx",
-  "people": []
+  "_comment": "Confirmed speakers. Hand-edited: one entry per person, listing the programme item ids (from programme.json) they appear in, with an optional role. tools/build_data.py attaches them to their sessions and finds headshots at images/speakers/<slug>.webp. Seeded 22 Oct 2026 from the Confirmed rows of the speakers tracker.",
+  "people": [
+    {
+      "name": "Jochen Bard",
+      "title": "Managing Director",
+      "org": "Fraunhofer CINES",
+      "sessions": [
+        {
+          "item": "session-6",
+          "role": "Flash-talk: methods"
+        }
+      ]
+    },
+    {
+      "name": "Simon Benmarraze",
+      "title": "Head of Strategic Infrastructure",
+      "org": "IRENA",
+      "sessions": [
+        {
+          "item": "opening",
+          "role": "Scene-setting: LTES Network introduction"
+        },
+        {
+          "item": "session-1",
+          "role": "Moderator"
+        },
+        {
+          "item": "welcome-dinner",
+          "role": "Host remarks"
+        },
+        {
+          "item": "opening-d3",
+          "role": "Opening remarks"
+        },
+        {
+          "item": "session-8",
+          "role": "Moderator"
+        }
+      ]
+    },
+    {
+      "name": "Edouard Clement",
+      "title": "Executive Director",
+      "org": "Energy Modelling Hub (EMH) & NRCAN",
+      "sessions": [
+        {
+          "item": "session-2",
+          "role": "Moderator / Co-host"
+        }
+      ]
+    },
+    {
+      "name": "Mike Enskat",
+      "title": "Director, IRENA Innovation and Technology Centre (IITC)",
+      "org": "IRENA",
+      "sessions": [
+        {
+          "item": "opening",
+          "role": "Welcome remarks"
+        }
+      ]
+    },
+    {
+      "name": "Vivien Foster",
+      "title": "",
+      "org": "Imperial College - D2D",
+      "sessions": [
+        {
+          "item": "session-7",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Reshma Francy",
+      "title": "Associate Director, Policy Pathfinding and World Energy Trilemma",
+      "org": "World Energy Council (WEC)",
+      "sessions": [
+        {
+          "item": "session-4",
+          "role": "Scene-setting: updated Trilemma framework"
+        }
+      ]
+    },
+    {
+      "name": "Nadeem Goussous",
+      "title": "",
+      "org": "",
+      "sessions": [
+        {
+          "item": "ai-showcase",
+          "role": "Moderator / Co-host"
+        }
+      ]
+    },
+    {
+      "name": "Matt Gray",
+      "title": "Head of Modelling",
+      "org": "TransitionZero",
+      "sessions": [
+        {
+          "item": "ai-showcase",
+          "role": "Use-case presentation"
+        }
+      ]
+    },
+    {
+      "name": "Prof. Maarten Hajer",
+      "title": "Distinguished Professor of Urban Futures and Futuring; Director, Urban Futures Studio",
+      "org": "Utrecht University",
+      "sessions": [
+        {
+          "item": "keynote-d1",
+          "role": "Keynote speaker"
+        }
+      ]
+    },
+    {
+      "name": "Charlie Heaps",
+      "title": "",
+      "org": "SEI",
+      "sessions": [
+        {
+          "item": "ai-showcase",
+          "role": "Use-case presentation"
+        },
+        {
+          "item": "session-5",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Mark Howells",
+      "title": "Professor of Systems Analysis for Sustainable Development, Loughborough University; Programme Director",
+      "org": "Climate Compatible Growth (CCG)",
+      "sessions": [
+        {
+          "item": "ai-showcase",
+          "role": "Use-case presentation"
+        }
+      ]
+    },
+    {
+      "name": "Mungai Kihara",
+      "title": "",
+      "org": "Ministry of Energy, Kenya",
+      "sessions": [
+        {
+          "item": "session-4",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Brad Little",
+      "title": "",
+      "org": "Natural Resources Canada",
+      "sessions": [
+        {
+          "item": "session-2"
+        },
+        {
+          "item": "session-5",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Kamil Maqsood",
+      "title": "",
+      "org": "Pakistan",
+      "sessions": [
+        {
+          "item": "session-2",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Luis Martinez",
+      "title": "",
+      "org": "International Institute for Sustainable Development (IISD)",
+      "sessions": [
+        {
+          "item": "session-8",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Luana Alves De Melo",
+      "title": "",
+      "org": "Energy Department. Ministry of Foreign Affairs of Brazil",
+      "sessions": [
+        {
+          "item": "session-8",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Juan Jose Garcia Mendez",
+      "title": "Programme Officer",
+      "org": "IRENA",
+      "sessions": [
+        {
+          "item": "ltes-strategic",
+          "role": "Chair"
+        },
+        {
+          "item": "impact-brazil",
+          "role": "Moderator"
+        },
+        {
+          "item": "keynote-d3",
+          "role": "Keynote presentation"
+        }
+      ]
+    },
+    {
+      "name": "Hector Orozco",
+      "title": "",
+      "org": "Guatemala",
+      "sessions": [
+        {
+          "item": "session-2",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Abdoulaye Oueddo",
+      "title": "Acting Head of Energy Information System and Statistics Division",
+      "org": "African Energy Commission (AFREC)",
+      "sessions": [
+        {
+          "item": "session-3",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Stelios Pesmajoglou",
+      "title": "Manager, NDCs and Long-Term Strategies, Mitigation Division",
+      "org": "UNFCCC",
+      "sessions": [
+        {
+          "item": "session-1",
+          "role": "Scene-setting: COP31 outcomes"
+        }
+      ]
+    },
+    {
+      "name": "Filipe de Pádua",
+      "title": "",
+      "org": "EPE - Brazil",
+      "sessions": [
+        {
+          "item": "impact-brazil",
+          "role": "Presentation: PNE 2055 / PDE 2035"
+        }
+      ]
+    },
+    {
+      "name": "Michael O. Sinocruz",
+      "title": "Chief, Planning Division",
+      "org": "Department of Energy, Philippines",
+      "sessions": [
+        {
+          "item": "session-4",
+          "role": "Panellist"
+        }
+      ]
+    },
+    {
+      "name": "Alessia De Vita",
+      "title": "Technical Advisor, Long-Term Energy Planning and Renewable Grid Integration",
+      "org": "GET.transform",
+      "sessions": [
+        {
+          "item": "opening-d3",
+          "role": "Opening remarks"
+        }
+      ]
+    },
+    {
+      "name": "Dr. Tania Vorwerk",
+      "title": "Deputy Director General \"Climate, environment, health\"",
+      "org": "Federal Ministry for Economic Cooperation and Development (BMZ), Germany",
+      "sessions": [
+        {
+          "item": "opening",
+          "role": "Co-lead country welcome"
+        }
+      ]
+    }
+  ]
 }

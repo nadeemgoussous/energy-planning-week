@@ -2,33 +2,30 @@
 
 Three jobs:
 
-1. Pull confirmed speakers out of the project's speaker tracker
-   (06 Speakers/EPW2026_Speakers_Tracker.xlsx) into data/speakers.json.
-   The tracker stays the single source of truth — the site never holds a
-   second, hand-maintained speaker list, which is what let the 2025 portal
-   drift out of sync with the agenda.
-
-2. Bundle every data/*.json file into js/data.js as `window.EPW`.
+1. Bundle every data/*.json file into js/data.js as `window.EPW`.
    The bundle exists so the site works when opened straight from disk.
    Browsers block fetch() on file:// URLs, so a colleague double-clicking
    index.html would otherwise see an empty page.
+
+2. Put the confirmed speakers from data/speakers.json (hand-edited) on their
+   programme sessions, in the bundle only. programme.json stays name-free, so
+   each person is written down once and the speaker list and the agenda
+   cannot drift apart. An unknown session id stops the build.
 
 3. Stamp the CSS and JS links in index.html with a content hash, so a
    deploy never serves a new page against stale cached scripts.
 
 Usage
 -----
-    python tools/build_data.py            # speakers + bundle
-    python tools/build_data.py --bundle   # bundle only (no tracker needed)
+    python tools/build_data.py
 
-Run it after editing anything in data/, and after editing the tracker.
+Run it after editing anything in data/, css/ or js/main.js.
 
-Optional tracker columns
-------------------------
-The script uses these if the tracker has them, and skips them if not:
-  Title  — job title, shown under the name
-  Bio    — paragraph for the speaker card
-  Photo  — filename in images/speakers/ (defaults to a slug of the name)
+Speaker photos
+--------------
+A headshot at images/speakers/<slug>.webp (slug of the name without
+"Prof."/"Dr.") is picked up automatically; a "photo" field overrides the
+filename. Without a photo the speaker card shows initials.
 """
 
 from __future__ import annotations
@@ -36,7 +33,6 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-import sys
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
@@ -45,10 +41,9 @@ REPO = Path(__file__).resolve().parent.parent
 DATA = REPO / "data"
 BUNDLE = REPO / "js" / "data.js"
 
-# The tracker lives in the project folder, not in the repo.
-TRACKER = REPO.parent.parent / "06 Speakers" / "EPW2026_Speakers_Tracker.xlsx"
+SPEAKER_PHOTOS = REPO / "images" / "speakers"
 
-CONFIRMED = {"confirmed"}
+HONORIFICS = re.compile(r"^(prof|dr|mr|ms|mrs)\.?\s+", re.I)
 
 
 def slugify(name: str) -> str:
@@ -59,81 +54,59 @@ def slugify(name: str) -> str:
     return re.sub(r"-{2,}", "-", slug)
 
 
-def build_speakers() -> dict:
-    """Read the tracker and return the speakers payload."""
-    payload = {
-        "_comment": (
-            "GENERATED FILE — do not hand-edit. Produced by tools/build_data.py from "
-            "'06 Speakers/EPW2026_Speakers_Tracker.xlsx'. Only people with Status = "
-            "Confirmed are written here. Edit the tracker, then re-run: "
-            "python tools/build_data.py"
-        ),
-        "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source": "06 Speakers/EPW2026_Speakers_Tracker.xlsx",
-        "people": [],
-    }
+def item_components(programme: dict) -> dict:
+    """Map each programme item id to its day, item and convening.
 
-    if not TRACKER.exists():
-        print(f"! Tracker not found at {TRACKER}")
-        print("  Writing an empty speaker list. The site will show 'speakers to be announced'.")
-        return payload
+    Mirrors assignComponents() in main.js: a day's component applies to every
+    item, unless the day switches part-way (Day 3 hands over after lunch).
+    """
+    found = {}
+    for day in programme["days"]:
+        current, switch = day["component"], day.get("componentSwitch")
+        for item in day["items"]:
+            if "id" in item:
+                found[item["id"]] = (item, current)
+            if switch and item.get("id") == switch["afterItem"]:
+                current = switch["to"]
+    return found
 
-    try:
-        import openpyxl
-    except ImportError:
-        print("! openpyxl is not installed — run: pip install openpyxl")
-        return payload
 
-    wb = openpyxl.load_workbook(TRACKER, data_only=True)
-    ws = wb["People"] if "People" in wb.sheetnames else wb.worksheets[0]
+def attach_speakers(payload: dict) -> None:
+    """Put each confirmed speaker on their sessions, and fill in card details."""
+    items = item_components(payload["programme"])
+    people = payload.get("speakers", {}).get("people", [])
+    unknown = []
 
-    rows = ws.iter_rows(values_only=True)
-    header = [str(c).strip() if c is not None else "" for c in next(rows)]
-    idx = {name: i for i, name in enumerate(header)}
+    for person in people:
+        slug = slugify(HONORIFICS.sub("", person["name"]))
+        person.setdefault("id", slug)
+        if "photo" not in person:
+            person["photo"] = f"{slug}.webp" if (SPEAKER_PHOTOS / f"{slug}.webp").exists() else ""
 
-    def cell(row, column):
-        i = idx.get(column)
-        if i is None or i >= len(row) or row[i] is None:
-            return ""
-        return str(row[i]).strip()
+        person["appearances"] = []
+        for s in person.get("sessions", []):
+            if s["item"] not in items:
+                unknown.append(f"{person['name']}: '{s['item']}'")
+                continue
+            item, component = items[s["item"]]
+            item.setdefault("speakers", []).append({
+                "name": person["name"],
+                "title": person.get("title", ""),
+                "org": person.get("org", ""),
+                "role": s.get("role", ""),
+            })
+            item["speakersStatus"] = "partial"
+            person["appearances"].append({"item": s["item"], "role": s.get("role", ""), "component": component})
 
-    seen, skipped = {}, 0
-    for row in rows:
-        if not any(row):
-            continue
-        name = cell(row, "Name")
-        if not name or name.upper() == "TBC":
-            skipped += 1
-            continue
-        if cell(row, "Status").lower() not in CONFIRMED:
-            skipped += 1
-            continue
+    if unknown:
+        print("! speakers.json names sessions that are not in programme.json:")
+        for line in unknown:
+            print(f"    - {line}")
+        raise SystemExit(1)
 
-        slug = slugify(name)
-        appearance = {
-            "role": cell(row, "Role"),
-            "component": cell(row, "Component"),
-            "session": cell(row, "Session"),
-        }
-
-        if slug in seen:
-            # One person can speak in several sessions — keep one card, many appearances.
-            seen[slug]["appearances"].append(appearance)
-            continue
-
-        seen[slug] = {
-            "id": slug,
-            "name": name,
-            "org": cell(row, "Organization"),
-            "title": cell(row, "Title"),
-            "bio": cell(row, "Bio"),
-            "photo": cell(row, "Photo") or f"{slug}.webp",
-            "appearances": [appearance],
-        }
-
-    payload["people"] = sorted(seen.values(), key=lambda p: p["name"].split()[-1].lower())
-    print(f"  speakers: {len(payload['people'])} confirmed, {skipped} not yet confirmed or TBC")
-    return payload
+    people.sort(key=lambda p: HONORIFICS.sub("", p["name"]).split()[-1].lower())
+    with_photo = sum(1 for p in people if p["photo"])
+    print(f"  speakers: {len(people)} on the site ({with_photo} with photos)")
 
 
 def bundle() -> None:
@@ -143,6 +116,7 @@ def bundle() -> None:
         with path.open(encoding="utf-8") as fh:
             payload[path.stem] = json.load(fh)
         print(f"  bundled data/{path.name}")
+    attach_speakers(payload)
 
     BUNDLE.parent.mkdir(parents=True, exist_ok=True)
     with BUNDLE.open("w", encoding="utf-8", newline="\n") as fh:
@@ -182,14 +156,6 @@ def stamp_assets() -> None:
 
 
 def main() -> int:
-    bundle_only = "--bundle" in sys.argv
-
-    if not bundle_only:
-        speakers = build_speakers()
-        with (DATA / "speakers.json").open("w", encoding="utf-8", newline="\n") as fh:
-            json.dump(speakers, fh, ensure_ascii=False, indent=2)
-            fh.write("\n")
-
     bundle()
     stamp_assets()
     print("Done.")
