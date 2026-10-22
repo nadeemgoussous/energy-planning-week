@@ -104,7 +104,8 @@ def attach_speakers(payload: dict) -> None:
             print(f"    - {line}")
         raise SystemExit(1)
 
-    people.sort(key=lambda p: HONORIFICS.sub("", p["name"]).split()[-1].lower())
+    # Alphabetical by name as shown, ignoring "Prof."/"Dr." and accents.
+    people.sort(key=lambda p: slugify(HONORIFICS.sub("", p["name"])))
     with_photo = sum(1 for p in people if p["photo"])
     print(f"  speakers: {len(people)} on the site ({with_photo} with photos)")
 
