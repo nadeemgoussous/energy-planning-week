@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-11-12 16:37 UTC */
+   Built 2026-11-12 17:09 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -418,6 +418,12 @@ window.EPW = {
         "name": "Sven Teske",
         "title": "Professor and Research Director, Institute for Sustainable Futures",
         "org": "University of Technology Sydney (UTS), Australia",
+        "role": "Panellist"
+       },
+       {
+        "name": "Laura Cristina Marín Ortiz",
+        "title": "Subdirector of Electric Power",
+        "org": "Mining and Energy Planning Unit (UPME), Colombia",
         "role": "Panellist"
        }
       ],
@@ -1563,6 +1569,28 @@ window.EPW = {
      {
       "item": "session-1",
       "role": "Scene-setting speaker",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Laura Cristina Marín Ortiz",
+    "title": "Subdirector of Electric Power",
+    "org": "Mining and Energy Planning Unit (UPME), Colombia",
+    "sessions": [
+     {
+      "item": "session-1",
+      "role": "Panellist"
+     }
+    ],
+    "bio": "Laura Cristina Marín Ortiz is Subdirector of Electric Power at Colombia's Mining and Energy Planning Unit (UPME). With more than 17 years in the energy sector, earlier roles include operations coordination analyst at XM, Colombia's power system operator, and project leader at PHC Consultores Energéticos from 2016. An electrical engineer, Laura holds a master's degree in power systems from Germany and is a certified Project Management Professional (PMP).",
+    "bioSource": "Review Energy, Nov 2026 (appointment announcement); check with speaker",
+    "id": "laura-cristina-marin-ortiz",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-1",
+      "role": "Panellist",
       "component": "ltes-forum"
      }
     ]
