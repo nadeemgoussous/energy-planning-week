@@ -485,10 +485,10 @@
     }
 
     el("speakersLede").textContent = people.length + " confirmed speakers, moderators and chairs.";
-    grid.innerHTML = people.map(function (p) {
+    grid.innerHTML = people.map(function (p, index) {
       var role = (p.appearances && p.appearances[0] && p.appearances[0].role) || "";
       var comp = (p.appearances && p.appearances[0] && p.appearances[0].component) || "";
-      return '<button class="speaker" type="button" style="' + accentStyle(comp) + '">' +
+      return '<button class="speaker" type="button" data-person="' + index + '" style="' + accentStyle(comp) + '">' +
         (p.photo
           ? '<img class="speaker__photo" src="images/speakers/' + esc(p.photo) + '" alt="" loading="lazy"' +
             " onerror=\"this.style.visibility='hidden'\">"
@@ -500,6 +500,61 @@
         "</span></button>";
     }).join("");
   }
+
+  /* A speaker card opens the same dialog as a session: photo, affiliation,
+     bio (when there is one) and the sessions the person appears in. */
+  function findItem(id) {
+    for (var d = 0; d < programme.days.length; d++) {
+      var items = programme.days[d].items;
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].id === id) return { day: programme.days[d], item: items[i] };
+      }
+    }
+    return null;
+  }
+
+  function openSpeaker(index) {
+    var p = (speakers.people || [])[index];
+    if (!p) return;
+    var comp = (p.appearances && p.appearances[0] && p.appearances[0].component) || "";
+
+    var sessions = (p.appearances || []).map(function (a) {
+      var hit = findItem(a.item);
+      if (!hit) return "";
+      return "<li>" +
+        (a.role ? '<div class="modal__person-role">' + esc(a.role) + "</div>" : "") +
+        '<div class="modal__person-name">' + esc((hit.item.code ? hit.item.code + ": " : "") + hit.item.title) + "</div>" +
+        '<div class="modal__person-org">' + esc(hit.day.label + ", " + hit.day.weekday + " " + parseInt(hit.day.date.slice(8), 10) +
+          " December · " + hit.item.start + "–" + hit.item.end) + "</div>" +
+      "</li>";
+    }).join("");
+
+    el("modalBody").innerHTML =
+      '<div style="' + accentStyle(comp) + '">' +
+        '<div class="modal__speaker">' +
+          (p.photo
+            ? '<img class="modal__speaker-photo" src="images/speakers/' + esc(p.photo) + '" alt="">'
+            : '<span class="modal__speaker-photo speaker__initials" aria-hidden="true">' + esc(initials(p.name)) + "</span>") +
+          "<div>" +
+            '<h2 class="modal__title" id="modalTitle">' + esc(p.name) + "</h2>" +
+            (p.title ? '<p class="modal__person-org">' + esc(p.title) + "</p>" : "") +
+            (p.org ? '<p class="modal__person-org">' + esc(p.org) + "</p>" : "") +
+          "</div>" +
+        "</div>" +
+        (p.bio ? '<p class="modal__summary">' + esc(p.bio) + "</p>" : "") +
+        (sessions
+          ? '<div class="modal__section"><p class="modal__label">At Energy Planning Week</p><ul class="modal__people">' + sessions + "</ul></div>"
+          : "") +
+      "</div>";
+
+    if (typeof modal.showModal === "function") modal.showModal();
+    else modal.setAttribute("open", "");
+  }
+
+  el("speakerGrid").addEventListener("click", function (e) {
+    var card = e.target.closest(".speaker[data-person]");
+    if (card) openSpeaker(parseInt(card.dataset.person, 10));
+  });
 
   /* ---------- join ---------- */
 

@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-11-12 16:03 UTC */
+   Built 2026-11-12 16:15 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -1129,8 +1129,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Alessia De Vita is Advisor for Long-Term Energy Planning and Renewable Energy Grid Integration at GET.transform, and contributed as an expert speaker to IRENA's 5th International Forum on Long-Term Energy Scenarios.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "alessia-de-vita",
-    "photo": "",
+    "photo": "alessia-de-vita.webp",
     "appearances": [
      {
       "item": "session-2",
@@ -1149,8 +1151,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Alfonso Blanco is Chief Operating Officer and a co-founder of Fundación Ivy, and directs the Energy Transition and Climate Program at the Inter-American Dialogue. From 2016 to March 2023, Alfonso was Executive Secretary of the Latin American Energy Organization (OLADE), and has advised the World Bank, IDB, CAF and the United Nations on energy issues.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "alfonso-blanco",
-    "photo": "",
+    "photo": "alfonso-blanco.webp",
     "appearances": [
      {
       "item": "session-8",
@@ -1169,8 +1173,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Asami Miketa is a Senior Energy Economist in the Policy and Regulation unit of the World Bank's Global Energy Practice. Before joining the World Bank, Dr Miketa led energy planning work at IRENA's Innovation and Technology Centre in Bonn for around 13 years, and earlier worked as an energy planner at the International Atomic Energy Agency (IAEA).",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "asami-miketa",
-    "photo": "",
+    "photo": "asami-miketa.webp",
     "appearances": [
      {
       "item": "session-7",
@@ -1193,6 +1199,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Brad Little is Deputy Director, Electricity Policy, at Natural Resources Canada.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "brad-little",
     "photo": "",
     "appearances": [
@@ -1222,8 +1230,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
-    "id": "charlie-heaps",
+    "bio": "Charlie Heaps is a Senior Scientist at SEI US and developer of LEAP, the Low Emissions Analysis Platform. From 2006 through 2014, he was also US Center Director, followed by serving as Energy Modeling Program Director 2015 to 2024. Charlie has a degree in energy studies from Swansea University in Wales and a PhD in environmental technology from the Imperial College London.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
     "photo": "charlie-heaps.webp",
+    "id": "charlie-heaps",
     "appearances": [
      {
       "item": "ai-showcase",
@@ -1247,6 +1257,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Dadan Kusdiana is Secretary General of Indonesia's National Energy Council (DEN). Previous posts include Director General of New and Renewable Energy and Energy Conservation at the Ministry of Energy and Mineral Resources, where Dr Kusdiana began working in 1992, and commissioner of the state electricity company PLN.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "dadan-kusdiana",
     "photo": "",
     "appearances": [
@@ -1287,6 +1299,8 @@ window.EPW = {
       "role": "Moderator"
      }
     ],
+    "bio": "Derck Koolen is an Energy Policy Economist at the European Commission. Published work with the Commission's Joint Research Centre and Directorate-General for Energy covers power market design, flexibility and storage requirements, and the cost-competitiveness of low-carbon electricity.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "derck-koolen",
     "photo": "",
     "appearances": [
@@ -1307,8 +1321,10 @@ window.EPW = {
       "role": "Scene-setting speaker"
      }
     ],
-    "id": "edouard-clement",
+    "bio": "Edouard Clement is the Executive Director of the Energy Modelling Hub, a pan-Canadian independent centre that supports evidence-based energy policymaking by advancing open data, modelling tools, and collaboration across government, academia, and industry. Trained in Mechanical Engineering and Aeronautics at Polytechnique Montréal, Edouard has built his career at the intersection of technology, sustainability, and decision-support systems. Before leading the Energy Modelling Hub, he worked as a Research Associate at ÉTS and at General Electric's hydro division, then directed Polytechnique Montréal's CIRAIG, overseeing major Life Cycle Assessment projects for public and private clients. As an entrepreneur, he co-founded Quantis Canada and later Novisto, two ventures that helped shape how organisations integrate environmental and ESG data into strategy and reporting. With 25 years of experience bridging science, policy, and business, Edouard brings deep expertise in life cycle assessment, GHG accounting, and sustainable design to his leadership of Canada's energy modelling ecosystem.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
     "photo": "edouard-clement.webp",
+    "id": "edouard-clement",
     "appearances": [
      {
       "item": "session-2",
@@ -1327,6 +1343,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Ema Gusheva is a Lecturer in Energy Sciences at the Copernicus Institute of Sustainable Development, Utrecht University. Research interests include the science-policy interface of the energy transition and how energy models are taken up in policymaking. Dr Gusheva holds a PhD from Delft University of Technology and an MPhil in System Dynamics from the University of Bergen.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "ema-gusheva",
     "photo": "",
     "appearances": [
@@ -1367,6 +1385,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Girvan Pigott was appointed Director of Energy of Antigua and Barbuda in August 2026, leading the Energy Department of the Ministry of ICTs, Utilities and Energy. With more than 20 years in the energy and utilities sector, Mr Pigott was previously a Project Engineer at the Antigua Public Utilities Authority (APUA).",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "girvan-pigott",
     "photo": "",
     "appearances": [
@@ -1387,8 +1407,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Isabel Cancela de Abreu founded the Lusophone Renewable Energy Association (ALER) at the end of 2014 and has been its Executive Director since. An environmental engineer from Instituto Superior Técnico with a postgraduate diploma from the MIT Portugal programme, Isabel previously directed the technical department of APREN, the Portuguese renewable energy association.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "isabel-abreu",
-    "photo": "",
+    "photo": "isabel-abreu.webp",
     "appearances": [
      {
       "item": "session-9",
@@ -1407,6 +1429,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Ivo Nacucchio is a data and modelling expert at the Latin American and Caribbean Energy Organization (OLACDE), working on regional energy data integration, electricity and gas interconnection studies in the Southern Cone, and open-source tools for energy planning.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "ivo-nacucchio",
     "photo": "",
     "appearances": [
@@ -1427,8 +1451,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Jochen Bard is Managing Director of Fraunhofer CINES. A physicist trained at the University of Karlsruhe, Dr Bard led the Energy Process Technology division at Fraunhofer IEE in Kassel and is a co-founder of the Hydrogen Science Coalition.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "jochen-bard",
-    "photo": "",
+    "photo": "jochen-bard.webp",
     "appearances": [
      {
       "item": "session-6",
@@ -1467,8 +1493,10 @@ window.EPW = {
       "role": "Speaker"
      }
     ],
+    "bio": "Juan José García is a Programme Officer at the International Renewable Energy Agency (IRENA), leading the Global Long-Term Energy Scenarios (LTES) Network. With over 17 years of experience in renewable energy, energy policy, and long-term energy planning, he specializes in energy system modelling, policy development, and international collaboration for clean energy transitions.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
+    "photo": "juan-garcia.webp",
     "id": "juan-jose-garcia-mendez",
-    "photo": "",
     "appearances": [
      {
       "item": "keynote-d3",
@@ -1527,8 +1555,10 @@ window.EPW = {
       "role": "Scene-setting speaker"
      }
     ],
+    "bio": "Dr. Larissa Nogueira has over a decade of experience in energy system analysis and techno-economic assessments of clean energy technologies to foster the green energy transition. Her main role at IRENA includes coordinating the delivery of technical analysis and technical support to key countries and regions on green energy transition pathways and associated investment needs. Larissa's expertise extends globally, having supported and led energy planning and climate policy initiatives across various regions and countries, encompassing governments, private sector, IGOs and NGOs.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
+    "photo": "larissa-pinheiro.webp",
     "id": "larissa-nogueira",
-    "photo": "",
     "appearances": [
      {
       "item": "session-1",
@@ -1587,6 +1617,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Luciano Caratori leads the Energy Cluster of the Climate Champions Team, which supports the UN Climate Change High-Level Champions. In Argentina, Luciano served as Undersecretary of Energy Planning and National Director of Energy Information, and has been a researcher at Fundación Torcuato Di Tella since 2011.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "luciano-caratori",
     "photo": "",
     "appearances": [
@@ -1627,8 +1659,10 @@ window.EPW = {
       "role": "Keynote speaker"
      }
     ],
+    "bio": "Maarten Hajer is Distinguished Professor of Urban Futures and Futuring at Utrecht University and Director of its Urban Futures Studio. Before joining Utrecht, Professor Hajer was Director-General of PBL Netherlands Environmental Assessment Agency (2008–2015) and Professor of Public Policy at the University of Amsterdam (1998–2015), and served on UNEP's International Resource Panel. Captured Futures, co-written with Jeroen Oomen, was published by Oxford University Press in 2025.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "maarten-hajer",
-    "photo": "",
+    "photo": "maarten-hajer.webp",
     "appearances": [
      {
       "item": "keynote-d1",
@@ -1667,8 +1701,10 @@ window.EPW = {
       "role": "Use-case presentation"
      }
     ],
-    "id": "mark-howells",
+    "bio": "Professor Mark Howells is a leading authority in sustainable energy systems analysis, holding joint appointments as a Professor at Loughborough University and a Principal Research Fellow at Imperial College London. His work focuses on developing data-driven tools and policy frameworks to guide the global transition to sustainable energy, influencing policy at the highest levels. He has advised and collaborated with prominent institutions including NASA, Google, the World Bank Group, the United Nations, and the European Commission. Professor Howells is renowned for co-developing the \"Data-to-Deal\" (D2D) framework, a revolutionary approach that empowers countries to build local capacity and unlock investment for national climate transitions. The framework's pioneering implementation in Costa Rica enabled the creation of a data-driven National Decarbonization Plan. The strategy, costing approximately $200,000 in direct expenses per country, has successfully mobilized an estimated $10 billion USD in international climate finance in three examples. Underpinning this success are open-source modelling toolkits and starter data he helped oversee, which have been translated into global public goods and downloaded hundreds of thousands of times. His leadership in the field is substantial. Professor Howells directs the £95 million www.ClimateCompatibleGrowth.com (CCG) research programme for the UK government and is the joint director of the £200 million STEER centre. He formally ran the EC's official Energy thinktank Insight-e, and also serves as Editor-in-Chief of the Energy Strategy Reviews journal. With an H-index of 62 and over 167 peer-reviewed publications, his research continues to shape global energy strategy. He previously served as an Energy Planner at the International Atomic Energy Agency (IAEA) and as Head of the Division of Energy Systems Analysis at KTH Royal Institute of Technology in Sweden. He holds a PhD in Energy Studies from the University of Cape Town.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
     "photo": "mark-howells.webp",
+    "id": "mark-howells",
     "appearances": [
      {
       "item": "ai-showcase",
@@ -1711,8 +1747,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "photo": "matias-paredes.webp",
+    "bio": "Matías Paredes is an Energy Planning and Climate Change Analyst at Chile's Ministry of Energy and a co-author of the final report of Chile's Long-Term Energy Planning process (PELP) 2023–2027.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "matias-paredes",
-    "photo": "",
     "appearances": [
      {
       "item": "session-2",
@@ -1736,8 +1774,10 @@ window.EPW = {
       "role": "Use-case presentation"
      }
     ],
+    "bio": "Matt Gray is CEO and co-founder of TransitionZero, a climate data and analytics not-for-profit founded in 2020. Earlier roles include head of European carbon and power research at Jefferies, managing director at Carbon Tracker, and consultant to the International Energy Agency.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "matt-gray",
-    "photo": "",
+    "photo": "matt-gray.webp",
     "appearances": [
      {
       "item": "ai-showcase",
@@ -1756,8 +1796,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Michael O. Sinocruz has worked at the Department of Energy of the Philippines since 1998, holding several key positions in its Energy Policy and Planning Bureau, including Chief of the Planning Division.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "michael-o-sinocruz",
-    "photo": "",
+    "photo": "michael-o-sinocruz.webp",
     "appearances": [
      {
       "item": "session-4",
@@ -1776,6 +1818,8 @@ window.EPW = {
       "role": "Moderator"
      }
     ],
+    "bio": "Mike Enskat has been Director of IRENA's Innovation and Technology Centre (IITC) in Bonn since December 2025. At GIZ, Dr Enskat led the infrastructure section, with a technical assistance portfolio of over EUR 400 million, and helped establish the Africa-EU Energy Partnership and GET.invest.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "mike-enskat",
     "photo": "",
     "appearances": [
@@ -1796,8 +1840,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Mohammad Amin Tahavori, a researcher at VITO/EnergyVille, specializes sustainable energy system and policy design. His focus revolves around collaborative efforts with governmental bodies and research institutes in several countries in the global south, towards a sustainable long term energy planning and policy design. His contributes to this through helping countries with improving National Energy Information Systems, refining energy modeling capabilities, and facilitating climate communication. Currently, he is actively invovled in the development of NDC3.0 and LT-LEDS within multiple African countries including Mozambique and Malawi. His research extends to the critical topic of energy access, with a primary emphasis on understanding the dynamics of energy consumption and demand evolution in rural contexts.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
+    "photo": "mohammad-tahavori.webp",
     "id": "mohammad-amin-tahavori",
-    "photo": "",
     "appearances": [
      {
       "item": "session-6",
@@ -1816,6 +1862,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Mungai Kihara is Deputy Director, Renewable Energy, at Kenya's Energy and Petroleum Regulatory Authority (EPRA), with recent work covering mini-grid regulation and Kenya's phased regulatory approach to green hydrogen.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "mungai-kihara",
     "photo": "",
     "appearances": [
@@ -1836,8 +1884,10 @@ window.EPW = {
       "role": "Moderator"
      }
     ],
-    "id": "nadeem-goussous",
+    "bio": "Nadeem Goussous is an Associate Programme Officer at the International Renewable Energy Agency (IRENA), where he works in the team leading the Global Network on Long-term Energy Scenarios (LTES), engaging with countries and experts worldwide from diverse sectors to advance energy planning practices. He currently leads the workstream on participatory processes for energy scenario development, bringing together policymakers, researchers, industry representatives, and civil society stakeholders to enhance participatory energy planning. He has also led and contributed to several publications on energy and climate planning. His work focuses on developing best practices for robust and inclusive national energy transition pathways. Previously, Nadeem worked as an R&D Engineer in renewable energy resource assessment. He holds a Master's degree in Global Energy Transition and Governance and a Bachelor's degree in Electrical and Electronic Engineering.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
     "photo": "nadeem-goussous.webp",
+    "id": "nadeem-goussous",
     "appearances": [
      {
       "item": "ai-showcase",
@@ -1856,8 +1906,10 @@ window.EPW = {
       "role": "Welcome remarks"
      }
     ],
+    "bio": "Norela Constantinescu is Acting Director at IRENA Innovation and Technology Center. Until May 2024 she was Head of Innovation Section with ENTSO-E, the European Network for Transmission System Operators for electricity for which she worked for 10 years, starting 2014. In the period June 2022 – March 2024 she was chair of the European Technology and Innovation Platform for Smart Network for Energy Transition. Previously she worked with European Commission DG Energy on low carbon technologies, wind and smart cities and communities. She is an energy engineer with post graduate studies in business administration and applied computer science.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
+    "photo": "norela-constantinescu.webp",
     "id": "norela-constantinescu",
-    "photo": "",
     "appearances": [
      {
       "item": "opening",
@@ -1876,8 +1928,10 @@ window.EPW = {
       "role": "Scene-setting and panellist"
      }
     ],
-    "id": "reshma-francy",
+    "bio": "With over a decade of experience in clean energy and climate change, Reshma leads the World Energy Council's World Energy Trilemma program. She led the development of the latest Trilemma report, launched at the World Energy Congress in April 2024, which provides extensive global and regional insights. As the Associate Director of Policy Pathfinding and Trilemma, she developed stakeholder engagement strategies based on the World Energy Trilemma Framework, focusing on energy security, energy equity, and environmental sustainability. She has organized sessions at the World Energy Congress in Rotterdam and is spearheading the evolution of the Trilemma to reflect new trends in these three pillars, integrating quantitative frameworks with current energy narratives. Additionally, she has managed the Council's World Energy Scenarios program, overseeing the design and execution of scenario workshops and utilizing the Council's policy simulator for national and regional policy pathways. Before joining the Council, Reshma was a policymaker in the UAE, and led the creation of the country's first national energy strategy with ambitious renewable energy targets. She was also a key member of the UAE's climate change negotiation team for the Paris Agreement, contributing to the formulation of the first Nationally Determined Contributions.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
     "photo": "reshma-francy.webp",
+    "id": "reshma-francy",
     "appearances": [
      {
       "item": "session-4",
@@ -1900,8 +1954,10 @@ window.EPW = {
       "role": "Keynote"
      }
     ],
+    "bio": "Prof. dr. Sebastian Sterl works as energy analyst at the Directorate-General for Energy (DG Energy) of the European Commission in Brussels. He focuses on conducting analyses on clean energy transition planning and how it can be harmonised with the need for economic prosperity and industrial competitiveness. Prior to his current roles, Sebastian worked at the World Resources Institute (WRI) in Addis Ababa, Ethiopia (2022-2024), and at the International Renewable Energy Agency (IRENA) in Bonn, Germany (2020-2022). In these roles, he specialised in capacity building on energy modelling with ministries and government agencies across the African continent to support the clean energy transition. He has also worked in various consultancy roles, among others for the World Bank and for GIZ. His work experience encompasses roles as researcher, modeler & project manager in a range of fields: renewable energy, energy systems, renewables' grid integration, energy meteorology, energy/climate policy, emissions modeling, and climate change impacts on energy systems.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
+    "photo": "sebastian-sterl.webp",
     "id": "sebastian-sterl",
-    "photo": "",
     "appearances": [
      {
       "item": "session-9",
@@ -1945,8 +2001,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Seoungho Lee is an Associate Research Fellow at the Korea Energy Economics Institute (KEEI), where he conducts research within the Department of Long-term Energy Modelling. His work focuses on developing and analysing Korea's Long-term Energy Outlook, supporting evidence-based policymaking through quantitative modelling and scenario analysis. Holding a Ph.D. in Economics, Lee's research interests include energy demand forecasting, macroeconomic linkages in energy transitions, and the integration of statistical insights into national energy planning.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
+    "photo": "seoungho-lee.webp",
     "id": "seoungho-lee",
-    "photo": "",
     "appearances": [
      {
       "item": "session-5",
@@ -1989,8 +2047,10 @@ window.EPW = {
       "role": "Moderator"
      }
     ],
-    "id": "simon-benmarraze",
+    "bio": "Simon Benmarraze is the Senior Manager and Global Head of Energy Planning at the International Renewable Energy Agency (IRENA), based at the Innovation and Technology Centre in Bonn, Germany. With over 15 years of experience in advancing sustainable energy solutions across public and private sectors, he leads IRENA's efforts to translate strategic energy intelligence into actionable policies that accelerate the global transition toward net-zero emissions. Simon is also dedicated to mentoring the next generation of renewable energy professionals and fostering international collaboration for a resilient, inclusive, and sustainable energy future.",
+    "bioSource": "6th LTES Forum portal (Oct 2025)",
     "photo": "simon-benmarraze.webp",
+    "id": "simon-benmarraze",
     "appearances": [
      {
       "item": "opening",
@@ -2015,7 +2075,7 @@ window.EPW = {
      }
     ],
     "id": "stefanie-bradtner",
-    "photo": "",
+    "photo": "stefanie-bradtner.webp",
     "appearances": [
      {
       "item": "opening",
@@ -2034,6 +2094,8 @@ window.EPW = {
       "role": "Scene-setting speaker"
      }
     ],
+    "bio": "Stelios Pesmajoglou is a Manager at the UNFCCC secretariat, with work covering nationally determined contributions (NDCs), long-term low-emission development strategies (LT-LEDS) and related support. Involved in climate change work since the mid-1990s, Stelios has worked on the negotiations of the Kyoto Protocol, the Paris Agreement and ICAO's Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA).",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "stelios-pesmajoglou",
     "photo": "",
     "appearances": [
@@ -2054,8 +2116,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Sven Teske is Professor and Research Director at the Institute for Sustainable Futures, University of Technology Sydney, leading work on decarbonisation pathways for countries, regions, cities and industry sectors. With around 30 years of experience in renewable energy market and policy analysis, Professor Teske was a lead author of the IPCC Special Report on Renewable Energy Sources (2011).",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "sven-teske",
-    "photo": "",
+    "photo": "sven-teske.webp",
     "appearances": [
      {
       "item": "session-1",
@@ -2074,8 +2138,10 @@ window.EPW = {
       "role": "Welcome remarks"
      }
     ],
+    "bio": "Tania Rödiger-Vorwerk is Deputy Director General for Climate, Environment and Health at Germany's Federal Ministry for Economic Cooperation and Development (BMZ). Earlier posts at the ministry include Director for Strategy and Policy Planning and Deputy Director General for Environment and Infrastructure. Dr Rödiger-Vorwerk holds a PhD in European environmental law.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "tania-vorwerk",
-    "photo": "",
+    "photo": "tania-vorwerk.webp",
     "appearances": [
      {
       "item": "opening",
@@ -2138,8 +2204,10 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Vivien Foster is a Principal Research Fellow at the Centre for Environmental Policy, Imperial College London, and leads international partnerships for the Climate Compatible Growth (CCG) programme. An infrastructure economist working on energy and transport systems in low- and middle-income countries, Dr Foster spent more than 20 years at the World Bank, latterly as Chief Economist for the Infrastructure Vice-Presidency.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "vivien-foster",
-    "photo": "",
+    "photo": "vivien-foster.webp",
     "appearances": [
      {
       "item": "session-6",
@@ -2163,6 +2231,8 @@ window.EPW = {
       "role": "Panellist"
      }
     ],
+    "bio": "Yudiandra Yuwono is Lead Modeller for the ASEAN Energy Outlook at the ASEAN Centre for Energy (ACE), leading work on the 9th ASEAN Energy Outlook (AEO9).",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "yudiandra-yuwono",
     "photo": "",
     "appearances": [
@@ -2183,6 +2253,8 @@ window.EPW = {
       "role": "Use-case presentation"
      }
     ],
+    "bio": "Yunshu Li is an Energy Systems Analyst in the Planning and Economic Studies Section of the International Atomic Energy Agency (IAEA), working on the representation of nuclear power in long-term energy system models and on the IAEA's energy planning tools.",
+    "bioSource": "Public institutional sources, compiled 12 Nov 2026; check with speaker",
     "id": "yunshu-li",
     "photo": "",
     "appearances": [

@@ -875,6 +875,14 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
   margin-bottom: .6rem;
 }
 .modal__people { list-style: none; padding: 0; display: grid; gap: .85rem; }
+.modal__speaker { display: flex; gap: 1.1rem; align-items: center; margin-bottom: 1.1rem; }
+.modal__speaker .modal__title { margin: 0 0 .3rem; }
+.modal__speaker .modal__person-org { margin: 0; }
+.modal__speaker-photo {
+  flex: none; width: 6.5rem; height: 6.5rem; border-radius: 50%; object-fit: cover;
+  background: var(--haze); display: grid; place-items: center;
+}
+@media (max-width: 30rem) { .modal__speaker { flex-direction: column; align-items: flex-start; } }
 .modal__person-name { font-weight: 600; }
 .modal__person-role { font-family: var(--font-mono); font-size: .7rem; color: var(--forum); text-transform: uppercase; letter-spacing: .06em; }
 .modal__person-org { font-size: .88rem; color: var(--ink-2); }
