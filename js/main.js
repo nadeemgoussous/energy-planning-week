@@ -485,8 +485,9 @@
     }
 
     el("speakersLede").textContent = people.length + " confirmed speakers, moderators and chairs.";
+    /* No role on the card: many people hold several roles across the week.
+       Roles are shown per session in the speaker dialog instead. */
     grid.innerHTML = people.map(function (p, index) {
-      var role = (p.appearances && p.appearances[0] && p.appearances[0].role) || "";
       var comp = (p.appearances && p.appearances[0] && p.appearances[0].component) || "";
       return '<button class="speaker" type="button" data-person="' + index + '" style="' + accentStyle(comp) + '">' +
         (p.photo
@@ -496,7 +497,6 @@
         '<span class="speaker__body">' +
           '<span class="speaker__name">' + esc(p.name) + "</span>" +
           (p.org ? '<span class="speaker__org">' + esc(p.org) + "</span>" : "") +
-          (role ? '<span class="speaker__role">' + esc(role) + "</span>" : "") +
         "</span></button>";
     }).join("");
   }
