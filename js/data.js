@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-10-22 19:39 UTC */
+   Built 2026-11-12 16:03 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -61,7 +61,7 @@ window.EPW = {
    "display": "GIZ Campus, Bonn, Germany",
    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
    "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
-   "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
+   "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to members and partners of the LTES Network, GCEP and GET.transform, speakers, and supported developing-country planners."
   },
   "format": {
    "type": "Hybrid",
@@ -102,7 +102,7 @@ window.EPW = {
     "shortName": "LTES Forum",
     "days": "Days 1–2",
     "convener": "IRENA LTES Network",
-    "summary": "The seventh edition of IRENA's International Forum on Long-Term Energy Scenarios, convened through the LTES Network. Government planners and scenario practitioners work through the priorities the Network identified for 2026: scenario governance and capacity, data stewardship, energy security and flexibility, climate risks, and new modelling methods."
+    "summary": "The seventh edition of IRENA's International Forum on Long-Term Energy Scenarios, convened through the LTES Network. Government planners and scenario practitioners work through electrification after COP31, durable planning ecosystems, data governance, energy security, climate adaptation, artificial intelligence and transformative scenario methods."
    },
    {
     "id": "gcep-dialogue",
@@ -119,8 +119,8 @@ window.EPW = {
     "name": "Implementation Lab: From Plans to Delivery",
     "shortName": "Implementation Lab",
     "days": "Day 3, afternoon",
-    "convener": "IRENA and GET.transform with partners",
-    "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery, looking at how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions. Country cases show where planning meets the market."
+    "convener": "GET.transform",
+    "summary": "Convened by GET.transform. It follows the plan into delivery, looking at how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions. Country cases show where planning meets the market."
    },
    {
     "id": "partner-sessions",
@@ -129,7 +129,7 @@ window.EPW = {
     "shortName": "Deep Dives",
     "days": "Day 4",
     "convener": "Partner-hosted sessions",
-    "summary": "A day of partner-hosted deep dives at IRENA's Innovation and Technology Centre in Bonn: data centres and rising electricity demand, offshore wind planning and subnational delivery, and power system flexibility."
+    "summary": "A day of thematic deep dives with partners at IRENA's Innovation and Technology Centre in Bonn: offshore wind and marine spatial planning, data centres, power system flexibility and regional interconnection."
    }
   ],
   "narrative": {
@@ -279,8 +279,8 @@ window.EPW = {
   ]
  },
  "programme": {
-  "_comment": "Programme data. Hand-edited from the draft programme overview circulated 22 October 2026 (the most recent draft). Speaker names are not written here: they live in data/speakers.json and tools/build_data.py attaches them to their sessions in the bundle.",
-  "sourceDocument": "Energy Planning Week 2026 - Draft Programme (overview), 22 October 2026",
+  "_comment": "Programme data. Hand-edited from the draft programme overview circulated 12 November 2026 (the most recent draft). Speaker names are not written here: they live in data/speakers.json and tools/build_data.py attaches them to their sessions in the bundle.",
+  "sourceDocument": "Energy Planning Week 2026 - Draft Programme (overview), 12 November 2026",
   "status": "provisional",
   "itemTypes": {
    "session": "Numbered programme session",
@@ -312,28 +312,40 @@ window.EPW = {
       "start": "09:00",
       "end": "09:45",
       "type": "plenary",
-      "title": "Opening session",
+      "title": "Welcome remarks and introductory presentations",
       "subtitle": "From COP31 commitments to investment-ready planning",
       "stage": "scenarios",
-      "summary": "Welcome remarks by IRENA, GET.transform and the co-lead countries, followed by two introductory presentations: an overview of the LTES Network's work and the role of scenario practice in connecting national planning to policy and investment decisions; and GET.transform's support to countries across the planning-to-implementation chain.",
+      "summary": "Welcome remarks from IRENA, GIZ, Germany's Federal Ministry for Economic Cooperation and Development (BMZ) and Federal Ministry for Economic Affairs and Energy (BMWE), Denmark and the Clean Energy Ministerial (CEM), followed by introductions to the LTES Network and to GET.transform.",
       "speakers": [
        {
         "name": "Simon Benmarraze",
         "title": "Head of Strategic Infrastructure",
         "org": "IRENA",
-        "role": "Scene-setting: LTES Network introduction"
+        "role": "Introduction to the LTES Network"
        },
        {
-        "name": "Mike Enskat",
-        "title": "Director, IRENA Innovation and Technology Centre (IITC)",
+        "name": "Stefanie Bradtner",
+        "title": "Communications Manager",
+        "org": "GET.transform",
+        "role": "Master of Ceremonies"
+       },
+       {
+        "name": "Norela Constantinescu",
+        "title": "Deputy Director, IRENA Innovation and Technology Centre",
         "org": "IRENA",
         "role": "Welcome remarks"
        },
        {
+        "name": "Vanessa Schmidt",
+        "title": "",
+        "org": "Federal Ministry for Economic Affairs and Energy (BMWE), Germany",
+        "role": "Welcome remarks"
+       },
+       {
         "name": "Dr. Tania Vorwerk",
-        "title": "Deputy Director General \"Climate, environment, health\"",
+        "title": "Deputy Director General, Climate, Environment, Health",
         "org": "Federal Ministry for Economic Cooperation and Development (BMZ), Germany",
-        "role": "Co-lead country welcome"
+        "role": "Welcome remarks"
        }
       ],
       "speakersStatus": "partial"
@@ -341,7 +353,7 @@ window.EPW = {
      {
       "id": "keynote-d1",
       "start": "09:45",
-      "end": "10:15",
+      "end": "10:25",
       "type": "keynote",
       "title": "Keynote presentation",
       "stage": "scenarios",
@@ -358,14 +370,13 @@ window.EPW = {
      {
       "id": "session-1",
       "code": "Session 1",
-      "start": "10:15",
+      "start": "10:25",
       "end": "12:00",
       "type": "session",
-      "title": "Electrification and the COP commitments – what scenarios must now capture",
+      "title": "Electrification and the outcomes of COP31 – what scenarios must now capture",
       "partner": "Co-hosted with UNFCCC",
       "stage": "policy",
       "summary": "This opening session examines what accelerated electrification commitments mean for national energy planning. Government planners and the institutions supporting them discuss how global electrification goals translate into national scenarios, policies and investment pipelines, and what practical support countries need to make that translation work.",
-      "note": "Scene-setting: outcomes of COP31 and SB64 relevant to electrification and planning.",
       "speakers": [
        {
         "name": "Simon Benmarraze",
@@ -374,10 +385,40 @@ window.EPW = {
         "role": "Moderator"
        },
        {
+        "name": "Luciano Caratori",
+        "title": "Global Energy Cluster Lead",
+        "org": "Climate Champions Team",
+        "role": "Panellist"
+       },
+       {
+        "name": "Dadan Kusdiana",
+        "title": "Secretary General",
+        "org": "National Energy Council (DEN), Indonesia",
+        "role": "Panellist"
+       },
+       {
+        "name": "Larissa Nogueira",
+        "title": "Team Lead, Energy Planning",
+        "org": "IRENA",
+        "role": "Scene-setting speaker"
+       },
+       {
         "name": "Stelios Pesmajoglou",
-        "title": "Manager, NDCs and Long-Term Strategies, Mitigation Division",
+        "title": "Manager, NDCs/LT-LEDS, Impacts Assessment Support",
         "org": "UNFCCC",
-        "role": "Scene-setting: COP31 outcomes"
+        "role": "Scene-setting speaker"
+       },
+       {
+        "name": "Girvan Pigott",
+        "title": "Director of Energy",
+        "org": "Ministry of ICTs, Utilities and Energy, Antigua and Barbuda",
+        "role": "Panellist"
+       },
+       {
+        "name": "Sven Teske",
+        "title": "Professor and Research Director, Institute for Sustainable Futures",
+        "org": "University of Technology Sydney (UTS), Australia",
+        "role": "Panellist"
        }
       ],
       "speakersStatus": "partial"
@@ -402,39 +443,42 @@ window.EPW = {
        {
         "name": "Edouard Clement",
         "title": "Executive Director",
-        "org": "Energy Modelling Hub (EMH) & NRCAN",
-        "role": "Moderator / Co-host"
+        "org": "Energy Modelling Hub (EMH)",
+        "role": "Scene-setting speaker"
+       },
+       {
+        "name": "Alessia De Vita",
+        "title": "Advisor",
+        "org": "GET.transform",
+        "role": "Panellist"
        },
        {
         "name": "Brad Little",
-        "title": "",
+        "title": "Deputy Director",
         "org": "Natural Resources Canada",
-        "role": ""
+        "role": "Moderator and scene-setting speaker"
        },
        {
         "name": "Kamil Maqsood",
-        "title": "",
-        "org": "Pakistan",
+        "title": "Team Lead – Policy",
+        "org": "Power Planning and Monitoring Company (PPMC), Pakistan",
         "role": "Panellist"
        },
        {
-        "name": "Hector Orozco",
-        "title": "",
-        "org": "Guatemala",
-        "role": "Panellist"
+        "name": "Matías Paredes",
+        "title": "Energy Planning and Climate Change Analyst",
+        "org": "Ministry of Energy, Chile",
+        "role": "Scene-setting speaker and panellist"
        }
       ],
       "speakersStatus": "partial"
      },
      {
-      "id": "poster-session",
+      "id": "lunch-d1",
       "start": "14:15",
       "end": "15:45",
       "type": "meal",
-      "title": "Lunch break and poster session",
-      "summary": "An extended lunch with a poster session: participants present scenario tools, country cases and ongoing work for informal discussion over lunch.",
-      "speakers": [],
-      "speakersStatus": "none"
+      "title": "Lunch break"
      },
      {
       "id": "session-3",
@@ -448,9 +492,27 @@ window.EPW = {
       "summary": "Credible scenarios rest on credible data, yet many planning teams face fragmented access, persistent gaps and heavy reliance on proprietary datasets. This session examines how countries and regional institutions govern, share and quality-assure energy data – from national energy information systems to regional databases – and explores practical solutions for planning teams with limited resources.",
       "speakers": [
        {
-        "name": "Abdoulaye Oueddo",
-        "title": "Acting Head of Energy Information System and Statistics Division",
-        "org": "African Energy Commission (AFREC)",
+        "name": "Derck Koolen",
+        "title": "Energy Policy Economist",
+        "org": "European Commission DG ENER",
+        "role": "Moderator"
+       },
+       {
+        "name": "Ivo Nacucchio",
+        "title": "Data and Modelling Expert",
+        "org": "Latin American and Caribbean Energy Organization (OLACDE)",
+        "role": "Panellist"
+       },
+       {
+        "name": "Marie Rousselot",
+        "title": "Head of Market Intelligence",
+        "org": "Enerdata, France",
+        "role": "Panellist"
+       },
+       {
+        "name": "Yudiandra Yuwono",
+        "title": "Lead Modeller",
+        "org": "ASEAN Centre for Energy (ACE)",
         "role": "Panellist"
        }
       ],
@@ -458,19 +520,12 @@ window.EPW = {
      },
      {
       "id": "welcome-dinner",
-      "start": "18:00",
+      "start": "19:00",
       "end": "21:00",
       "type": "social",
       "title": "Welcome dinner",
-      "speakers": [
-       {
-        "name": "Simon Benmarraze",
-        "title": "Head of Strategic Infrastructure",
-        "org": "IRENA",
-        "role": "Host remarks"
-       }
-      ],
-      "speakersStatus": "partial"
+      "speakers": [],
+      "speakersStatus": "none"
      }
     ]
    },
@@ -493,17 +548,11 @@ window.EPW = {
       "start": "08:15",
       "end": "09:15",
       "type": "closed",
-      "title": "LTES Network members and partners strategic meeting",
+      "title": "Closed-door session: LTES Network members and partners strategic meeting",
       "access": "Closed-door: LTES Network members and partners only",
-      "speakers": [
-       {
-        "name": "Juan Jose Garcia Mendez",
-        "title": "Programme Officer",
-        "org": "IRENA",
-        "role": "Chair"
-       }
-      ],
-      "speakersStatus": "partial"
+      "speakers": [],
+      "speakersStatus": "none",
+      "note": "Coffee and networking continue for other participants until 09:15."
      },
      {
       "id": "impact-brazil",
@@ -515,16 +564,16 @@ window.EPW = {
       "summary": "Brazil's Energy Research Office presents the country's national energy planning instruments, the long-term PNE 2055 and the ten-year expansion plan PDE 2035, and reflects on how peer exchange through the LTES Network informed national planning practice. An impact spotlight on what Network collaboration looks like for national planning processes.",
       "speakers": [
        {
-        "name": "Juan Jose Garcia Mendez",
-        "title": "Programme Officer",
-        "org": "IRENA",
-        "role": "Moderator"
+        "name": "Lidiane de Almeida Modesto",
+        "title": "",
+        "org": "Empresa de Pesquisa Energética (EPE), Brazil",
+        "role": "Presentation"
        },
        {
         "name": "Filipe de Pádua",
         "title": "",
-        "org": "EPE - Brazil",
-        "role": "Presentation: PNE 2055 / PDE 2035"
+        "org": "Empresa de Pesquisa Energética (EPE), Brazil",
+        "role": "Presentation"
        }
       ],
       "speakersStatus": "partial"
@@ -547,15 +596,33 @@ window.EPW = {
       "summary": "Geopolitical volatility, fuel-price shocks and supply disruptions have moved energy security back to the centre of national planning. This session examines how countries stress-test scenarios against these risks, how the fossil-fuel transition and stranded-asset exposure are treated in national frameworks, and how alternative plans are conceived to respond to supply disruptions.",
       "speakers": [
        {
+        "name": "Mike Enskat",
+        "title": "Director, IRENA Innovation and Technology Centre (IITC)",
+        "org": "IRENA",
+        "role": "Moderator"
+       },
+       {
         "name": "Reshma Francy",
         "title": "Associate Director, Policy Pathfinding and World Energy Trilemma",
-        "org": "World Energy Council (WEC)",
-        "role": "Scene-setting: updated Trilemma framework"
+        "org": "World Energy Council",
+        "role": "Scene-setting and panellist"
        },
        {
         "name": "Mungai Kihara",
+        "title": "Deputy Director, Renewable Energy",
+        "org": "Energy and Petroleum Regulatory Authority (EPRA), Kenya",
+        "role": "Panellist"
+       },
+       {
+        "name": "Juan Lucero",
+        "title": "Coordinator",
+        "org": "National Energy Secretariat, Panama",
+        "role": "Panellist"
+       },
+       {
+        "name": "Daniel Pérez Nombela",
         "title": "",
-        "org": "Ministry of Energy, Kenya",
+        "org": "Ministry for the Ecological Transition and the Demographic Challenge (MITECO), Spain",
         "role": "Panellist"
        },
        {
@@ -572,32 +639,38 @@ window.EPW = {
       "start": "12:15",
       "end": "13:30",
       "type": "meal",
-      "title": "Lunch session: machine learning and artificial intelligence in energy planning",
+      "title": "Lunch session: state-of-the-art showcase of machine learning and artificial intelligence in energy planning",
       "stage": "scenarios",
-      "summary": "A working-lunch, state-of-the-art showcase of applied AI uses prioritised by the LTES Network – demand and load forecasting, scenario development and sensitivity analysis, and data processing and quality assurance.",
+      "summary": "A working-lunch showcase of applied AI uses prioritised by the LTES Network – demand and load forecasting, scenario development and sensitivity analysis, and data processing and quality assurance.",
       "speakers": [
        {
         "name": "Nadeem Goussous",
         "title": "",
-        "org": "",
-        "role": "Moderator / Co-host"
+        "org": "IRENA",
+        "role": "Moderator"
        },
        {
         "name": "Matt Gray",
-        "title": "Head of Modelling",
+        "title": "CEO and Co-Founder",
         "org": "TransitionZero",
         "role": "Use-case presentation"
        },
        {
         "name": "Charlie Heaps",
-        "title": "",
-        "org": "SEI",
+        "title": "Senior Scientist",
+        "org": "Stockholm Environment Institute (SEI) US",
         "role": "Use-case presentation"
        },
        {
         "name": "Mark Howells",
         "title": "Professor of Systems Analysis for Sustainable Development, Loughborough University; Programme Director",
         "org": "Climate Compatible Growth (CCG)",
+        "role": "Use-case presentation"
+       },
+       {
+        "name": "Yunshu Li",
+        "title": "Energy Systems Analyst, Planning and Economic Studies Section",
+        "org": "International Atomic Energy Agency (IAEA)",
         "role": "Use-case presentation"
        }
       ],
@@ -615,13 +688,19 @@ window.EPW = {
       "speakers": [
        {
         "name": "Charlie Heaps",
-        "title": "",
-        "org": "SEI",
+        "title": "Senior Scientist",
+        "org": "Stockholm Environment Institute (SEI) US",
+        "role": "Panellist"
+       },
+       {
+        "name": "Seoungho Lee",
+        "title": "Associate Research Fellow",
+        "org": "Korea Energy Economics Institute (KEEI)",
         "role": "Panellist"
        },
        {
         "name": "Brad Little",
-        "title": "",
+        "title": "Deputy Director",
         "org": "Natural Resources Canada",
         "role": "Panellist"
        }
@@ -648,7 +727,31 @@ window.EPW = {
         "name": "Jochen Bard",
         "title": "Managing Director",
         "org": "Fraunhofer CINES",
-        "role": "Flash-talk: methods"
+        "role": "Panellist"
+       },
+       {
+        "name": "Vivien Foster",
+        "title": "Principal Research Fellow, Centre for Environmental Policy",
+        "org": "Imperial College London",
+        "role": "Moderator"
+       },
+       {
+        "name": "Ema Gusheva",
+        "title": "Lecturer",
+        "org": "Utrecht University",
+        "role": "Panellist"
+       },
+       {
+        "name": "Matías Paredes",
+        "title": "Energy Planning and Climate Change Analyst",
+        "org": "Ministry of Energy, Chile",
+        "role": "Panellist"
+       },
+       {
+        "name": "Mohammad Amin Tahavori",
+        "title": "Researcher",
+        "org": "VITO/EnergyVille",
+        "role": "Panellist"
        }
       ],
       "speakersStatus": "partial"
@@ -680,10 +783,10 @@ window.EPW = {
      "Morning",
      "Afternoon"
     ],
-    "intro": "Convened under the Global Coalition for Energy Planning (GCEP), the Planning–Investment Dialogue connects the technical discussions of the LTES Forum with the investment and implementation challenges emerging from GCEP regional dialogues. It takes the findings of those dialogues as its evidence base and opens a structured discussion with financiers, regulators and planning institutions on a single question: what turns an energy plan into an investable opportunity.",
+    "intro": "Convened under the Global Coalition for Energy Planning (GCEP), the Planning–Investment Dialogue connects the technical discussions of the LTES Forum with the investment and implementation challenges emerging from GCEP regional dialogues. The morning takes the findings of those dialogues as its evidence base and opens a structured discussion with financiers, regulators and planning institutions on a single question: what turns an energy plan into an investable opportunity. It focuses on the practical interface between planning and investment: what countries are asking from their planning systems; which bottlenecks recur across regions – grids, flexibility, project preparation, institutional coordination, finance-facing signals – and what support partners are prepared to offer in response.",
     "items": [
      {
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:00",
       "type": "break",
       "title": "Coffee and networking"
@@ -695,37 +798,24 @@ window.EPW = {
       "type": "plenary",
       "title": "Opening: from the LTES Forum to investment-ready implementation",
       "stage": "investment",
-      "speakers": [
-       {
-        "name": "Simon Benmarraze",
-        "title": "Head of Strategic Infrastructure",
-        "org": "IRENA",
-        "role": "Opening remarks"
-       },
-       {
-        "name": "Alessia De Vita",
-        "title": "Technical Advisor, Long-Term Energy Planning and Renewable Grid Integration",
-        "org": "GET.transform",
-        "role": "Opening remarks"
-       }
-      ],
-      "speakersStatus": "partial"
+      "speakers": [],
+      "speakersStatus": "tbc"
      },
      {
       "id": "keynote-d3",
       "start": "09:15",
       "end": "09:30",
       "type": "keynote",
-      "title": "Findings from the GCEP regional planning-to-investment dialogues",
+      "title": "Scene-setting presentation: findings from the GCEP regional planning-to-investment dialogues",
       "subtitle": "What countries are telling us about planning, investment and implementation",
       "stage": "investment",
       "summary": "Cross-regional findings from the GCEP regional dialogues and other relevant regional exchanges, focusing on recurring planning-to-investment messages: grids and flexibility, institutional coordination, project preparation, finance-facing planning signals, data and governance, and country requests for practical partner support.",
       "speakers": [
        {
-        "name": "Juan Jose Garcia Mendez",
-        "title": "Programme Officer",
+        "name": "Juan José García Méndez",
+        "title": "GCEP Secretariat",
         "org": "IRENA",
-        "role": "Keynote presentation"
+        "role": "Speaker"
        }
       ],
       "speakersStatus": "partial"
@@ -736,15 +826,27 @@ window.EPW = {
       "start": "09:30",
       "end": "11:00",
       "type": "session",
-      "title": "From energy planning to investment decisions in developing countries",
+      "title": "From energy planning to investment decisions",
       "partner": "Co-hosted with the World Bank",
       "stage": "investment",
       "summary": "This session examines how developing countries can strengthen the connection between national energy planning and investment decisions. Drawing on country experiences and perspectives from development finance institutions, it explores how long-term scenarios inform investment priorities, how these priorities connect with budgeting and project preparation, and how collaboration between planners and financiers can support implementation.",
       "speakers": [
        {
-        "name": "Vivien Foster",
+        "name": "José Campos",
         "title": "",
-        "org": "Imperial College - D2D",
+        "org": "European Bank for Reconstruction and Development (EBRD)",
+        "role": "Panellist"
+       },
+       {
+        "name": "Vivien Foster",
+        "title": "Principal Research Fellow, Centre for Environmental Policy",
+        "org": "Imperial College London",
+        "role": "Panellist"
+       },
+       {
+        "name": "Asami Miketa",
+        "title": "Senior Energy Economist",
+        "org": "World Bank",
         "role": "Panellist"
        }
       ],
@@ -762,27 +864,33 @@ window.EPW = {
       "start": "11:30",
       "end": "13:00",
       "type": "session",
-      "title": "Planning the transition away from fossil fuels (TAFF)",
+      "title": "Planning the transition away from fossil fuels",
       "partner": "Co-hosted with the Ministry for the Ecological Transition and the Demographic Challenge, Spain",
       "stage": "investment",
       "summary": "The transition away from fossil fuels (TAFF) agenda through the lens of investment-ready energy planning: how national planning systems can translate transition-away commitments into credible implementation pathways, and what practical support GCEP can provide to facilitate dialogue between planners, policymakers and financiers on the conditions needed to move from political commitment to investable action. It also reflects on the development and climate nexus.",
       "speakers": [
        {
-        "name": "Simon Benmarraze",
-        "title": "Head of Strategic Infrastructure",
-        "org": "IRENA",
-        "role": "Moderator"
+        "name": "Luana Alves de Melo",
+        "title": "Energy Department",
+        "org": "Ministry of Foreign Affairs, Brazil",
+        "role": "Panellist"
        },
        {
-        "name": "Luis Martinez",
+        "name": "Alfonso Blanco",
+        "title": "COO",
+        "org": "Fundación Ivy",
+        "role": "Panellist"
+       },
+       {
+        "name": "Luis Martínez",
         "title": "",
         "org": "International Institute for Sustainable Development (IISD)",
         "role": "Panellist"
        },
        {
-        "name": "Luana Alves De Melo",
+        "name": "Marta Muñoz",
         "title": "",
-        "org": "Energy Department. Ministry of Foreign Affairs of Brazil",
+        "org": "Ministry for the Ecological Transition and the Demographic Challenge (MITECO), Spain",
         "role": "Panellist"
        }
       ],
@@ -793,7 +901,8 @@ window.EPW = {
       "start": "13:00",
       "end": "14:15",
       "type": "meal",
-      "title": "Lunch break"
+      "title": "Lunch break and interactive lunch session on energy access planning",
+      "summary": "Lunch from 13:00. The interactive session on energy access planning runs from 13:15 to 14:15; a description will follow."
      },
      {
       "id": "session-9",
@@ -804,8 +913,27 @@ window.EPW = {
       "title": "From plans to delivery – how can planning support enabling energy markets?",
       "stage": "implementation",
       "summary": "What it takes to turn energy planning priorities into commercially viable projects, infrastructure and functioning markets. The session looks at what needs to happen from planning to action, from policy, regulation and procurement to market design and investment decisions, and where key barriers can emerge along the way, bringing together perspectives from different actors on how governments and planning institutions can create the conditions for investment and strengthen the link between long-term planning and delivery.",
-      "speakers": [],
-      "speakersStatus": "tbc"
+      "speakers": [
+       {
+        "name": "Isabel Abreu",
+        "title": "Executive Director",
+        "org": "ALER",
+        "role": "Panellist"
+       },
+       {
+        "name": "Sehlule Ndlovu",
+        "title": "International Project Officer",
+        "org": "SolarPower Europe",
+        "role": "Panellist"
+       },
+       {
+        "name": "Sebastian Sterl",
+        "title": "Energy Analyst",
+        "org": "European Commission DG ENER",
+        "role": "Panellist"
+       }
+      ],
+      "speakersStatus": "partial"
      },
      {
       "start": "15:45",
@@ -822,18 +950,25 @@ window.EPW = {
       "title": "Country cases – when planning meets the market",
       "stage": "implementation",
       "summary": "Country case presentations from three angles. Planning enables the market (large scale): how long-term planning can inform large-scale project procurement and create a pipeline investors can respond to. The market moves faster than planning (distributed generation): what happens when markets, prosumers or new technologies such as battery storage move ahead of the assumptions in the plan, and how market information, investor behaviour, technology costs and emerging business models should feed back into planning. Planning enables infrastructure investment: how grid infrastructure enables functioning energy markets and private investment, and how planning can provide the long-term visibility, coordination and investment framework needed to develop it.",
-      "speakers": [],
-      "speakersStatus": "tbc"
+      "speakers": [
+       {
+        "name": "Ubaid Ullah Khan",
+        "title": "Specialist, Integrated Energy Planning",
+        "org": "Power Planning and Monitoring Company (PPMC), Pakistan",
+        "role": "Presenter"
+       }
+      ],
+      "speakersStatus": "partial"
      },
      {
       "id": "closing",
       "start": "17:45",
       "end": "18:00",
       "type": "plenary",
-      "title": "Closing of Energy Planning Week 2026",
-      "summary": "Joint closing remarks by IRENA and GET.transform: what the week established, from scenario practice to planning-to-investment, and what follows: the partnerships, country cases and commitments carried forward into the GCEP programme and the LTES Network calendar for 2027.",
+      "title": "Closing of Day 3",
       "speakers": [],
-      "speakersStatus": "tbc"
+      "speakersStatus": "none",
+      "note": "Followed by a reception."
      }
     ]
    },
@@ -843,14 +978,20 @@ window.EPW = {
     "date": "2026-12-04",
     "weekday": "Friday",
     "component": "partner-sessions",
-    "theme": "Thematic Deep Dives",
+    "theme": "Energy Planning Deep Dives",
     "venue": "IRENA Innovation and Technology Centre, Bonn",
     "items": [
      {
-      "start": "08:30",
+      "id": "breakfast-msp",
+      "start": "08:15",
       "end": "09:00",
-      "type": "break",
-      "title": "Coffee and networking"
+      "type": "meal",
+      "title": "Breakfast session: Connecting long-term energy scenarios with marine spatial planning",
+      "subtitle": "How closer coordination can lead to better results",
+      "stage": "scenarios",
+      "summary": "Marine spatial planning (MSP) is the strategic process through which governments decide how marine space is used over time, balancing ecological, social and economic objectives across sectors. It is a key enabler of accelerated, responsible offshore wind deployment, and well-planned processes can shorten lead times and reduce development costs. Long-term energy scenarios, in turn, explore future energy mixes and infrastructure needs, in which offshore wind plays a growing role for countries with strong resources. This session examines how energy planners and marine spatial planners can work together so that each process informs the other – connecting scenarios with more granular MSP data on available areas to improve forecasts of timelines and of transmission, interconnection and supporting infrastructure needs. Building on discussions throughout the Week, it focuses on institutional coordination and data governance.",
+      "speakers": [],
+      "speakersStatus": "tbc"
      },
      {
       "id": "deep-dive-1",
@@ -858,7 +999,7 @@ window.EPW = {
       "start": "09:00",
       "end": "10:00",
       "type": "session",
-      "title": "Data centres and rising electricity demand: implications for energy planning",
+      "title": "Greening data centres: principles for sound energy planning under uncertainty",
       "stage": "scenarios",
       "summary": "The rapid expansion of data centres is creating new challenges for energy planners, particularly in anticipating electricity demand, assessing grid capacity and planning future infrastructure investments. This session explores how integrated planning approaches can help governments accommodate growing data centre demand while considering system reliability, flexibility, affordability and broader energy priorities.",
       "speakers": [],
@@ -870,9 +1011,10 @@ window.EPW = {
       "start": "10:00",
       "end": "11:00",
       "type": "session",
-      "title": "Offshore wind planning: spatial coordination and subnational delivery",
-      "stage": "implementation",
-      "summary": "The role of subnational and state-level governments in planning and enabling offshore wind development. Drawing on experiences from different jurisdictions, the discussion explores marine spatial planning, permitting, grid and port infrastructure, and stakeholder engagement, with particular attention to coordination between national and subnational authorities and the practical challenges of project delivery.",
+      "title": "Planning for power system flexibility – from scenarios to grid investment",
+      "partner": "Co-hosted with the Green Grids Initiative",
+      "stage": "investment",
+      "summary": "How governments can integrate flexibility needs into long-term energy planning as renewable energy shares increase and power systems evolve. Drawing on country experiences and technical perspectives, the discussion examines the implications for grid expansion, storage, system operation and investment priorities, including the planning and coordination approaches needed to support more flexible and resilient power systems.",
       "speakers": [],
       "speakersStatus": "tbc"
      },
@@ -886,38 +1028,42 @@ window.EPW = {
       "id": "deep-dive-3",
       "code": "Deep Dive 3",
       "start": "11:30",
-      "end": "12:30",
+      "end": "13:00",
       "type": "session",
-      "title": "Planning for power system flexibility: from scenarios to grid investment",
-      "stage": "investment",
-      "summary": "How governments can integrate flexibility needs into long-term energy planning as renewable energy shares increase and power systems evolve. Drawing on country experiences and technical perspectives, the discussion examines the implications for grid expansion, storage, system operation and investment priorities, including the planning and coordination approaches needed to support more flexible and resilient power systems.",
-      "speakers": [],
-      "speakersStatus": "tbc"
-     },
-     {
-      "start": "12:30",
-      "end": "13:30",
-      "type": "meal",
-      "title": "Lunch"
-     },
-     {
-      "id": "deep-dive-4",
-      "code": "Deep Dive 4",
-      "start": "13:30",
-      "end": "14:30",
-      "type": "session",
-      "title": "Topic to be confirmed",
-      "speakers": [],
-      "speakersStatus": "tbc"
+      "title": "Regional energy planning – aligning national priorities and regional interconnection",
+      "partner": "Co-hosted with the African Union Commission",
+      "stage": "policy",
+      "summary": "Regional institutions and planning entities from different world regions share how national plans inform regional transmission development and vice versa, the institutional mechanisms that support coordination, and the challenges that remain.",
+      "speakers": [
+       {
+        "name": "Shehu Ibrahim Khaleel",
+        "title": "Senior Energy Advisor",
+        "org": "African Union Commission",
+        "role": "Keynote"
+       },
+       {
+        "name": "Sebastian Sterl",
+        "title": "Energy Analyst",
+        "org": "European Commission DG ENER",
+        "role": "Keynote"
+       }
+      ],
+      "speakersStatus": "partial"
      },
      {
       "id": "closing-d4",
-      "start": "14:30",
-      "end": "14:45",
+      "start": "13:00",
+      "end": "13:15",
       "type": "plenary",
       "title": "Closing",
-      "speakers": [],
-      "speakersStatus": "none"
+      "speakersStatus": "none",
+      "speakers": []
+     },
+     {
+      "start": "13:15",
+      "end": "14:00",
+      "type": "meal",
+      "title": "Lunch"
      }
     ]
    }
@@ -971,55 +1117,76 @@ window.EPW = {
   ]
  },
  "speakers": {
-  "_comment": "Confirmed speakers. Hand-edited: one entry per person, listing the programme item ids (from programme.json) they appear in, with an optional role. tools/build_data.py attaches them to their sessions and finds headshots at images/speakers/<slug>.webp. Seeded 22 Oct 2026 from the Confirmed rows of the speakers tracker.",
+  "_comment": "Confirmed speakers. Hand-edited: one entry per person, listing the programme item ids (from programme.json) they appear in, with an optional role. tools/build_data.py attaches them to their sessions and finds headshots at images/speakers/<slug>.webp. Rebuilt 12 Nov 2026 from the named speakers in the 12 November draft programme overview (TBC slots are left out).",
   "people": [
    {
-    "name": "Abdoulaye Oueddo",
-    "title": "Acting Head of Energy Information System and Statistics Division",
-    "org": "African Energy Commission (AFREC)",
-    "sessions": [
-     {
-      "item": "session-3",
-      "role": "Panellist"
-     }
-    ],
-    "id": "abdoulaye-oueddo",
-    "photo": "",
-    "appearances": [
-     {
-      "item": "session-3",
-      "role": "Panellist",
-      "component": "ltes-forum"
-     }
-    ]
-   },
-   {
     "name": "Alessia De Vita",
-    "title": "Technical Advisor, Long-Term Energy Planning and Renewable Grid Integration",
+    "title": "Advisor",
     "org": "GET.transform",
     "sessions": [
      {
-      "item": "opening-d3",
-      "role": "Opening remarks"
+      "item": "session-2",
+      "role": "Panellist"
      }
     ],
     "id": "alessia-de-vita",
     "photo": "",
     "appearances": [
      {
-      "item": "opening-d3",
-      "role": "Opening remarks",
+      "item": "session-2",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Alfonso Blanco",
+    "title": "COO",
+    "org": "Fundación Ivy",
+    "sessions": [
+     {
+      "item": "session-8",
+      "role": "Panellist"
+     }
+    ],
+    "id": "alfonso-blanco",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-8",
+      "role": "Panellist",
+      "component": "gcep-dialogue"
+     }
+    ]
+   },
+   {
+    "name": "Asami Miketa",
+    "title": "Senior Energy Economist",
+    "org": "World Bank",
+    "sessions": [
+     {
+      "item": "session-7",
+      "role": "Panellist"
+     }
+    ],
+    "id": "asami-miketa",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-7",
+      "role": "Panellist",
       "component": "gcep-dialogue"
      }
     ]
    },
    {
     "name": "Brad Little",
-    "title": "",
+    "title": "Deputy Director",
     "org": "Natural Resources Canada",
     "sessions": [
      {
-      "item": "session-2"
+      "item": "session-2",
+      "role": "Moderator and scene-setting speaker"
      },
      {
       "item": "session-5",
@@ -1031,7 +1198,7 @@ window.EPW = {
     "appearances": [
      {
       "item": "session-2",
-      "role": "",
+      "role": "Moderator and scene-setting speaker",
       "component": "ltes-forum"
      },
      {
@@ -1043,8 +1210,8 @@ window.EPW = {
    },
    {
     "name": "Charlie Heaps",
-    "title": "",
-    "org": "SEI",
+    "title": "Senior Scientist",
+    "org": "Stockholm Environment Institute (SEI) US",
     "sessions": [
      {
       "item": "ai-showcase",
@@ -1071,13 +1238,73 @@ window.EPW = {
     ]
    },
    {
+    "name": "Dadan Kusdiana",
+    "title": "Secretary General",
+    "org": "National Energy Council (DEN), Indonesia",
+    "sessions": [
+     {
+      "item": "session-1",
+      "role": "Panellist"
+     }
+    ],
+    "id": "dadan-kusdiana",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-1",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Daniel Pérez Nombela",
+    "title": "",
+    "org": "Ministry for the Ecological Transition and the Demographic Challenge (MITECO), Spain",
+    "sessions": [
+     {
+      "item": "session-4",
+      "role": "Panellist"
+     }
+    ],
+    "id": "daniel-perez-nombela",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-4",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Derck Koolen",
+    "title": "Energy Policy Economist",
+    "org": "European Commission DG ENER",
+    "sessions": [
+     {
+      "item": "session-3",
+      "role": "Moderator"
+     }
+    ],
+    "id": "derck-koolen",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-3",
+      "role": "Moderator",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
     "name": "Edouard Clement",
     "title": "Executive Director",
-    "org": "Energy Modelling Hub (EMH) & NRCAN",
+    "org": "Energy Modelling Hub (EMH)",
     "sessions": [
      {
       "item": "session-2",
-      "role": "Moderator / Co-host"
+      "role": "Scene-setting speaker"
      }
     ],
     "id": "edouard-clement",
@@ -1085,7 +1312,27 @@ window.EPW = {
     "appearances": [
      {
       "item": "session-2",
-      "role": "Moderator / Co-host",
+      "role": "Scene-setting speaker",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Ema Gusheva",
+    "title": "Lecturer",
+    "org": "Utrecht University",
+    "sessions": [
+     {
+      "item": "session-6",
+      "role": "Panellist"
+     }
+    ],
+    "id": "ema-gusheva",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-6",
+      "role": "Panellist",
       "component": "ltes-forum"
      }
     ]
@@ -1093,11 +1340,11 @@ window.EPW = {
    {
     "name": "Filipe de Pádua",
     "title": "",
-    "org": "EPE - Brazil",
+    "org": "Empresa de Pesquisa Energética (EPE), Brazil",
     "sessions": [
      {
       "item": "impact-brazil",
-      "role": "Presentation: PNE 2055 / PDE 2035"
+      "role": "Presentation"
      }
     ],
     "id": "filipe-de-padua",
@@ -1105,26 +1352,66 @@ window.EPW = {
     "appearances": [
      {
       "item": "impact-brazil",
-      "role": "Presentation: PNE 2055 / PDE 2035",
+      "role": "Presentation",
       "component": "ltes-forum"
      }
     ]
    },
    {
-    "name": "Hector Orozco",
-    "title": "",
-    "org": "Guatemala",
+    "name": "Girvan Pigott",
+    "title": "Director of Energy",
+    "org": "Ministry of ICTs, Utilities and Energy, Antigua and Barbuda",
     "sessions": [
      {
-      "item": "session-2",
+      "item": "session-1",
       "role": "Panellist"
      }
     ],
-    "id": "hector-orozco",
+    "id": "girvan-pigott",
     "photo": "",
     "appearances": [
      {
-      "item": "session-2",
+      "item": "session-1",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Isabel Abreu",
+    "title": "Executive Director",
+    "org": "ALER",
+    "sessions": [
+     {
+      "item": "session-9",
+      "role": "Panellist"
+     }
+    ],
+    "id": "isabel-abreu",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-9",
+      "role": "Panellist",
+      "component": "implementation"
+     }
+    ]
+   },
+   {
+    "name": "Ivo Nacucchio",
+    "title": "Data and Modelling Expert",
+    "org": "Latin American and Caribbean Energy Organization (OLACDE)",
+    "sessions": [
+     {
+      "item": "session-3",
+      "role": "Panellist"
+     }
+    ],
+    "id": "ivo-nacucchio",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-3",
       "role": "Panellist",
       "component": "ltes-forum"
      }
@@ -1137,7 +1424,7 @@ window.EPW = {
     "sessions": [
      {
       "item": "session-6",
-      "role": "Flash-talk: methods"
+      "role": "Panellist"
      }
     ],
     "id": "jochen-bard",
@@ -1145,53 +1432,75 @@ window.EPW = {
     "appearances": [
      {
       "item": "session-6",
-      "role": "Flash-talk: methods",
+      "role": "Panellist",
       "component": "ltes-forum"
      }
     ]
    },
    {
-    "name": "Juan Jose Garcia Mendez",
-    "title": "Programme Officer",
+    "name": "José Campos",
+    "title": "",
+    "org": "European Bank for Reconstruction and Development (EBRD)",
+    "sessions": [
+     {
+      "item": "session-7",
+      "role": "Panellist"
+     }
+    ],
+    "id": "jose-campos",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-7",
+      "role": "Panellist",
+      "component": "gcep-dialogue"
+     }
+    ]
+   },
+   {
+    "name": "Juan José García Méndez",
+    "title": "GCEP Secretariat",
     "org": "IRENA",
     "sessions": [
      {
-      "item": "ltes-strategic",
-      "role": "Chair"
-     },
-     {
-      "item": "impact-brazil",
-      "role": "Moderator"
-     },
-     {
       "item": "keynote-d3",
-      "role": "Keynote presentation"
+      "role": "Speaker"
      }
     ],
     "id": "juan-jose-garcia-mendez",
     "photo": "",
     "appearances": [
      {
-      "item": "ltes-strategic",
-      "role": "Chair",
-      "component": "ltes-forum"
-     },
-     {
-      "item": "impact-brazil",
-      "role": "Moderator",
-      "component": "ltes-forum"
-     },
-     {
       "item": "keynote-d3",
-      "role": "Keynote presentation",
+      "role": "Speaker",
       "component": "gcep-dialogue"
      }
     ]
    },
    {
+    "name": "Juan Lucero",
+    "title": "Coordinator",
+    "org": "National Energy Secretariat, Panama",
+    "sessions": [
+     {
+      "item": "session-4",
+      "role": "Panellist"
+     }
+    ],
+    "id": "juan-lucero",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-4",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
     "name": "Kamil Maqsood",
-    "title": "",
-    "org": "Pakistan",
+    "title": "Team Lead – Policy",
+    "org": "Power Planning and Monitoring Company (PPMC), Pakistan",
     "sessions": [
      {
       "item": "session-2",
@@ -1209,9 +1518,49 @@ window.EPW = {
     ]
    },
    {
-    "name": "Luana Alves De Melo",
+    "name": "Larissa Nogueira",
+    "title": "Team Lead, Energy Planning",
+    "org": "IRENA",
+    "sessions": [
+     {
+      "item": "session-1",
+      "role": "Scene-setting speaker"
+     }
+    ],
+    "id": "larissa-nogueira",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-1",
+      "role": "Scene-setting speaker",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Lidiane de Almeida Modesto",
     "title": "",
-    "org": "Energy Department. Ministry of Foreign Affairs of Brazil",
+    "org": "Empresa de Pesquisa Energética (EPE), Brazil",
+    "sessions": [
+     {
+      "item": "impact-brazil",
+      "role": "Presentation"
+     }
+    ],
+    "id": "lidiane-de-almeida-modesto",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "impact-brazil",
+      "role": "Presentation",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Luana Alves de Melo",
+    "title": "Energy Department",
+    "org": "Ministry of Foreign Affairs, Brazil",
     "sessions": [
      {
       "item": "session-8",
@@ -1229,7 +1578,27 @@ window.EPW = {
     ]
    },
    {
-    "name": "Luis Martinez",
+    "name": "Luciano Caratori",
+    "title": "Global Energy Cluster Lead",
+    "org": "Climate Champions Team",
+    "sessions": [
+     {
+      "item": "session-1",
+      "role": "Panellist"
+     }
+    ],
+    "id": "luciano-caratori",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-1",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Luis Martínez",
     "title": "",
     "org": "International Institute for Sustainable Development (IISD)",
     "sessions": [
@@ -1269,6 +1638,26 @@ window.EPW = {
     ]
    },
    {
+    "name": "Marie Rousselot",
+    "title": "Head of Market Intelligence",
+    "org": "Enerdata, France",
+    "sessions": [
+     {
+      "item": "session-3",
+      "role": "Panellist"
+     }
+    ],
+    "id": "marie-rousselot",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-3",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
     "name": "Mark Howells",
     "title": "Professor of Systems Analysis for Sustainable Development, Loughborough University; Programme Director",
     "org": "Climate Compatible Growth (CCG)",
@@ -1289,8 +1678,57 @@ window.EPW = {
     ]
    },
    {
+    "name": "Marta Muñoz",
+    "title": "",
+    "org": "Ministry for the Ecological Transition and the Demographic Challenge (MITECO), Spain",
+    "sessions": [
+     {
+      "item": "session-8",
+      "role": "Panellist"
+     }
+    ],
+    "id": "marta-munoz",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-8",
+      "role": "Panellist",
+      "component": "gcep-dialogue"
+     }
+    ]
+   },
+   {
+    "name": "Matías Paredes",
+    "title": "Energy Planning and Climate Change Analyst",
+    "org": "Ministry of Energy, Chile",
+    "sessions": [
+     {
+      "item": "session-2",
+      "role": "Scene-setting speaker and panellist"
+     },
+     {
+      "item": "session-6",
+      "role": "Panellist"
+     }
+    ],
+    "id": "matias-paredes",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-2",
+      "role": "Scene-setting speaker and panellist",
+      "component": "ltes-forum"
+     },
+     {
+      "item": "session-6",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
     "name": "Matt Gray",
-    "title": "Head of Modelling",
+    "title": "CEO and Co-Founder",
     "org": "TransitionZero",
     "sessions": [
      {
@@ -1334,24 +1772,44 @@ window.EPW = {
     "org": "IRENA",
     "sessions": [
      {
-      "item": "opening",
-      "role": "Welcome remarks"
+      "item": "session-4",
+      "role": "Moderator"
      }
     ],
     "id": "mike-enskat",
     "photo": "",
     "appearances": [
      {
-      "item": "opening",
-      "role": "Welcome remarks",
+      "item": "session-4",
+      "role": "Moderator",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Mohammad Amin Tahavori",
+    "title": "Researcher",
+    "org": "VITO/EnergyVille",
+    "sessions": [
+     {
+      "item": "session-6",
+      "role": "Panellist"
+     }
+    ],
+    "id": "mohammad-amin-tahavori",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-6",
+      "role": "Panellist",
       "component": "ltes-forum"
      }
     ]
    },
    {
     "name": "Mungai Kihara",
-    "title": "",
-    "org": "Ministry of Energy, Kenya",
+    "title": "Deputy Director, Renewable Energy",
+    "org": "Energy and Petroleum Regulatory Authority (EPRA), Kenya",
     "sessions": [
      {
       "item": "session-4",
@@ -1371,11 +1829,11 @@ window.EPW = {
    {
     "name": "Nadeem Goussous",
     "title": "",
-    "org": "",
+    "org": "IRENA",
     "sessions": [
      {
       "item": "ai-showcase",
-      "role": "Moderator / Co-host"
+      "role": "Moderator"
      }
     ],
     "id": "nadeem-goussous",
@@ -1383,7 +1841,27 @@ window.EPW = {
     "appearances": [
      {
       "item": "ai-showcase",
-      "role": "Moderator / Co-host",
+      "role": "Moderator",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Norela Constantinescu",
+    "title": "Deputy Director, IRENA Innovation and Technology Centre",
+    "org": "IRENA",
+    "sessions": [
+     {
+      "item": "opening",
+      "role": "Welcome remarks"
+     }
+    ],
+    "id": "norela-constantinescu",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "opening",
+      "role": "Welcome remarks",
       "component": "ltes-forum"
      }
     ]
@@ -1391,11 +1869,11 @@ window.EPW = {
    {
     "name": "Reshma Francy",
     "title": "Associate Director, Policy Pathfinding and World Energy Trilemma",
-    "org": "World Energy Council (WEC)",
+    "org": "World Energy Council",
     "sessions": [
      {
       "item": "session-4",
-      "role": "Scene-setting: updated Trilemma framework"
+      "role": "Scene-setting and panellist"
      }
     ],
     "id": "reshma-francy",
@@ -1403,8 +1881,97 @@ window.EPW = {
     "appearances": [
      {
       "item": "session-4",
-      "role": "Scene-setting: updated Trilemma framework",
+      "role": "Scene-setting and panellist",
       "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Sebastian Sterl",
+    "title": "Energy Analyst",
+    "org": "European Commission DG ENER",
+    "sessions": [
+     {
+      "item": "session-9",
+      "role": "Panellist"
+     },
+     {
+      "item": "deep-dive-3",
+      "role": "Keynote"
+     }
+    ],
+    "id": "sebastian-sterl",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-9",
+      "role": "Panellist",
+      "component": "implementation"
+     },
+     {
+      "item": "deep-dive-3",
+      "role": "Keynote",
+      "component": "partner-sessions"
+     }
+    ]
+   },
+   {
+    "name": "Sehlule Ndlovu",
+    "title": "International Project Officer",
+    "org": "SolarPower Europe",
+    "sessions": [
+     {
+      "item": "session-9",
+      "role": "Panellist"
+     }
+    ],
+    "id": "sehlule-ndlovu",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-9",
+      "role": "Panellist",
+      "component": "implementation"
+     }
+    ]
+   },
+   {
+    "name": "Seoungho Lee",
+    "title": "Associate Research Fellow",
+    "org": "Korea Energy Economics Institute (KEEI)",
+    "sessions": [
+     {
+      "item": "session-5",
+      "role": "Panellist"
+     }
+    ],
+    "id": "seoungho-lee",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-5",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Shehu Ibrahim Khaleel",
+    "title": "Senior Energy Advisor",
+    "org": "African Union Commission",
+    "sessions": [
+     {
+      "item": "deep-dive-3",
+      "role": "Keynote"
+     }
+    ],
+    "id": "shehu-ibrahim-khaleel",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "deep-dive-3",
+      "role": "Keynote",
+      "component": "partner-sessions"
      }
     ]
    },
@@ -1415,22 +1982,10 @@ window.EPW = {
     "sessions": [
      {
       "item": "opening",
-      "role": "Scene-setting: LTES Network introduction"
+      "role": "Introduction to the LTES Network"
      },
      {
       "item": "session-1",
-      "role": "Moderator"
-     },
-     {
-      "item": "welcome-dinner",
-      "role": "Host remarks"
-     },
-     {
-      "item": "opening-d3",
-      "role": "Opening remarks"
-     },
-     {
-      "item": "session-8",
       "role": "Moderator"
      }
     ],
@@ -1439,39 +1994,44 @@ window.EPW = {
     "appearances": [
      {
       "item": "opening",
-      "role": "Scene-setting: LTES Network introduction",
+      "role": "Introduction to the LTES Network",
       "component": "ltes-forum"
      },
      {
       "item": "session-1",
       "role": "Moderator",
       "component": "ltes-forum"
-     },
+     }
+    ]
+   },
+   {
+    "name": "Stefanie Bradtner",
+    "title": "Communications Manager",
+    "org": "GET.transform",
+    "sessions": [
      {
-      "item": "welcome-dinner",
-      "role": "Host remarks",
+      "item": "opening",
+      "role": "Master of Ceremonies"
+     }
+    ],
+    "id": "stefanie-bradtner",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "opening",
+      "role": "Master of Ceremonies",
       "component": "ltes-forum"
-     },
-     {
-      "item": "opening-d3",
-      "role": "Opening remarks",
-      "component": "gcep-dialogue"
-     },
-     {
-      "item": "session-8",
-      "role": "Moderator",
-      "component": "gcep-dialogue"
      }
     ]
    },
    {
     "name": "Stelios Pesmajoglou",
-    "title": "Manager, NDCs and Long-Term Strategies, Mitigation Division",
+    "title": "Manager, NDCs/LT-LEDS, Impacts Assessment Support",
     "org": "UNFCCC",
     "sessions": [
      {
       "item": "session-1",
-      "role": "Scene-setting: COP31 outcomes"
+      "role": "Scene-setting speaker"
      }
     ],
     "id": "stelios-pesmajoglou",
@@ -1479,19 +2039,39 @@ window.EPW = {
     "appearances": [
      {
       "item": "session-1",
-      "role": "Scene-setting: COP31 outcomes",
+      "role": "Scene-setting speaker",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Sven Teske",
+    "title": "Professor and Research Director, Institute for Sustainable Futures",
+    "org": "University of Technology Sydney (UTS), Australia",
+    "sessions": [
+     {
+      "item": "session-1",
+      "role": "Panellist"
+     }
+    ],
+    "id": "sven-teske",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-1",
+      "role": "Panellist",
       "component": "ltes-forum"
      }
     ]
    },
    {
     "name": "Dr. Tania Vorwerk",
-    "title": "Deputy Director General \"Climate, environment, health\"",
+    "title": "Deputy Director General, Climate, Environment, Health",
     "org": "Federal Ministry for Economic Cooperation and Development (BMZ), Germany",
     "sessions": [
      {
       "item": "opening",
-      "role": "Co-lead country welcome"
+      "role": "Welcome remarks"
      }
     ],
     "id": "tania-vorwerk",
@@ -1499,16 +2079,60 @@ window.EPW = {
     "appearances": [
      {
       "item": "opening",
-      "role": "Co-lead country welcome",
+      "role": "Welcome remarks",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Ubaid Ullah Khan",
+    "title": "Specialist, Integrated Energy Planning",
+    "org": "Power Planning and Monitoring Company (PPMC), Pakistan",
+    "sessions": [
+     {
+      "item": "session-10",
+      "role": "Presenter"
+     }
+    ],
+    "id": "ubaid-ullah-khan",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-10",
+      "role": "Presenter",
+      "component": "implementation"
+     }
+    ]
+   },
+   {
+    "name": "Vanessa Schmidt",
+    "title": "",
+    "org": "Federal Ministry for Economic Affairs and Energy (BMWE), Germany",
+    "sessions": [
+     {
+      "item": "opening",
+      "role": "Welcome remarks"
+     }
+    ],
+    "id": "vanessa-schmidt",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "opening",
+      "role": "Welcome remarks",
       "component": "ltes-forum"
      }
     ]
    },
    {
     "name": "Vivien Foster",
-    "title": "",
-    "org": "Imperial College - D2D",
+    "title": "Principal Research Fellow, Centre for Environmental Policy",
+    "org": "Imperial College London",
     "sessions": [
+     {
+      "item": "session-6",
+      "role": "Moderator"
+     },
      {
       "item": "session-7",
       "role": "Panellist"
@@ -1518,9 +2142,54 @@ window.EPW = {
     "photo": "",
     "appearances": [
      {
+      "item": "session-6",
+      "role": "Moderator",
+      "component": "ltes-forum"
+     },
+     {
       "item": "session-7",
       "role": "Panellist",
       "component": "gcep-dialogue"
+     }
+    ]
+   },
+   {
+    "name": "Yudiandra Yuwono",
+    "title": "Lead Modeller",
+    "org": "ASEAN Centre for Energy (ACE)",
+    "sessions": [
+     {
+      "item": "session-3",
+      "role": "Panellist"
+     }
+    ],
+    "id": "yudiandra-yuwono",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "session-3",
+      "role": "Panellist",
+      "component": "ltes-forum"
+     }
+    ]
+   },
+   {
+    "name": "Yunshu Li",
+    "title": "Energy Systems Analyst, Planning and Economic Studies Section",
+    "org": "International Atomic Energy Agency (IAEA)",
+    "sessions": [
+     {
+      "item": "ai-showcase",
+      "role": "Use-case presentation"
+     }
+    ],
+    "id": "yunshu-li",
+    "photo": "",
+    "appearances": [
+     {
+      "item": "ai-showcase",
+      "role": "Use-case presentation",
+      "component": "ltes-forum"
      }
     ]
    }

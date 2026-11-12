@@ -34,7 +34,7 @@
     "display": "GIZ Campus, Bonn, Germany",
     "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
-    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
+    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to members and partners of the LTES Network, GCEP and GET.transform, speakers, and supported developing-country planners."
   },
   "format": {
     "type": "Hybrid",
@@ -75,7 +75,7 @@
       "shortName": "LTES Forum",
       "days": "Days 1–2",
       "convener": "IRENA LTES Network",
-      "summary": "The seventh edition of IRENA's International Forum on Long-Term Energy Scenarios, convened through the LTES Network. Government planners and scenario practitioners work through the priorities the Network identified for 2026: scenario governance and capacity, data stewardship, energy security and flexibility, climate risks, and new modelling methods."
+      "summary": "The seventh edition of IRENA's International Forum on Long-Term Energy Scenarios, convened through the LTES Network. Government planners and scenario practitioners work through electrification after COP31, durable planning ecosystems, data governance, energy security, climate adaptation, artificial intelligence and transformative scenario methods."
     },
     {
       "id": "gcep-dialogue",
@@ -92,8 +92,8 @@
       "name": "Implementation Lab: From Plans to Delivery",
       "shortName": "Implementation Lab",
       "days": "Day 3, afternoon",
-      "convener": "IRENA and GET.transform with partners",
-      "summary": "Convened by IRENA and GET.transform. It follows the plan into delivery, looking at how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions. Country cases show where planning meets the market."
+      "convener": "GET.transform",
+      "summary": "Convened by GET.transform. It follows the plan into delivery, looking at how planning can support enabling energy markets, from policy, regulation and procurement to market design and investment decisions. Country cases show where planning meets the market."
     },
     {
       "id": "partner-sessions",
@@ -102,7 +102,7 @@
       "shortName": "Deep Dives",
       "days": "Day 4",
       "convener": "Partner-hosted sessions",
-      "summary": "A day of partner-hosted deep dives at IRENA's Innovation and Technology Centre in Bonn: data centres and rising electricity demand, offshore wind planning and subnational delivery, and power system flexibility."
+      "summary": "A day of thematic deep dives with partners at IRENA's Innovation and Technology Centre in Bonn: offshore wind and marine spatial planning, data centres, power system flexibility and regional interconnection."
     }
   ],
   "narrative": {
