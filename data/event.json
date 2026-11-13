@@ -23,17 +23,17 @@
     "start": "2026-12-01",
     "end": "2026-12-04",
     "display": "1–4 December 2026",
-   "_datesNote": "1–4 December 2026 is confirmed. Earlier drafts saying 1–3 December or \"three days\" are superseded.",
+    "_datesNote": "1–4 December 2026 is confirmed. Earlier drafts saying 1–3 December or \"three days\" are superseded.",
     "timezone": "Europe/Berlin",
     "timezoneLabel": "CET (UTC+1)"
   },
   "venue": {
-    "name": "GIZ Campus",
+    "name": "GIZ Campus Forum",
     "city": "Bonn",
     "country": "Germany",
-    "display": "GIZ Campus, Bonn, Germany",
-    "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
+    "display": "GIZ Campus Forum, Bonn, Germany",
+    "address": "Friedrich-Ebert-Allee 32, 53113 Bonn, Germany",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus+Forum,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
     "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to members and partners of the LTES Network, GCEP and GET.transform, speakers, and supported developing-country planners."
   },
   "format": {
@@ -102,7 +102,7 @@
       "shortName": "Deep Dives",
       "days": "Day 4",
       "convener": "Partner-hosted sessions",
-      "summary": "A day of thematic deep dives with partners at IRENA's Innovation and Technology Centre in Bonn: offshore wind and marine spatial planning, data centres, power system flexibility and regional interconnection."
+      "summary": "A morning of thematic deep dives with partners: marine spatial planning, data centres and rising demand, power system flexibility, and regional energy planning."
     }
   ],
   "narrative": {

@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-11-12 17:09 UTC */
+   Built 2026-11-13 11:28 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -55,12 +55,12 @@ window.EPW = {
    "timezoneLabel": "CET (UTC+1)"
   },
   "venue": {
-   "name": "GIZ Campus",
+   "name": "GIZ Campus Forum",
    "city": "Bonn",
    "country": "Germany",
-   "display": "GIZ Campus, Bonn, Germany",
-   "address": "Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany",
-   "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
+   "display": "GIZ Campus Forum, Bonn, Germany",
+   "address": "Friedrich-Ebert-Allee 32, 53113 Bonn, Germany",
+   "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus+Forum,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to members and partners of the LTES Network, GCEP and GET.transform, speakers, and supported developing-country planners."
   },
   "format": {
@@ -129,7 +129,7 @@ window.EPW = {
     "shortName": "Deep Dives",
     "days": "Day 4",
     "convener": "Partner-hosted sessions",
-    "summary": "A day of thematic deep dives with partners at IRENA's Innovation and Technology Centre in Bonn: offshore wind and marine spatial planning, data centres, power system flexibility and regional interconnection."
+    "summary": "A morning of thematic deep dives with partners: marine spatial planning, data centres and rising demand, power system flexibility, and regional energy planning."
    }
   ],
   "narrative": {
@@ -163,7 +163,7 @@ window.EPW = {
   "items": [
    {
     "q": "When and where is Energy Planning Week 2026?",
-    "a": "1–4 December 2026 at the GIZ Campus, Friedrich-Ebert-Allee 32 + 36, 53113 Bonn, Germany. The Week runs in a hybrid format: on site in Bonn and online through Microsoft Teams. All times are CET."
+    "a": "1–4 December 2026 at the GIZ Campus Forum, Friedrich-Ebert-Allee 32, 53113 Bonn, Germany. The Week runs in a hybrid format: on site in Bonn and online through Microsoft Teams. All times are CET."
    },
    {
     "q": "Who can attend?",
@@ -179,7 +179,7 @@ window.EPW = {
    },
    {
     "q": "I need a visa to travel to Germany. What should I do?",
-    "a": "Indicate on the registration form that you need an invitation letter, and apply early: Schengen visa appointments in some countries are booked months ahead. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
+    "a": "Apply as early as possible: Schengen visa appointments in some countries are booked months ahead. IRENA can provide a visa support letter for registered participants on request; contact {LTES@irena.org|mailto:LTES@irena.org}. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
    },
    {
     "q": "Can I follow the Week online?",
@@ -233,17 +233,20 @@ window.EPW = {
   ],
   "documentsNote": "Documents are hosted on SharePoint for registered participants. If you have trouble opening them, contact the organisers.",
   "venue": {
-   "name": "GIZ Campus",
+   "name": "GIZ Campus Forum, Auditorium",
    "addressLines": [
-    "Friedrich-Ebert-Allee 32 + 36"
+    "Friedrich-Ebert-Allee 32"
    ],
-   "_addressNote": "Address confirmed to comms 14 Sept 2026. Phone still to fill.",
+   "_addressNote": "Per logistical note of 13 Nov 2026: all four days at GIZ Campus Forum, Auditorium. Meeting rooms for side meetings and bilaterals on request.",
    "city": "53113 Bonn, Germany",
    "phone": "",
-   "mapEmbed": "https://maps.google.com/maps?q=GIZ+Campus,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany&z=16&output=embed"
+   "mapEmbed": "https://maps.google.com/maps?q=GIZ+Campus+Forum,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany&z=16&output=embed"
   },
   "gettingThere": [
-   "Directions from Bonn Hauptbahnhof to the GIZ Campus: to be confirmed."
+   "From the airport (Cologne Bonn or Frankfurt): take a train or bus to Bonn Central Station (Bonn Hbf). Tickets are sold at bahn.com/en, in the DB Navigator app, at the DB travel centre or from ticket machines.",
+   "From Bonn Hbf: take underground tram (U-Bahn) line 16 or 63 towards Bad Godesberg, or line 66 towards Bad Honnef, and get off at Ollenhauerstraße. Turn right onto Friedrich-Ebert-Allee and walk towards the city centre; GIZ is on the left.",
+   "Fares are paid by participants. For a full week, a weekly ticket (Wochenticket) for price level 1b is usually cheapest; the Deutschlandticket is also valid. Paper tickets bought from a machine outside the tram must be stamped.",
+   "Hotels in the Bundesviertel or near Bonn Hbf give the easiest access to the venue. Participants book their own accommodation unless it is covered by other means."
   ],
   "sections": [
    {
@@ -252,19 +255,29 @@ window.EPW = {
     "body": "Energy Planning Week 2026 runs in a hybrid format, with up to 120 places on site. Registering is an expression of interest, not a confirmed place: the co-hosts review every registration and confirm on-site places. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
    },
    {
+    "id": "registration",
+    "heading": "Registration and badges",
+    "body": "Registration and badge collection open at 08:00 on Tuesday 1 December at the GIZ Campus. Bring a valid photo ID (passport or national identity card); your badge is needed to enter the venue all week. Photographs and video will be taken during the event and may be published by IRENA and GET.transform; participants sign a consent form when collecting their badge."
+   },
+   {
     "id": "meals",
     "heading": "Meals",
-    "body": "Lunch and coffee are provided on site each day. A welcome dinner takes place on the evening of Day 1. Dietary requirements are collected through the registration form; please provide them as early as possible."
+    "body": "Breakfast, coffee breaks and a vegetarian lunch (with a vegan option) are provided free of charge to registered on-site participants on all four days. Registered on-site participants are invited to a vegetarian welcome dinner on Tuesday 1 December, 19:00–21:00, at Eventmanufaktur near Bonn Central Station. A reception follows Day 3 on Thursday 3 December. Please send any dietary restrictions to LTES@irena.org as soon as possible."
    },
    {
     "id": "visas",
     "heading": "Visas and letters",
-    "body": "Participants who need a visa to enter Germany should request an invitation letter as early as possible. Schengen appointments in some countries are booked months ahead. Indicate on the registration form that you need an invitation letter. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
+    "body": "Participants who need a Schengen visa to enter Germany should apply as early as possible: appointments in some countries are booked months ahead. IRENA can provide a visa support letter for registered participants on request; contact LTES@irena.org. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
    },
    {
     "id": "accessibility",
     "heading": "Access and language",
     "body": "Sessions run in English only, without interpretation. Let the organisers know in advance if you have accessibility requirements."
+   },
+   {
+    "id": "local",
+    "heading": "Weather, power and time",
+    "body": "Bonn in early December is cold and often wet, typically 0–7 °C: bring a warm coat and an umbrella. Germany uses type C and F plugs (230 V, 50 Hz); bring an adapter if needed. Bonn is on Central European Time (CET, UTC+1)."
    }
   ],
   "emergency": [
@@ -985,7 +998,6 @@ window.EPW = {
     "weekday": "Friday",
     "component": "partner-sessions",
     "theme": "Energy Planning Deep Dives",
-    "venue": "IRENA Innovation and Technology Centre, Bonn",
     "items": [
      {
       "id": "breakfast-msp",
