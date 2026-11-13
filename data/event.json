@@ -34,7 +34,7 @@
     "display": "GIZ Campus Forum, Bonn, Germany",
     "address": "Friedrich-Ebert-Allee 32, 53113 Bonn, Germany",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus+Forum,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
-    "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to members and partners of the LTES Network, GCEP and GET.transform, speakers, and supported developing-country planners."
+    "capacityNote": "Registration is currently open for online participation only. On-site places (up to 120) are confirmed directly by the co-hosts, with priority for speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
   },
   "format": {
     "type": "Hybrid",
@@ -48,8 +48,8 @@
   },
   "registration": {
     "url": "https://forms.cloud.microsoft/r/UhjVrHEPrx",
-    "label": "Register your interest",
-    "note": "Registration is an expression of interest, not a confirmed place."
+    "label": "Register to join online",
+    "note": "Registration is currently open for online participation only."
   },
   "join": {
     "platform": "Microsoft Teams",

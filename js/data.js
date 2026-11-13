@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-11-13 11:28 UTC */
+   Built 2026-11-13 11:36 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -61,7 +61,7 @@ window.EPW = {
    "display": "GIZ Campus Forum, Bonn, Germany",
    "address": "Friedrich-Ebert-Allee 32, 53113 Bonn, Germany",
    "mapUrl": "https://www.google.com/maps/search/?api=1&query=GIZ+Campus+Forum,+Friedrich-Ebert-Allee+32,+53113+Bonn,+Germany",
-   "capacityNote": "Up to 120 places on site. Registration is an expression of interest, not a confirmed place; on-site places are confirmed by the co-hosts. Priority is given to members and partners of the LTES Network, GCEP and GET.transform, speakers, and supported developing-country planners."
+   "capacityNote": "Registration is currently open for online participation only. On-site places (up to 120) are confirmed directly by the co-hosts, with priority for speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
   },
   "format": {
    "type": "Hybrid",
@@ -75,8 +75,8 @@ window.EPW = {
   },
   "registration": {
    "url": "https://forms.cloud.microsoft/r/UhjVrHEPrx",
-   "label": "Register your interest",
-   "note": "Registration is an expression of interest, not a confirmed place."
+   "label": "Register to join online",
+   "note": "Registration is currently open for online participation only."
   },
   "join": {
    "platform": "Microsoft Teams",
@@ -170,16 +170,16 @@ window.EPW = {
     "a": "The Week is designed primarily for government energy planners and policymakers, alongside representatives of the energy industry, financial institutions, regulators, utilities, intergovernmental organisations and the scientific and modelling community. Anyone interested is welcome to follow the sessions online."
    },
    {
-    "q": "Does registering guarantee me a place in Bonn?",
-    "a": "No. Registration is an expression of interest, not a confirmed place. There are up to 120 places on site. The co-hosts review every registration and confirm on-site places. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform. Everyone else is welcome to join online."
+    "q": "Can I register to attend in Bonn?",
+    "a": "Registration is currently open for online participation only. On-site places (up to 120) are confirmed directly by the co-hosts, with priority for speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform."
    },
    {
     "q": "How do I register?",
-    "a": "Complete the {expression of interest form|https://forms.cloud.microsoft/r/UhjVrHEPrx}. Please indicate whether you would like to attend on site or online, and whether you need a visa invitation letter."
+    "a": "Complete the {registration form|https://forms.cloud.microsoft/r/UhjVrHEPrx} to join online. Connection details (Microsoft Teams) are shared with registered online participants ahead of the event."
    },
    {
     "q": "I need a visa to travel to Germany. What should I do?",
-    "a": "Apply as early as possible: Schengen visa appointments in some countries are booked months ahead. IRENA can provide a visa support letter for registered participants on request; contact {LTES@irena.org|mailto:LTES@irena.org}. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
+    "a": "Apply as early as possible: Schengen visa appointments in some countries are booked months ahead. IRENA can provide a visa support letter for participants attending in person on request; contact {LTES@irena.org|mailto:LTES@irena.org}. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
    },
    {
     "q": "Can I follow the Week online?",
@@ -252,7 +252,7 @@ window.EPW = {
    {
     "id": "format",
     "heading": "Attending",
-    "body": "Energy Planning Week 2026 runs in a hybrid format, with up to 120 places on site. Registering is an expression of interest, not a confirmed place: the co-hosts review every registration and confirm on-site places. Priority is given to speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform. Everyone else is welcome to join online. All plenary and numbered sessions are streamed, except the closed-door strategic meeting on Day 2."
+    "body": "Energy Planning Week 2026 runs in a hybrid format. Registration is currently open for online participation only. On-site places (up to 120) are confirmed directly by the co-hosts, with priority for speakers, government planners, and members and partners of the LTES Network, GCEP and GET.transform. All plenary and numbered sessions are streamed on Microsoft Teams, except the closed-door strategic meeting on Day 2."
    },
    {
     "id": "registration",
@@ -267,7 +267,7 @@ window.EPW = {
    {
     "id": "visas",
     "heading": "Visas and letters",
-    "body": "Participants who need a Schengen visa to enter Germany should apply as early as possible: appointments in some countries are booked months ahead. IRENA can provide a visa support letter for registered participants on request; contact LTES@irena.org. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
+    "body": "Participants who need a Schengen visa to enter Germany should apply as early as possible: appointments in some countries are booked months ahead. IRENA can provide a visa support letter for participants attending in person on request; contact LTES@irena.org. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
    },
    {
     "id": "accessibility",
