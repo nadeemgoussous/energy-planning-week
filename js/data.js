@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-11-13 11:37 UTC */
+   Built 2026-11-13 11:49 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
@@ -818,7 +818,6 @@ window.EPW = {
      "Morning",
      "Afternoon"
     ],
-    "intro": "Convened under the Global Coalition for Energy Planning (GCEP), the Planning–Investment Dialogue connects the technical discussions of the LTES Forum with the investment and implementation challenges emerging from GCEP regional dialogues. The morning takes the findings of those dialogues as its evidence base and opens a structured discussion with financiers, regulators and planning institutions on a single question: what turns an energy plan into an investable opportunity. It focuses on the practical interface between planning and investment: what countries are asking from their planning systems; which bottlenecks recur across regions – grids, flexibility, project preparation, institutional coordination, finance-facing signals – and what support partners are prepared to offer in response.",
     "items": [
      {
       "start": "08:00",
