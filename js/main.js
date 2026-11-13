@@ -156,21 +156,15 @@
 
   /* ---------- themes ----------
      The four-stage chain, drawn as one sequence rather than four cards: the
-     stages are steps of a single planning process. Each lists its sessions. */
+     stages are steps of a single planning process. No session mapping: most
+     sessions span several stages. */
 
   function renderThemes() {
     el("themeGrid").innerHTML = '<ol class="chain">' + event.narrative.stages.map(function (stage, i) {
-      var codes = [];
-      programme.days.forEach(function (d) {
-        d.items.forEach(function (it) { if (it.stage === stage.id && it.code) codes.push(it.code.replace("Session ", "")); });
-      });
       return '<li class="chain__step">' +
         '<span class="chain__node" aria-hidden="true">' + (i + 1) + "</span>" +
         '<h3 class="chain__title">' + esc(stage.label) + "</h3>" +
         '<p class="chain__text">' + esc(stage.summary || "") + "</p>" +
-        (codes.length
-          ? '<p class="chain__sessions">' + (codes.length === 1 ? "Session " : "Sessions ") + esc(codes.join(", ")) + "</p>"
-          : "") +
       "</li>";
     }).join("") + "</ol>";
   }

@@ -1,7 +1,7 @@
 /* GENERATED FILE — do not edit.
    Built from data/*.json by tools/build_data.py.
    Edit the JSON in data/, then re-run: python tools/build_data.py
-   Built 2026-11-13 11:49 UTC */
+   Built 2026-11-13 11:54 UTC */
 window.EPW = {
  "about": {
   "_comment": "The 'About the Week' section. Condensed (24 September 2026) from the Background, Objectives and Target audience of the draft programme overview (23 September 2026). Keep it in step with the agenda; figures must be verified before reuse. The GET.transform sentence is the co-host's standard description — keep it verbatim.",
