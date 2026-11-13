@@ -351,13 +351,25 @@
     var item = day.items[index];
     var comp = component(item._component);
 
+    /* Each speaker shows a headshot and, when they are on the speaker list,
+       opens their bio (with a way back to this session). */
     var people = (item.speakers || []).map(function (p) {
-      return "<li>" +
-        (p.role ? '<div class="modal__person-role">' + esc(p.role) + (p.provisional ? " · to be confirmed" : "") + "</div>" : "") +
-        '<div class="modal__person-name">' + esc(p.name) + "</div>" +
-        (p.title ? '<div class="modal__person-org">' + esc(p.title) + "</div>" : "") +
-        (p.org ? '<div class="modal__person-org">' + esc(p.org) + "</div>" : "") +
-      "</li>";
+      var pi = personIndex(p.name);
+      var person = pi >= 0 ? speakers.people[pi] : null;
+      var photo = person && person.photo;
+      var inner =
+        (photo
+          ? '<img class="modal__person-photo" src="images/speakers/' + esc(photo) + '" alt="" loading="lazy">'
+          : '<span class="modal__person-photo speaker__initials" aria-hidden="true">' + esc(initials(p.name)) + "</span>") +
+        '<span class="modal__person-text">' +
+          (p.role ? '<span class="modal__person-role">' + esc(p.role) + (p.provisional ? " · to be confirmed" : "") + "</span>" : "") +
+          '<span class="modal__person-name">' + esc(p.name) + "</span>" +
+          (p.title ? '<span class="modal__person-org">' + esc(p.title) + "</span>" : "") +
+          (p.org ? '<span class="modal__person-org">' + esc(p.org) + "</span>" : "") +
+        "</span>";
+      return "<li>" + (pi >= 0
+        ? '<button type="button" class="modal__person" data-person="' + pi + '" data-from="' + index + '">' + inner + "</button>"
+        : '<div class="modal__person">' + inner + "</div>") + "</li>";
     }).join("");
 
     el("modalBody").innerHTML =
@@ -380,7 +392,19 @@
   }
 
   el("modalClose").addEventListener("click", function () { modal.close(); });
-  modal.addEventListener("click", function (e) { if (e.target === modal) modal.close(); });
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) { modal.close(); return; }
+    var person = e.target.closest(".modal__person[data-person]");
+    if (person) { openSpeaker(parseInt(person.dataset.person, 10), parseInt(person.dataset.from, 10)); return; }
+    var back = e.target.closest("[data-back]");
+    if (back) openSession(parseInt(back.dataset.back, 10));
+  });
+
+  function personIndex(name) {
+    var list = speakers.people || [];
+    for (var i = 0; i < list.length; i++) if (list[i].name === name) return i;
+    return -1;
+  }
 
   /* ---------- now / next ---------- */
 
@@ -507,9 +531,12 @@
     return null;
   }
 
-  function openSpeaker(index) {
+  function openSpeaker(index, fromSession) {
     var p = (speakers.people || [])[index];
     if (!p) return;
+    var back = typeof fromSession === "number" && !isNaN(fromSession)
+      ? '<button type="button" class="modal__back" data-back="' + fromSession + '">← Back to session</button>'
+      : "";
     var comp = (p.appearances && p.appearances[0] && p.appearances[0].component) || "";
 
     var sessions = (p.appearances || []).map(function (a) {
@@ -525,6 +552,7 @@
 
     el("modalBody").innerHTML =
       '<div style="' + accentStyle(comp) + '">' +
+        back +
         '<div class="modal__speaker">' +
           (p.photo
             ? '<img class="modal__speaker-photo" src="images/speakers/' + esc(p.photo) + '" alt="">'

@@ -886,6 +886,24 @@ button.rail__item:hover .rail__body { background: var(--surface-2); }
 .modal__person-name { font-weight: 600; }
 .modal__person-role { font-family: var(--font-mono); font-size: .7rem; color: var(--forum); text-transform: uppercase; letter-spacing: .06em; }
 .modal__person-org { font-size: .88rem; color: var(--ink-2); }
+.modal__person {
+  display: flex; gap: .9rem; align-items: center; width: 100%;
+  font: inherit; color: inherit; text-align: left;
+  background: none; border: 0; padding: .35rem; margin: -.35rem; border-radius: .6rem;
+}
+button.modal__person { cursor: pointer; }
+button.modal__person:hover, button.modal__person:focus-visible { background: var(--haze); }
+button.modal__person:hover .modal__person-name { text-decoration: underline; }
+.modal__person-photo {
+  flex: none; width: 3.5rem; height: 3.5rem; border-radius: 50%; object-fit: cover;
+  background: var(--haze); display: grid; place-items: center; font-size: .95rem;
+}
+.modal__person-text { display: flex; flex-direction: column; min-width: 0; }
+.modal__back {
+  font: inherit; font-size: .85rem; color: var(--forum); background: none; border: 0;
+  padding: 0; margin-bottom: 1rem; cursor: pointer;
+}
+.modal__back:hover { text-decoration: underline; }
 
 /* ---------- scene ----------
    Photographs from the previous Forum, sitting between the programme and the
