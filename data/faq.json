@@ -19,11 +19,27 @@
     },
     {
       "q": "I need a visa to travel to Germany. What should I do?",
-      "a": "Apply as early as possible: Schengen visa appointments in some countries are booked months ahead. IRENA can provide a visa support letter for participants attending in person on request; contact {LTES@irena.org|mailto:LTES@irena.org}. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
+      "a": "Apply as early as possible: Schengen visa appointments in some countries are booked months ahead. If you are attending in person, IRENA can provide a visa support letter on request; contact {LTES@irena.org|mailto:LTES@irena.org}. Passport details are requested separately, and only once your place is confirmed. Please do not send them by email."
+    },
+    {
+      "q": "How do I get to the venue?",
+      "a": "From Bonn Central Station (Bonn Hbf), take underground tram (U-Bahn) line 16 or 63 towards Bad Godesberg, or line 66 towards Bad Honnef, and get off at Ollenhauerstraße. Turn right onto Friedrich-Ebert-Allee and walk towards the city centre; GIZ is on the left. From Cologne Bonn or Frankfurt airport, trains and buses run to Bonn Hbf ({bahn.com|https://www.bahn.com/en}). Local fares are paid by participants."
+    },
+    {
+      "q": "What do I need to bring on the first day?",
+      "a": "Registration and badge collection open at 08:00 on Tuesday 1 December at the GIZ Campus. Bring a valid photo ID (passport or national identity card). Your badge is needed to enter the venue all week, and you will be asked to sign a photography consent form when you collect it."
+    },
+    {
+      "q": "Are meals provided?",
+      "a": "Yes, for registered on-site participants: breakfast, coffee breaks and a vegetarian lunch (with a vegan option) on all four days, a vegetarian welcome dinner on Tuesday 1 December (19:00–21:00, Eventmanufaktur, near Bonn Hbf) and a reception after Day 3. Please send any dietary restrictions to {LTES@irena.org|mailto:LTES@irena.org} as soon as possible."
+    },
+    {
+      "q": "Do I book my own accommodation?",
+      "a": "Yes, unless your accommodation is covered by other means. Hotels in the Bundesviertel or near Bonn Hbf give the easiest access to the venue."
     },
     {
       "q": "Can I follow the Week online?",
-      "a": "Yes. All plenary and numbered sessions are streamed on Microsoft Teams, except the closed-door LTES Network strategic meeting on Day 2. The joining link is published on this page before the event."
+      "a": "Yes. All plenary and numbered sessions are streamed on Microsoft Teams, except the closed-door LTES Network strategic meeting on Day 2. Connection details are shared with registered online participants ahead of the event."
     },
     {
       "q": "What language are the sessions in?",
