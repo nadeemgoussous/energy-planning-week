@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:opening-d3@energyplanningweek.info
-DTSTAMP:20261126T094143Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T080500Z
 DTEND:20261203T082500Z
 SUMMARY:EPW 2026: Opening presentations
@@ -19,7 +19,7 @@ URL:https://energyplanningweek.info/#opening-d3
 END:VEVENT
 BEGIN:VEVENT
 UID:session-7@energyplanningweek.info
-DTSTAMP:20261126T094143Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T083000Z
 DTEND:20261203T100000Z
 SUMMARY:EPW 2026: Session 7: From energy planning to investment decisions 
@@ -41,7 +41,7 @@ URL:https://energyplanningweek.info/#session-7
 END:VEVENT
 BEGIN:VEVENT
 UID:session-8@energyplanningweek.info
-DTSTAMP:20261126T094143Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T103000Z
 DTEND:20261203T120000Z
 SUMMARY:EPW 2026: Session 8: Planning the transition away from fossil fuels
@@ -59,15 +59,15 @@ URL:https://energyplanningweek.info/#session-8
 END:VEVENT
 BEGIN:VEVENT
 UID:lunch-d3@energyplanningweek.info
-DTSTAMP:20261126T094143Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T120000Z
-DTEND:20261203T131500Z
+DTEND:20261203T133000Z
 SUMMARY:EPW 2026: Lunch break and working lunch session: Planning for unive
  rsal access – turning national targets into a bankable last mile
 LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
  onn\, Germany
-DESCRIPTION:Lunch from 13:00\; the working lunch session runs from 13:15 to
-  14:05. Many countries now hold a national strategy or least-cost plan for
+DESCRIPTION:Lunch from 13:00\; the working lunch session runs from 13:00 to
+  14:00. Many countries now hold a national strategy or least-cost plan for
   universal access\, yet turning it into a financed pipeline remains diffic
  ult\, particularly in Sub-Saharan Africa. This working lunch brings govern
  ment planners\, regulators\, data and tool providers\, and financiers toge
@@ -79,8 +79,8 @@ URL:https://energyplanningweek.info/#lunch-d3
 END:VEVENT
 BEGIN:VEVENT
 UID:session-9@energyplanningweek.info
-DTSTAMP:20261126T094143Z
-DTSTART:20261203T131500Z
+DTSTAMP:20261126T164119Z
+DTSTART:20261203T133000Z
 DTEND:20261203T144500Z
 SUMMARY:EPW 2026: Session 9: From plans to delivery – how can planning su
  pport enabling energy markets?
@@ -99,7 +99,7 @@ URL:https://energyplanningweek.info/#session-9
 END:VEVENT
 BEGIN:VEVENT
 UID:session-10@energyplanningweek.info
-DTSTAMP:20261126T094143Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T151500Z
 DTEND:20261203T164500Z
 SUMMARY:EPW 2026: Session 10: Country cases – when planning meets the mar
@@ -122,14 +122,14 @@ URL:https://energyplanningweek.info/#session-10
 END:VEVENT
 BEGIN:VEVENT
 UID:closing@energyplanningweek.info
-DTSTAMP:20261126T094143Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T164500Z
 DTEND:20261203T170000Z
 SUMMARY:EPW 2026: Closing of Day 3
 LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
  onn\, Germany
-DESCRIPTION:Followed by a reception.\n\nProvisional programme\, check for c
- hanges: https://energyplanningweek.info/#closing
+DESCRIPTION:Provisional programme\, check for changes: https://energyplanni
+ ngweek.info/#closing
 URL:https://energyplanningweek.info/#closing
 END:VEVENT
 END:VCALENDAR

@@ -5,14 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:closing@energyplanningweek.info
-DTSTAMP:20261124T130616Z
+DTSTAMP:20261126T164119Z
 DTSTART:20261203T164500Z
 DTEND:20261203T170000Z
 SUMMARY:EPW 2026: Closing of Day 3
 LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
  onn\, Germany
-DESCRIPTION:Followed by a reception.\n\nProvisional programme\, check for c
- hanges: https://energyplanningweek.info/#closing
+DESCRIPTION:Provisional programme\, check for changes: https://energyplanni
+ ngweek.info/#closing
 URL:https://energyplanningweek.info/#closing
 END:VEVENT
 END:VCALENDAR

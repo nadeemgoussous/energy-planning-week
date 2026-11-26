@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reception-d3@energyplanningweek.info
+DTSTAMP:20261126T164119Z
+DTSTART:20261203T170000Z
+DTEND:20261203T190000Z
+SUMMARY:EPW 2026: Reception
+LOCATION:Foyer\, GIZ Campus
+DESCRIPTION:Foyer\, GIZ Campus\n\nProvisional programme\, check for changes
+ : https://energyplanningweek.info/#reception-d3
+URL:https://energyplanningweek.info/#reception-d3
+END:VEVENT
+END:VCALENDAR
