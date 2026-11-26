@@ -1262,8 +1262,7 @@
     }
 
     el("programmeLede").textContent =
-      event.components.map(function (c) { return c.shortName + " (" + c.days.toLowerCase() + ")"; }).join(", ") +
-      ". Select a day to view its sessions, and a session for its description. " +
+      "Select a day to view its sessions, and a session for its description. " +
       "All times are " + event.dates.timezoneLabel + ".";
   }
 
