@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-4@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261202T093000Z
+DTEND:20261202T111500Z
+SUMMARY:EPW 2026: Session 4: Planning under geopolitical uncertainty
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Geopolitical volatility\, fuel-price shocks and supply disrupti
+ ons have moved energy security back to the centre of national planning. Th
+ is session examines how countries stress-test scenarios against these risk
+ s\, how the fossil-fuel transition and stranded-asset exposure are treated
+  in national frameworks\, and how alternative plans are conceived to respo
+ nd to supply disruptions.\n\nProvisional programme\, check for changes: ht
+ tps://energyplanningweek.info/#session-4
+URL:https://energyplanningweek.info/#session-4
+END:VEVENT
+END:VCALENDAR

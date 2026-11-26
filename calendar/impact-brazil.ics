@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:impact-brazil@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261202T081500Z
+DTEND:20261202T090000Z
+SUMMARY:EPW 2026: Impact session: Brazil's national energy plan and the LTE
+ S Network
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Brazil's Energy Research Office presents the country's national
+  energy planning instruments\, the long-term PNE 2055 and the ten-year exp
+ ansion plan PDE 2035\, and reflects on how peer exchange through the LTES 
+ Network informed national planning practice. An impact spotlight on what N
+ etwork collaboration looks like for national planning processes.\n\nProvis
+ ional programme\, check for changes: https://energyplanningweek.info/#impa
+ ct-brazil
+URL:https://energyplanningweek.info/#impact-brazil
+END:VEVENT
+END:VCALENDAR

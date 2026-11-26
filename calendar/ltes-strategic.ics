@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ltes-strategic@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261203T070000Z
+DTEND:20261203T080000Z
+SUMMARY:EPW 2026: Closed-door session: LTES Network members and partners st
+ rategic meeting
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Closed-door: LTES Network members and partners only\n\nCoffee a
+ nd networking for all other participants\, 08:00–09:00.\n\nProvisional p
+ rogramme\, check for changes: https://energyplanningweek.info/#ltes-strate
+ gic
+URL:https://energyplanningweek.info/#ltes-strategic
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:breakfast-msp@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T071500Z
+DTEND:20261204T080000Z
+SUMMARY:EPW 2026: Coffee session: Connecting long-term energy scenarios wit
+ h marine spatial planning
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Marine spatial planning (MSP) determines how marine space is us
+ ed and is a key enabler of accelerated\, responsible offshore wind deploym
+ ent – a growing part of many long-term energy scenarios. This session ex
+ amines how energy planners and marine spatial planners can work together s
+ o that each process informs the other\, using more granular MSP data to im
+ prove forecasts of timelines and infrastructure needs\, with a focus on in
+ stitutional coordination and data governance.\n\nProvisional programme\, c
+ heck for changes: https://energyplanningweek.info/#breakfast-msp
+URL:https://energyplanningweek.info/#breakfast-msp
+END:VEVENT
+END:VCALENDAR

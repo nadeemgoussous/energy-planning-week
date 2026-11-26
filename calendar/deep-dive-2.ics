@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:deep-dive-2@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T090000Z
+DTEND:20261204T100000Z
+SUMMARY:EPW 2026: Deep Dive 2: Robust power system planning – linking gri
+ d infrastructure and flexibility
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:As solar and wind shares grow and electrification reshapes dema
+ nd\, power systems need more grid capacity and more flexibility\, and the 
+ two are closely linked. This session shares experiences in connecting nati
+ onal energy scenarios with grid and flexibility planning: where grid expan
+ sion is needed\, where flexibility offers a cost-effective complement\, an
+ d how to avoid unnecessary investment while maintaining reliability.\n\nPr
+ ovisional programme\, check for changes: https://energyplanningweek.info/#
+ deep-dive-2
+URL:https://energyplanningweek.info/#deep-dive-2
+END:VEVENT
+END:VCALENDAR

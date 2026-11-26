@@ -1,0 +1,9 @@
+# The page itself must stay crawlable: search engines have to open it to see its
+# noindex tag. Blocking it here would let the bare address be listed.
+User-agent: *
+Disallow: /images/
+Disallow: /data/
+Disallow: /calendar/
+Disallow: /js/
+Disallow: /tools/
+Disallow: /README.md

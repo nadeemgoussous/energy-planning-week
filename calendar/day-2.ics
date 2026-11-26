@@ -1,0 +1,107 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:impact-brazil@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T081500Z
+DTEND:20261202T090000Z
+SUMMARY:EPW 2026: Impact session: Brazil's national energy plan and the LTE
+ S Network
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Brazil's Energy Research Office presents the country's national
+  energy planning instruments\, the long-term PNE 2055 and the ten-year exp
+ ansion plan PDE 2035\, and reflects on how peer exchange through the LTES 
+ Network informed national planning practice. An impact spotlight on what N
+ etwork collaboration looks like for national planning processes.\n\nProvis
+ ional programme\, check for changes: https://energyplanningweek.info/#impa
+ ct-brazil
+URL:https://energyplanningweek.info/#impact-brazil
+END:VEVENT
+BEGIN:VEVENT
+UID:session-4@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T093000Z
+DTEND:20261202T111500Z
+SUMMARY:EPW 2026: Session 4: Planning under geopolitical uncertainty
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Geopolitical volatility\, fuel-price shocks and supply disrupti
+ ons have moved energy security back to the centre of national planning. Th
+ is session examines how countries stress-test scenarios against these risk
+ s\, how the fossil-fuel transition and stranded-asset exposure are treated
+  in national frameworks\, and how alternative plans are conceived to respo
+ nd to supply disruptions.\n\nProvisional programme\, check for changes: ht
+ tps://energyplanningweek.info/#session-4
+URL:https://energyplanningweek.info/#session-4
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-showcase@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T111500Z
+DTEND:20261202T123000Z
+SUMMARY:EPW 2026: Lunch session: state-of-the-art showcase of machine learn
+ ing and artificial intelligence in energy planning
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:A working-lunch showcase of applied AI uses prioritised by the 
+ LTES Network – demand and load forecasting\, scenario development and se
+ nsitivity analysis\, and data processing and quality assurance.\n\nProvisi
+ onal programme\, check for changes: https://energyplanningweek.info/#ai-sh
+ owcase
+URL:https://energyplanningweek.info/#ai-showcase
+END:VEVENT
+BEGIN:VEVENT
+UID:session-5@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T123000Z
+DTEND:20261202T141500Z
+SUMMARY:EPW 2026: Session 5: Climate risks and adaptation in national energ
+ y scenarios
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Climate variability and physical risks – heatwaves\, floods\,
+  droughts and shifting hydrology – are stress-testing national energy sy
+ stems in real time. This session examines how planning teams incorporate c
+ limate risks and adaptation into long-term scenarios: from El Niño-driven
+  droughts in hydropower-dependent systems to cooling demand and flood expo
+ sure\, and the data and methods needed to make plans resilient.\n\nProvisi
+ onal programme\, check for changes: https://energyplanningweek.info/#sessi
+ on-5
+URL:https://energyplanningweek.info/#session-5
+END:VEVENT
+BEGIN:VEVENT
+UID:session-6@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T144500Z
+DTEND:20261202T163000Z
+SUMMARY:EPW 2026: Session 6: Transformative methods\, transformative scenar
+ ios?
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Scenario practice is evolving: deep uncertainty and robust deci
+ sion-making\, agent-based and participatory modelling\, and open-source to
+ ols are moving from research into government planning\, bringing new actor
+ s and interdisciplinary insights into the scenario-building process itself
+ . This session examines how these methods can be navigated within the real
+ ities government planners face: resource constraints\, institutional manda
+ tes and political viability.\n\nProvisional programme\, check for changes:
+  https://energyplanningweek.info/#session-6
+URL:https://energyplanningweek.info/#session-6
+END:VEVENT
+BEGIN:VEVENT
+UID:day2-wrap@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T163000Z
+DTEND:20261202T164500Z
+SUMMARY:EPW 2026: Day 2 wrap and bridge to Day 3
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Joint reflections by IRENA and GET.transform.\n\nProvisional pr
+ ogramme\, check for changes: https://energyplanningweek.info/#day2-wrap
+URL:https://energyplanningweek.info/#day2-wrap
+END:VEVENT
+END:VCALENDAR

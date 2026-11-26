@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:opening-d3@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261203T080500Z
+DTEND:20261203T082500Z
+SUMMARY:EPW 2026: Opening presentations
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Cross-regional findings from the Global Coalition for Energy Pl
+ anning (GCEP) regional dialogues on the bottlenecks between planning and i
+ nvestment\, and a perspective from GET.pro.\n\nProvisional programme\, che
+ ck for changes: https://energyplanningweek.info/#opening-d3
+URL:https://energyplanningweek.info/#opening-d3
+END:VEVENT
+END:VCALENDAR

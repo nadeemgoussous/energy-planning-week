@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:welcome-dinner@energyplanningweek.info
+DTSTAMP:20261124T084847Z
+DTSTART:20261201T180000Z
+DTEND:20261201T200000Z
+SUMMARY:EPW 2026: Welcome dinner
+LOCATION:Eventmanufaktur\, Maximilianstraße 15\, 53111 Bonn
+DESCRIPTION:Eventmanufaktur\, Maximilianstraße 15\, 53111 Bonn\n\nProvisio
+ nal programme\, check for changes: https://energyplanningweek.info/#welcom
+ e-dinner
+URL:https://energyplanningweek.info/#welcome-dinner
+END:VEVENT
+END:VCALENDAR

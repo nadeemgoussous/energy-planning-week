@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-10@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261203T151500Z
+DTEND:20261203T164500Z
+SUMMARY:EPW 2026: Session 10: Country cases – when planning meets the mar
+ ket
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Country case presentations from three angles. Planning enables 
+ the market (large scale): how long-term planning can inform large-scale pr
+ oject procurement and create a pipeline investors can respond to. The mark
+ et moves faster than planning (distributed generation): what happens when 
+ markets\, prosumers or new technologies such as battery storage move ahead
+  of the assumptions in the plan\, and how market information\, investor be
+ haviour\, technology costs and emerging business models should feed back i
+ nto planning. Planning enables infrastructure investment: how grid infrast
+ ructure enables functioning energy markets and private investment\, and ho
+ w planning can provide the long-term visibility\, coordination and investm
+ ent framework needed to develop it.\n\nProvisional programme\, check for c
+ hanges: https://energyplanningweek.info/#session-10
+URL:https://energyplanningweek.info/#session-10
+END:VEVENT
+END:VCALENDAR

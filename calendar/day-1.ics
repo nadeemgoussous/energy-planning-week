@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:opening@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T080000Z
+DTEND:20261201T084500Z
+SUMMARY:EPW 2026: Welcome remarks and introductory presentations
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Welcome remarks from IRENA\, GIZ\, Germany's Federal Ministry f
+ or Economic Cooperation and Development (BMZ) and Federal Ministry for Eco
+ nomic Affairs and Energy (BMWE)\, Denmark and the Clean Energy Ministerial
+  (CEM).\n\nProvisional programme\, check for changes: https://energyplanni
+ ngweek.info/#opening
+URL:https://energyplanningweek.info/#opening
+END:VEVENT
+BEGIN:VEVENT
+UID:keynote-d1@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T084500Z
+DTEND:20261201T092500Z
+SUMMARY:EPW 2026: Keynote presentation
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Provisional programme\, check for changes: https://energyplanni
+ ngweek.info/#keynote-d1
+URL:https://energyplanningweek.info/#keynote-d1
+END:VEVENT
+BEGIN:VEVENT
+UID:session-1@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T092500Z
+DTEND:20261201T110000Z
+SUMMARY:EPW 2026: Session 1: Electrification and the outcomes of COP31 – 
+ what scenarios must now capture
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:This opening session examines what accelerated electrification 
+ commitments mean for national energy planning. Government planners and the
+  institutions supporting them discuss how global electrification goals tra
+ nslate into national scenarios\, policies and investment pipelines\, and w
+ hat practical support countries need to make that translation work.\n\nPro
+ visional programme\, check for changes: https://energyplanningweek.info/#s
+ ession-1
+URL:https://energyplanningweek.info/#session-1
+END:VEVENT
+BEGIN:VEVENT
+UID:session-2@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T113000Z
+DTEND:20261201T131500Z
+SUMMARY:EPW 2026: Session 2: Building planning ecosystems that survive poli
+ tical cycles
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Durable scenario work depends on institutions. This session exa
+ mines how countries build planning ecosystems that develop and retain capa
+ city across ministries\, universities and research institutions\, moving f
+ rom dependence on external support toward self-sustaining national plannin
+ g functions. It covers institutional mandates and ownership\, skills and r
+ etention\, modelling-tool institutionalisation\, and alignment with policy
+  and budget cycles.\n\nProvisional programme\, check for changes: https://
+ energyplanningweek.info/#session-2
+URL:https://energyplanningweek.info/#session-2
+END:VEVENT
+BEGIN:VEVENT
+UID:session-3@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T144500Z
+DTEND:20261201T163000Z
+SUMMARY:EPW 2026: Session 3: Data governance\, sharing and quality assuranc
+ e for developing long-term scenarios
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Credible scenarios rest on credible data\, yet many planning te
+ ams face fragmented access\, persistent gaps and heavy reliance on proprie
+ tary datasets. This session examines how countries and regional institutio
+ ns govern\, share and quality-assure energy data – from national energy 
+ information systems to regional databases – and explores practical solut
+ ions for planning teams with limited resources.\n\nProvisional programme\,
+  check for changes: https://energyplanningweek.info/#session-3
+URL:https://energyplanningweek.info/#session-3
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-2@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T113000Z
+DTEND:20261201T131500Z
+SUMMARY:EPW 2026: Session 2: Building planning ecosystems that survive poli
+ tical cycles
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Durable scenario work depends on institutions. This session exa
+ mines how countries build planning ecosystems that develop and retain capa
+ city across ministries\, universities and research institutions\, moving f
+ rom dependence on external support toward self-sustaining national plannin
+ g functions. It covers institutional mandates and ownership\, skills and r
+ etention\, modelling-tool institutionalisation\, and alignment with policy
+  and budget cycles.\n\nProvisional programme\, check for changes: https://
+ energyplanningweek.info/#session-2
+URL:https://energyplanningweek.info/#session-2
+END:VEVENT
+END:VCALENDAR

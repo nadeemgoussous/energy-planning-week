@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:deep-dive-1@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T080000Z
+DTEND:20261204T090000Z
+SUMMARY:EPW 2026: Deep Dive 1: Greening data centres – principles for sou
+ nd energy planning under uncertainty
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:AI and data centres are driving rapid growth in electricity dem
+ and. Poorly planned\, this new demand can strain networks and raise emissi
+ ons\; well-designed procurement and siting can instead accelerate addition
+ al renewables\, flexibility and grid investment. Building on IRENA's work 
+ on green data centres\, this session explores how principles for credible 
+ renewable electricity supply can be linked with system and infrastructure 
+ planning to address anticipated data centre demand despite prevailing unce
+ rtainty.\n\nProvisional programme\, check for changes: https://energyplann
+ ingweek.info/#deep-dive-1
+URL:https://energyplanningweek.info/#deep-dive-1
+END:VEVENT
+END:VCALENDAR

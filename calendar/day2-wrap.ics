@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:day2-wrap@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261202T163000Z
+DTEND:20261202T164500Z
+SUMMARY:EPW 2026: Day 2 wrap and bridge to Day 3
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Joint reflections by IRENA and GET.transform.\n\nProvisional pr
+ ogramme\, check for changes: https://energyplanningweek.info/#day2-wrap
+URL:https://energyplanningweek.info/#day2-wrap
+END:VEVENT
+END:VCALENDAR

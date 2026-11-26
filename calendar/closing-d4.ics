@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:closing-d4@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T120000Z
+DTEND:20261204T121500Z
+SUMMARY:EPW 2026: Closing remarks
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Provisional programme\, check for changes: https://energyplanni
+ ngweek.info/#closing-d4
+URL:https://energyplanningweek.info/#closing-d4
+END:VEVENT
+END:VCALENDAR

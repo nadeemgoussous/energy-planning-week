@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:deep-dive-3@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T103000Z
+DTEND:20261204T120000Z
+SUMMARY:EPW 2026: Deep Dive 3: Regional energy planning – aligning nation
+ al priorities and regional interconnection
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Regional institutions and planning entities from different worl
+ d regions share how national plans inform regional transmission developmen
+ t and vice versa\, the institutional mechanisms that support coordination\
+ , and the challenges that remain.\n\nProvisional programme\, check for cha
+ nges: https://energyplanningweek.info/#deep-dive-3
+URL:https://energyplanningweek.info/#deep-dive-3
+END:VEVENT
+END:VCALENDAR

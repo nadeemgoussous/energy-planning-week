@@ -1,0 +1,135 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:opening-d3@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T080500Z
+DTEND:20261203T082500Z
+SUMMARY:EPW 2026: Opening presentations
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Cross-regional findings from the Global Coalition for Energy Pl
+ anning (GCEP) regional dialogues on the bottlenecks between planning and i
+ nvestment\, and a perspective from GET.pro.\n\nProvisional programme\, che
+ ck for changes: https://energyplanningweek.info/#opening-d3
+URL:https://energyplanningweek.info/#opening-d3
+END:VEVENT
+BEGIN:VEVENT
+UID:session-7@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T083000Z
+DTEND:20261203T100000Z
+SUMMARY:EPW 2026: Session 7: From energy planning to investment decisions 
+ – the case of power utilities
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Power-sector investment planning offers a concrete case in whic
+ h scenario findings can guide specific investments\, particularly where st
+ ate-owned or vertically integrated utilities can commit to them. Building 
+ on initial findings from the GCEP Planning-to-Investment Dialogues\, this 
+ session examines what planning requirements support the translation of lon
+ g-term power-sector scenarios into investable plans\, how these differ acr
+ oss investment arrangements – utility investment programmes\, public pro
+ curement and private-sector investment – and how conditions such as util
+ ity creditworthiness\, debt sustainability and financial risks can be cons
+ idered during planning.\n\nProvisional programme\, check for changes: http
+ s://energyplanningweek.info/#session-7
+URL:https://energyplanningweek.info/#session-7
+END:VEVENT
+BEGIN:VEVENT
+UID:session-8@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T103000Z
+DTEND:20261203T120000Z
+SUMMARY:EPW 2026: Session 8: Planning the transition away from fossil fuels
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:The transition away from fossil fuels (TAFF) agenda through the
+  lens of investment-ready energy planning: how national planning systems c
+ an translate transition-away commitments into credible implementation path
+ ways\, and what practical support GCEP can provide to facilitate dialogue 
+ between planners\, policymakers and financiers on the conditions needed to
+  move from political commitment to investable action. It also reflects on 
+ the development and climate nexus.\n\nProvisional programme\, check for ch
+ anges: https://energyplanningweek.info/#session-8
+URL:https://energyplanningweek.info/#session-8
+END:VEVENT
+BEGIN:VEVENT
+UID:lunch-d3@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T120000Z
+DTEND:20261203T131500Z
+SUMMARY:EPW 2026: Lunch break and working lunch session: Planning for unive
+ rsal access – turning national targets into a bankable last mile
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Lunch from 13:00\; the working lunch session runs from 13:15 to
+  14:05. Many countries now hold a national strategy or least-cost plan for
+  universal access\, yet turning it into a financed pipeline remains diffic
+ ult\, particularly in Sub-Saharan Africa. This working lunch brings govern
+ ment planners\, regulators\, data and tool providers\, and financiers toge
+ ther in small groups around real country cases to examine where access pla
+ ns stall on the way to investment and what would move them forward.\n\nPro
+ visional programme\, check for changes: https://energyplanningweek.info/#l
+ unch-d3
+URL:https://energyplanningweek.info/#lunch-d3
+END:VEVENT
+BEGIN:VEVENT
+UID:session-9@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T131500Z
+DTEND:20261203T144500Z
+SUMMARY:EPW 2026: Session 9: From plans to delivery – how can planning su
+ pport enabling energy markets?
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:What it takes to turn energy planning priorities into commercia
+ lly viable projects\, infrastructure and functioning markets. The session 
+ looks at what needs to happen from planning to action\, from policy\, regu
+ lation and procurement to market design and investment decisions\, and whe
+ re key barriers can emerge along the way\, bringing together perspectives 
+ from different actors on how governments and planning institutions can cre
+ ate the conditions for investment and strengthen the link between long-ter
+ m planning and delivery.\n\nProvisional programme\, check for changes: htt
+ ps://energyplanningweek.info/#session-9
+URL:https://energyplanningweek.info/#session-9
+END:VEVENT
+BEGIN:VEVENT
+UID:session-10@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T151500Z
+DTEND:20261203T164500Z
+SUMMARY:EPW 2026: Session 10: Country cases – when planning meets the mar
+ ket
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Country case presentations from three angles. Planning enables 
+ the market (large scale): how long-term planning can inform large-scale pr
+ oject procurement and create a pipeline investors can respond to. The mark
+ et moves faster than planning (distributed generation): what happens when 
+ markets\, prosumers or new technologies such as battery storage move ahead
+  of the assumptions in the plan\, and how market information\, investor be
+ haviour\, technology costs and emerging business models should feed back i
+ nto planning. Planning enables infrastructure investment: how grid infrast
+ ructure enables functioning energy markets and private investment\, and ho
+ w planning can provide the long-term visibility\, coordination and investm
+ ent framework needed to develop it.\n\nProvisional programme\, check for c
+ hanges: https://energyplanningweek.info/#session-10
+URL:https://energyplanningweek.info/#session-10
+END:VEVENT
+BEGIN:VEVENT
+UID:closing@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T164500Z
+DTEND:20261203T170000Z
+SUMMARY:EPW 2026: Closing of Day 3
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Followed by a reception.\n\nProvisional programme\, check for c
+ hanges: https://energyplanningweek.info/#closing
+URL:https://energyplanningweek.info/#closing
+END:VEVENT
+END:VCALENDAR

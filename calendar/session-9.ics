@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-9@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261203T131500Z
+DTEND:20261203T144500Z
+SUMMARY:EPW 2026: Session 9: From plans to delivery – how can planning su
+ pport enabling energy markets?
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:What it takes to turn energy planning priorities into commercia
+ lly viable projects\, infrastructure and functioning markets. The session 
+ looks at what needs to happen from planning to action\, from policy\, regu
+ lation and procurement to market design and investment decisions\, and whe
+ re key barriers can emerge along the way\, bringing together perspectives 
+ from different actors on how governments and planning institutions can cre
+ ate the conditions for investment and strengthen the link between long-ter
+ m planning and delivery.\n\nProvisional programme\, check for changes: htt
+ ps://energyplanningweek.info/#session-9
+URL:https://energyplanningweek.info/#session-9
+END:VEVENT
+END:VCALENDAR

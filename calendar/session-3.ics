@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-3@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T144500Z
+DTEND:20261201T163000Z
+SUMMARY:EPW 2026: Session 3: Data governance\, sharing and quality assuranc
+ e for developing long-term scenarios
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Credible scenarios rest on credible data\, yet many planning te
+ ams face fragmented access\, persistent gaps and heavy reliance on proprie
+ tary datasets. This session examines how countries and regional institutio
+ ns govern\, share and quality-assure energy data – from national energy 
+ information systems to regional databases – and explores practical solut
+ ions for planning teams with limited resources.\n\nProvisional programme\,
+  check for changes: https://energyplanningweek.info/#session-3
+URL:https://energyplanningweek.info/#session-3
+END:VEVENT
+END:VCALENDAR

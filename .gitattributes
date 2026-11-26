@@ -1,0 +1,2 @@
+# Calendar files need CRLF line endings exactly as built
+*.ics -text

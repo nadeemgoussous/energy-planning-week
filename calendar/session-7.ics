@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-7@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T083000Z
+DTEND:20261203T100000Z
+SUMMARY:EPW 2026: Session 7: From energy planning to investment decisions 
+ – the case of power utilities
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Power-sector investment planning offers a concrete case in whic
+ h scenario findings can guide specific investments\, particularly where st
+ ate-owned or vertically integrated utilities can commit to them. Building 
+ on initial findings from the GCEP Planning-to-Investment Dialogues\, this 
+ session examines what planning requirements support the translation of lon
+ g-term power-sector scenarios into investable plans\, how these differ acr
+ oss investment arrangements – utility investment programmes\, public pro
+ curement and private-sector investment – and how conditions such as util
+ ity creditworthiness\, debt sustainability and financial risks can be cons
+ idered during planning.\n\nProvisional programme\, check for changes: http
+ s://energyplanningweek.info/#session-7
+URL:https://energyplanningweek.info/#session-7
+END:VEVENT
+END:VCALENDAR

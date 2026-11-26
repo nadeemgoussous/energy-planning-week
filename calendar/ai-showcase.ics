@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ai-showcase@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261202T111500Z
+DTEND:20261202T123000Z
+SUMMARY:EPW 2026: Lunch session: state-of-the-art showcase of machine learn
+ ing and artificial intelligence in energy planning
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:A working-lunch showcase of applied AI uses prioritised by the 
+ LTES Network – demand and load forecasting\, scenario development and se
+ nsitivity analysis\, and data processing and quality assurance.\n\nProvisi
+ onal programme\, check for changes: https://energyplanningweek.info/#ai-sh
+ owcase
+URL:https://energyplanningweek.info/#ai-showcase
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:opening@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261201T080000Z
+DTEND:20261201T084500Z
+SUMMARY:EPW 2026: Welcome remarks and introductory presentations
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Welcome remarks from IRENA\, GIZ\, Germany's Federal Ministry f
+ or Economic Cooperation and Development (BMZ) and Federal Ministry for Eco
+ nomic Affairs and Energy (BMWE)\, Denmark and the Clean Energy Ministerial
+  (CEM).\n\nProvisional programme\, check for changes: https://energyplanni
+ ngweek.info/#opening
+URL:https://energyplanningweek.info/#opening
+END:VEVENT
+END:VCALENDAR

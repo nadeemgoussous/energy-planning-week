@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-6@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261202T144500Z
+DTEND:20261202T163000Z
+SUMMARY:EPW 2026: Session 6: Transformative methods\, transformative scenar
+ ios?
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Scenario practice is evolving: deep uncertainty and robust deci
+ sion-making\, agent-based and participatory modelling\, and open-source to
+ ols are moving from research into government planning\, bringing new actor
+ s and interdisciplinary insights into the scenario-building process itself
+ . This session examines how these methods can be navigated within the real
+ ities government planners face: resource constraints\, institutional manda
+ tes and political viability.\n\nProvisional programme\, check for changes:
+  https://energyplanningweek.info/#session-6
+URL:https://energyplanningweek.info/#session-6
+END:VEVENT
+END:VCALENDAR

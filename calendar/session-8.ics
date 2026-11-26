@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:session-8@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261203T103000Z
+DTEND:20261203T120000Z
+SUMMARY:EPW 2026: Session 8: Planning the transition away from fossil fuels
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:The transition away from fossil fuels (TAFF) agenda through the
+  lens of investment-ready energy planning: how national planning systems c
+ an translate transition-away commitments into credible implementation path
+ ways\, and what practical support GCEP can provide to facilitate dialogue 
+ between planners\, policymakers and financiers on the conditions needed to
+  move from political commitment to investable action. It also reflects on 
+ the development and climate nexus.\n\nProvisional programme\, check for ch
+ anges: https://energyplanningweek.info/#session-8
+URL:https://energyplanningweek.info/#session-8
+END:VEVENT
+END:VCALENDAR

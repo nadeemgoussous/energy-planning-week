@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lunch-d3@energyplanningweek.info
+DTSTAMP:20261126T094143Z
+DTSTART:20261203T120000Z
+DTEND:20261203T131500Z
+SUMMARY:EPW 2026: Lunch break and working lunch session: Planning for unive
+ rsal access – turning national targets into a bankable last mile
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Lunch from 13:00\; the working lunch session runs from 13:15 to
+  14:05. Many countries now hold a national strategy or least-cost plan for
+  universal access\, yet turning it into a financed pipeline remains diffic
+ ult\, particularly in Sub-Saharan Africa. This working lunch brings govern
+ ment planners\, regulators\, data and tool providers\, and financiers toge
+ ther in small groups around real country cases to examine where access pla
+ ns stall on the way to investment and what would move them forward.\n\nPro
+ visional programme\, check for changes: https://energyplanningweek.info/#l
+ unch-d3
+URL:https://energyplanningweek.info/#lunch-d3
+END:VEVENT
+END:VCALENDAR

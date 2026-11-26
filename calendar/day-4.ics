@@ -1,0 +1,92 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Energy Planning Week 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:breakfast-msp@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T071500Z
+DTEND:20261204T080000Z
+SUMMARY:EPW 2026: Coffee session: Connecting long-term energy scenarios wit
+ h marine spatial planning
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Marine spatial planning (MSP) determines how marine space is us
+ ed and is a key enabler of accelerated\, responsible offshore wind deploym
+ ent – a growing part of many long-term energy scenarios. This session ex
+ amines how energy planners and marine spatial planners can work together s
+ o that each process informs the other\, using more granular MSP data to im
+ prove forecasts of timelines and infrastructure needs\, with a focus on in
+ stitutional coordination and data governance.\n\nProvisional programme\, c
+ heck for changes: https://energyplanningweek.info/#breakfast-msp
+URL:https://energyplanningweek.info/#breakfast-msp
+END:VEVENT
+BEGIN:VEVENT
+UID:deep-dive-1@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T080000Z
+DTEND:20261204T090000Z
+SUMMARY:EPW 2026: Deep Dive 1: Greening data centres – principles for sou
+ nd energy planning under uncertainty
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:AI and data centres are driving rapid growth in electricity dem
+ and. Poorly planned\, this new demand can strain networks and raise emissi
+ ons\; well-designed procurement and siting can instead accelerate addition
+ al renewables\, flexibility and grid investment. Building on IRENA's work 
+ on green data centres\, this session explores how principles for credible 
+ renewable electricity supply can be linked with system and infrastructure 
+ planning to address anticipated data centre demand despite prevailing unce
+ rtainty.\n\nProvisional programme\, check for changes: https://energyplann
+ ingweek.info/#deep-dive-1
+URL:https://energyplanningweek.info/#deep-dive-1
+END:VEVENT
+BEGIN:VEVENT
+UID:deep-dive-2@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T090000Z
+DTEND:20261204T100000Z
+SUMMARY:EPW 2026: Deep Dive 2: Robust power system planning – linking gri
+ d infrastructure and flexibility
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:As solar and wind shares grow and electrification reshapes dema
+ nd\, power systems need more grid capacity and more flexibility\, and the 
+ two are closely linked. This session shares experiences in connecting nati
+ onal energy scenarios with grid and flexibility planning: where grid expan
+ sion is needed\, where flexibility offers a cost-effective complement\, an
+ d how to avoid unnecessary investment while maintaining reliability.\n\nPr
+ ovisional programme\, check for changes: https://energyplanningweek.info/#
+ deep-dive-2
+URL:https://energyplanningweek.info/#deep-dive-2
+END:VEVENT
+BEGIN:VEVENT
+UID:deep-dive-3@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T103000Z
+DTEND:20261204T120000Z
+SUMMARY:EPW 2026: Deep Dive 3: Regional energy planning – aligning nation
+ al priorities and regional interconnection
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Regional institutions and planning entities from different worl
+ d regions share how national plans inform regional transmission developmen
+ t and vice versa\, the institutional mechanisms that support coordination\
+ , and the challenges that remain.\n\nProvisional programme\, check for cha
+ nges: https://energyplanningweek.info/#deep-dive-3
+URL:https://energyplanningweek.info/#deep-dive-3
+END:VEVENT
+BEGIN:VEVENT
+UID:closing-d4@energyplanningweek.info
+DTSTAMP:20261124T130616Z
+DTSTART:20261204T120000Z
+DTEND:20261204T121500Z
+SUMMARY:EPW 2026: Closing remarks
+LOCATION:Auditorium\, GIZ Campus Forum\, Friedrich-Ebert-Allee 32\, 53113 B
+ onn\, Germany
+DESCRIPTION:Provisional programme\, check for changes: https://energyplanni
+ ngweek.info/#closing-d4
+URL:https://energyplanningweek.info/#closing-d4
+END:VEVENT
+END:VCALENDAR
